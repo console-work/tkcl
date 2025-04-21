@@ -4,8 +4,8 @@ const api = {
   endpoint: {
     homedata: `${baseURL}/data/home.json`,
     aboutdata: `${baseURL}/data/about.json`,
-    servicesdata: `${baseURL}/data/services.json`,
-    contactdata: `${baseURL}/data/contact.json`,
+    // servicesdata: `${baseURL}/data/services.json`,
+    // contactdata: `${baseURL}/data/contact.json`,
   },
 };
 
