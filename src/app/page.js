@@ -7,7 +7,7 @@ export const metadatas = metadata.home;
 
 async function getHomeData() {
   const res = await fetch(api.endpoint.homedata , {
-    cache: 'force-cache', 
+    cache: 'no-store',
   });
   const data = await res.json();
   return data;

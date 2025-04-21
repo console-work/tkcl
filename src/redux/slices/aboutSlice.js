@@ -6,7 +6,9 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const fetchAboutData = createAsyncThunk('about/fetchData', async () => {
   const res = await fetch(api.endpoint.aboutdata);
-  return res.json();
+  const data = await res.json();
+  console.log(data) 
+  return data;
 });
 
 

@@ -6,7 +6,7 @@ import api from "@/api/endpoint";
 export const metadatas = metadata.about;
 async function getAboutData() {
   const res = await fetch(api.endpoint.aboutdata , {
-    cache: 'force-cache', 
+    cache: 'no-store',
   });
   const data = await res.json();
   return data;
