@@ -14,5 +14,5 @@ async function getAboutData() {
 
 export default async function Page() {
   const data = await getAboutData();
-  return <AboutContent data={data }/>;
+  return <AboutContent data={data}/>;
 }
