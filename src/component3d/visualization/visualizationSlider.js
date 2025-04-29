@@ -84,7 +84,7 @@ const VisualizationSlider = () => {
                         >
                             {sliderList.map((item, index) => (
                                 // <div className='h-full px-2'><img loading="lazy" src={item.image}/></div>
-                                <div className='relative flex flex-col md:block mx-2 cursor-pointer'>
+                                <div key={index} className='relative flex flex-col md:block mx-2 cursor-pointer'>
                                     <div>
                                         <img alt='slider' loading="lazy" src={item.image} className="w-full h-full object-cover" />
                                     </div>

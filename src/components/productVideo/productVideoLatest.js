@@ -56,7 +56,7 @@ export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] 
                                     indicators={false}
                                 >
                                     {tagList.map((item, index) =>
-                                        <div className="flex justify-center font-tag-font opacity-60 "><h1 className="text-2xl md:text-7xl font-bold uppercase text-white ">{item}</h1></div>
+                                        <div key={index} className="flex justify-center font-tag-font opacity-60 "><h1 className="text-2xl md:text-7xl font-bold uppercase text-white ">{item}</h1></div>
                                     )}
                                 </Carousel>
                             </div>

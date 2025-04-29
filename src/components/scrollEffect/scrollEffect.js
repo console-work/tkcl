@@ -8,7 +8,8 @@ export const ScrollEffect = (props) => {
   const duration = props.duration ? props.duration + 's' : '1s';
   const animateOut = props.animateOut ?? false;
 
-  const id = props.id ?? useSSRId('scroll'); // SSR-safe ID
+  const generatedId = useSSRId('scroll');
+  const id = props.id ?? generatedId;
   const animElemRef = useRef(null);
   const [activeElem, setActiveElem] = useState(false);
 
