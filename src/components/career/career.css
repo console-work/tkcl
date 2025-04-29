@@ -1,0 +1,95 @@
+
+.career-bg {
+    background-image: url("/img/career-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.career-top-bg {
+    background-image: url("/img/light.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.career-bottom-bg {
+    background-image: url("/img/chair-shadow.webp");
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+.job-des p{ 
+    padding-bottom: 10px;
+}
+
+.job-des h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.job-des h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.job-des h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.job-des h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.job-des ul {
+    list-style: unset;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+.job-des ol {
+    list-style: none;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+.shift-p{
+    background-color: #7C9C30;
+    padding-bottom: 0 !important;
+    color: white;
+    text-align: center;
+    padding-top: 5px ;
+    
+}
+.normal-p{
+    padding-bottom: 5px !important;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: -1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7C9C30;
+  border-radius: 3px;
+}
+
+
+.deadline{
+    font-weight: bold;
+    color: red;
+}
+
+.email-address{
+    font-weight: bold;
+    color: green;
+}
+

@@ -1,19 +1,28 @@
-// ✅ Server Component (SEO এর জন্য ভালো)
-import api from '@/api/endpoint';
-import HomeContent from './homeContent';
-import { metadata } from "@/seo/metadatas";
 
-export const metadatas = metadata.home;
+import api from "@/api/endpoint";
+import { metadata as pageMeta } from '@/seo/metadatas';
+import HomeClient from './homeClient';
+import Loader from '@/components/loader';
 
-async function getHomeData() {
-  const res = await fetch(api.endpoint.homedata , {
-    cache: 'no-store',
-  });
-  const data = await res.json();
-  return data;
-}
 
-export default async function Page() {
-  const data = await getHomeData();
-  return <HomeContent data={data} />;
+
+export const metadata = pageMeta.home;
+
+// async function getHomeData() {
+//   const res = await fetch(api.endpoint.homedata);
+//   return await res.json();
+// }
+
+export default  function Home() {
+
+  
+  return (
+    <>
+     
+      
+      {/* Client-side hydration with loader */}
+      {/* <HomeClient initialData={initialData} fallback={<Loader />} /> */}
+      <HomeClient />
+    </>
+  );
 }
