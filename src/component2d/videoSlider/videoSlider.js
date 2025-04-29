@@ -62,7 +62,7 @@ const VideoSlider = () => {
                         ]}
                     >
                         {sliderList.map((item, index) => (
-                            <VideoWithThumb index={index} video={item.video}  label={item.label} />
+                            <VideoWithThumb key={index} video={item.video}  label={item.label} />
                         ))}
                     </Carousel>
                 </div>
