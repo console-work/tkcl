@@ -49,17 +49,18 @@ const EVPage2 = () => {
   const isNextDisabled = currentIndex === visibleDivs.length - 1;
 
   const getVisibleDivs = () => {
-    // const endIndex = currentIndex + 1 >= visibleDivs.length ? 0 : currentIndex + 1;
-    // const middleIndex = currentIndex;
+    if (typeof window === 'undefined') return [];
+  
     const startIndex =
       currentIndex === 0 ? visibleDivs.length - 1 : currentIndex - 1;
-
+  
     return window.screen.width <= 641
       ? [visibleDivs[startIndex]]
       : window.screen.width <= 1025
       ? [visibleDivs[startIndex]]
       : [visibleDivs[startIndex]];
   };
+  
   return (
     <div>
       <div className="2xl:container mx-auto my-1">
