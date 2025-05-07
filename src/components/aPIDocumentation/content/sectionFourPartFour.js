@@ -9,7 +9,7 @@ const SectionFourPartFour = () => {
 
   const handleCopy = () => {
     const textToCopy = `POST /v.03.13.23/upload - image
-Request (form-data):
+Request (form - data):
 order_master_id: { order_master_id }
 file: { image_file_path }
 add_on_services: [" remove_bg ", " retouch ", " color_correction "] (optional)
@@ -23,7 +23,6 @@ Response:
   "status": "success",
   "status_code": 200
 }`;
-
     navigator.clipboard
       .writeText(textToCopy)
       .then(() => {
@@ -43,24 +42,22 @@ Response:
       </ParagraphOne>
 
       <div className="bg-[#F2F2EA] p-4 shadow-md font-anek-latin w-full mx-auto relative">
-        <pre className="text-sm text-gray-800 overflow-x-auto">
-POST /v.<span className="text-[#0000FF]">03.13.23</span>/upload - image
+        <pre className="text-sm text-gray-800 overflow-x-auto overflow-y-hidden whitespace-pre-wrap">
+{`POST /v.03.13.23/upload - image
 Request (form-data):
-order_master_id : <span className="text-[#A01ED4]">{`{ order_master_id }`}</span>
-file : <span className="text-[#A01ED4]">{`{ image_file_path }`}</span>
-add_on_services : [<span className="text-[#A01ED4]">" remove_bg ", " retouch ", " color_correction "</span>] (optional)
-notes : <span className="text-[#A01ED4]">{`{ additional_notes }`}</span> (optional)
-attachments : <span className="text-[#A01ED4]">{`{ attachment_file_path }`}</span> (optional)
-Authorization : <span className="text-[#A01ED4]">{`{ user_token }`}</span>
+order_master_id : { order_master_id }
+file : { image_file_path }
+add_on_services : [" remove_bg ", " retouch ", " color_correction "] (optional)
+notes : { additional_notes } (optional)
+attachments : { attachment_file_path } (optional)
+Authorization : { user_token }
 
 Response:
-{`{
-  `}<span className="text-[#A01ED4]">"message"</span>: <span className="text-[#A01ED4]">"Upload Successful."</span>,
-  <br />
-  <span className="text-[#A01ED4]">"status"</span>: <span className="text-[#A01ED4]">"success"</span>,
-  <br />
-  <span className="text-[#A01ED4]">"status_code"</span>: <span className="text-[#0000FF]">200</span>
-<br />{'}'}
+{
+  "message": "Upload Successful",
+  "status": "success",
+  "status_code": 200
+}`}
         </pre>
 
         <div className="absolute flex gap-2 items-end right-3 bottom-3">
@@ -76,12 +73,12 @@ Response:
                 d="M6 11C6 8.17157 6 6.75736 6.87868 5.87868C7.75736 5 9.17157 5 12 5H15C17.8284 5 19.2426 5 20.1213 5.87868C21 6.75736 21 8.17157 21 11V16C21 18.8284 21 20.2426 20.1213 21.1213C19.2426 22 17.8284 22 15 22H12C9.17157 22 7.75736 22 6.87868 21.1213C6 20.2426 6 18.8284 6 16V11Z"
                 stroke="currentColor"
                 strokeWidth="1.5"
-              />
+              ></path>
               <path
                 d="M6 19C4.34315 19 3 17.6569 3 16V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H15C16.6569 2 18 3.34315 18 5"
                 stroke="currentColor"
                 strokeWidth="1.5"
-              />
+              ></path>
             </svg>
             {copied && (
               <span className="absolute -top-8 right-0 bg-black text-white text-xs rounded px-2 py-1">
