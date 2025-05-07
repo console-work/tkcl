@@ -2,7 +2,7 @@
 import React from 'react';
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
-import Heading from '../Heading/Heading';
+import Heading from '../heading/heaDing';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import  Link  from 'next/link';
 

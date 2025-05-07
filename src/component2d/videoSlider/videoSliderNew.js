@@ -1,6 +1,6 @@
 'use client'
 import { Carousel } from "react-div-carousel";
-import Heading2D from "../../component3d/Heading/Heading2D";
+import Heading2D from "../../component3d/heading/heading2D";
 import  {useEffect } from "react";
 
 const VideoSliderNew = () => {
@@ -35,7 +35,7 @@ const VideoSliderNew = () => {
   return (
     <div className="pb-4 pt-10">
       <Heading2D className="pt-6 pb-12" titleClassName="w-[500px]" title="VIDEOS" />
-      <div className="2xl:container 2xl:mx-auto">
+      <div className="2xl:container 2xl:mx-auto commonContainer">
         <div className="relative w-full">
           <Carousel
             uniqueId="id_125"

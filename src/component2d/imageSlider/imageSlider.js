@@ -3,7 +3,7 @@
 import ReactCompareImage from 'react-compare-image'
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
-import Heading2D from '../../component3d/Heading/Heading2D'
+import Heading2D from '../../component3d/heading/heading2D'
 
 const ImageSlider = () => {
     const sliderList = [
@@ -52,7 +52,7 @@ const ImageSlider = () => {
         title="IMAGES"
       />
                 
-            <div className='2xl:container 2xl:mx-auto '>
+            <div className='2xl:container 2xl:mx-auto commonContainer'>
                 <div className='relative w-full h-[400px]'>
                     <Carousel uniqueId="id_1011"
                         delay={3000}

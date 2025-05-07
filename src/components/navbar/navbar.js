@@ -2,7 +2,7 @@
 import { GoHomeFill } from "react-icons/go";
 import logo from "@/images/logo3.png";
 import logoWhite from "@/images/logo2.png";
-import { CgMenuGridO } from "react-icons/cg";
+import { CgClose, CgFormatJustify, CgFormatRight, CgMenu, CgMenuGridO } from "react-icons/cg";
 import Link from 'next/link'
 import { useEffect, useState } from "react";
 
@@ -15,7 +15,7 @@ import "@/styles/navbar.css";
 import GoogleTranslate from "../googleTranslate/googleTranslate";
 import HeadlineModal from "./headlineModal";
 import MegaNavbar from "./megaNavbar";
-
+import { AnimatePresence, motion } from "framer-motion";
 
 const NavbarHome = ({carearmenu}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -109,9 +109,19 @@ const NavbarHome = ({carearmenu}) => {
       <div style={carearmenu && {background:"#DEE2E2"}}
         className={`menuActive  ${
           screenLeft && "bg-[#DEE2E2]"
-        }  fixed w-full top-0 z-[999]  shadow-xl md:shadow-none`}
+        }  fixed w-full top-[0px] z-[999]  shadow-xl md:shadow-none`}
       >
-        {screenLeft && <MegaNavbar />}
+        {/* {screenLeft && <MegaNavbar />} */}
+        {screenLeft && (
+  <motion.div
+    initial={{ y: -50, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.2 }}
+  >
+    <MegaNavbar />
+  </motion.div>
+)}
+
         <div className="container mx-auto bg-[#DEE2E2] md:bg-transparent py-1">
           <div className="hidden lg:flex items-center justify-between gap-3">
             <Link aria-label="home" href={"/"}>
@@ -137,7 +147,7 @@ const NavbarHome = ({carearmenu}) => {
             </Link>
             <Link
               aria-label="3D"
-              href="/3d"
+              href="/3d-modeling-and-rendering"
               className={` text-xs lg:text-sm font-semibold ${
                 screenLeft || carearmenu
                   ? "text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] "
@@ -347,23 +357,28 @@ const NavbarHome = ({carearmenu}) => {
             <Link aria-label="logo" href={"/"}>
               <img
                 loading="lazy"
-                src={logo}
+                src={logo.src}
                 width={80}
                 height={40}
                 alt="logo"
               />
             </Link>
-            <CgMenuGridO
-              onClick={() => setMenuBool(!getMenuBool)}
-              className="text-[32px]  cursor-pointer"
-            />
+            
+          <CgMenu
+            onClick={() => setMenuBool(true)}
+            className="text-[27px] cursor-pointer"
+          style={{opacity:'0.5'}}/>
+      
           </div>
         </div>
         {/* -----------------------------------For Mobile--------------------------------------- */}
         {getMenuBool && (
-          <div className="block lg:hidden bg-[#DEE2E2] pt-2 ">
-            <div className="container mx-auto ">
-              <div className="flex flex-col text-center gap-4">
+          <div
+          className={`block lg:hidden pt-2 mobileSidebarFool ${getMenuBool ? "open" : ""}`}
+        >
+              <button  className="mobileSidebarFoolCrox  cursor-pointer" onClick={() => setMenuBool(false)}><CgClose className="text-[25px]" style={{opacity:'0.5'}}/></button>
+            <div className="container mx-auto mt-10">
+              <div className="flex flex-col text-center gap-1">
                 <Link
                   aria-label="2D"
                   onClick={() => setMenuBool(false)}
@@ -373,9 +388,9 @@ const NavbarHome = ({carearmenu}) => {
                   IMAGES
                 </Link>
                 <Link
-                  aria-label="3D"
+                  aria-label="3d-modeling-and-rendering"
                   onClick={() => setMenuBool(false)}
-                  href="/3d"
+                  href="/3d-modeling-and-rendering"
                   className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]"
                 >
                   3D

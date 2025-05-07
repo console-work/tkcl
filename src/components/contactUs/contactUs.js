@@ -56,7 +56,7 @@ function ContactUs() {
                 {/* <Helmet>
         <style>{"body { background-color: #c5da9c; }"}</style>
       </Helmet> */}
-                <div className="container mx-auto">
+                <div className="container mx-auto commonContainerContact">
                     <div className="flex flex-col-reverse md:flex-row  justify-center gap-10 md:gap-20 items-center">
                         <div className="flex flex-col justify-center items-center gap-4">
                             <div className="flex w-full flex-col border-b-2 border-[#98AE61]  justify-end items-end text-end">

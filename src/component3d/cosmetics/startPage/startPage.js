@@ -7,7 +7,7 @@ const StartPage = () => {
             <div className='container mx-auto'>
                 <div className='flex relative justify-center px-2 md:px-0'>
                     <div className='relative z-10'>
-                        <h3 className='text-5xl text-[80px] md:text-[95px]  leading-[60px] font-bold md:leading-[80px]'>COSMETICS</h3>
+                        <h3 className='text-5xl text-[80px] threetaging md:text-[95px]  leading-[60px] font-bold md:leading-[80px]'>COSMETICS</h3>
                         {/* <h3 className='text-5xl text-[50px] md:text-[60px] md:leading-[85px] pb-4 text-[#8abc8b] font-bold'>ACCESSORIES</h3> */}
                         <img  alt="green-ball" loading="lazy" className='absolute -top-[70px] md:-top-[50px] -right-[65px] w-[120px]' src='/img/3d/Green-Ball.png' />
                     </div>

@@ -6,6 +6,7 @@ import ImageSlider from "@/component2d/imageSlider/imageSlider";
 import OrderGuide from "@/component2d/orderGuide/orderGuide";
 import Record2d from "@/component2d/record/record2d";
 import StartPage from "@/component2d/startPage/startPage";
+import Trends2D from "@/component2d/trends2D/trends2D";
 import VideoSliderNew from "@/component2d/videoSlider/videoSliderNew";
 import Navbar2D from "@/components/navbar/navbar2D";
 import ScrolTop from "@/components/scrolTop/scrolTop";
@@ -41,7 +42,7 @@ const Twope = () => {
                     <OrderGuide />
                 {/* </ScrollEffect> */}
                 {/* <ScrollEffect id="2d-trends" offset={100}> */}
-                    {/* <Blog2D /> */}
+                    <Trends2D />
                 {/* </ScrollEffect> */}
                 <Footer2D />
             </div>

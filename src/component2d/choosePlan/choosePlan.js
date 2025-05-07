@@ -1,6 +1,6 @@
 'use client'
 import  Link  from "next/link";
-import Heading2D from "../../component3d/Heading/Heading2D";
+import Heading2D from "../../component3d/heading/heading2D";
 import { BsCircleFill } from "react-icons/bs";
 const ChoosePlan = () => {
   return (
@@ -14,7 +14,7 @@ const ChoosePlan = () => {
         title="CHOOSE YOUR PLAN"
       />
           </div>
-          <div className="container mx-auto pt-16">
+          <div className="container mx-auto pt-16 commonContainer">
             <div className="flex flex-col justify-center md:flex-row  gap-12 items-center ">
               <div className=" h-[400px] w-[260px] bg-white shadow-lg border border--gradient-to-t from-white via-slate-300 to-white rounded-md "  style={{borderWidth:'0'}}>
                 <div className="flex flex-col items-center h-[130px] bg-[#DEE2E2] pt-10">

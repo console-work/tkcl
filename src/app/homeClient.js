@@ -1,26 +1,4 @@
-// 'use client';
-// import { useEffect, useState } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { fetchHomeDataSuccess } from '@/redux/slices/homeSlice';
 
-// export default function HomeClient({ initialData, fallback }) {
-//   const dispatch = useDispatch();
-//   const [isLoading, setIsLoading] = useState(true);
-//   const { data } = useSelector(state => state.home);
-
-//   useEffect(() => {
-//     if (!data) {
-//       dispatch(fetchHomeDataSuccess(initialData));
-//     }
-//     setIsLoading(false);
-//   }, [initialData, dispatch, data]);
-
-//   if (isLoading) {
-//     return fallback;
-//   }
-
-//   return null; // Server content remains visible
-// }
 'use client'
 
 

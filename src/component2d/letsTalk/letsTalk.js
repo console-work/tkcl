@@ -1,7 +1,7 @@
 
 'use client'
 import contact from "../../assets/contact-us.png";
-import Heading2D from "../../component3d/Heading/Heading2D";
+import Heading2D from "../../component3d/heading/heading2D";
 
 const LetsTalk = () => {
   return (

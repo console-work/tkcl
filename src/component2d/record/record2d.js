@@ -1,5 +1,5 @@
 'use client'
-import Heading2D from "../../component3d/Heading/Heading2D";
+import Heading2D from "../../component3d/heading/heading2D";
 import CircleStyle2d from "./circleStyle2d";
 
 const Record2d = () => {
@@ -13,7 +13,7 @@ const Record2d = () => {
       />
       </div>
       <div>
-        <div className="container mx-auto ">
+        <div className="container mx-auto commonContainer">
           <div className="flex flex-col gap-6">
             <div className="grid grid-cols-1 gap-12 md:gap-0 md:grid-cols-4 justify-items-center -mt-24">
               <CircleStyle2d

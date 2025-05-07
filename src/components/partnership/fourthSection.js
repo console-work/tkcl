@@ -8,7 +8,7 @@ const FourthSection = () => {
             <div>
                 <div className='fourth-section-container'>
                     <div className='fourth-section-button'>
-                        <Link aria-label="Explore 3D" href="/3d">Explore 3D</Link>
+                        <Link aria-label="Explore 3D" href="/3d-modeling-and-rendering">Explore 3D</Link>
                     </div>
                     <div className='fourth-section-button'>
                         <Link aria-label="Request a Quote" href='/contact-us'>Request a Quote</Link>

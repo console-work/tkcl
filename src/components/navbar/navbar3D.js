@@ -1,7 +1,7 @@
 'use client';
 import { GoHomeFill } from "react-icons/go";
 import logo from "../../images/logo3.png";
-import { CgMenuGridO } from "react-icons/cg";
+import { CgClose, CgMenu, CgMenuGridO } from "react-icons/cg";
 import  Link  from 'next/link';
 import { useEffect, useRef, useState } from "react";
 
@@ -103,7 +103,7 @@ const Navbar3D = () => {
                 </button>
                 <Link
                   aria-label="3d-trends"
-                  href="/3d#3d-trends"
+                  href="/3d-modeling-and-rendering#3d-trends"
                   className="text-gray-800 text-xl lg:text-sm font-medium"
                 >
                   3D TRENDS
@@ -133,7 +133,7 @@ const Navbar3D = () => {
                 </Link> */}
                 <Link
                   aria-label="Subscribe"
-                  href={"/3d#subscribe"}
+                  href={"/3d-modeling-and-rendering#subscribe"}
                   className="text-gray-800 text-xl lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-medium"
                   rel="noreferrer"
                 >
@@ -156,30 +156,36 @@ const Navbar3D = () => {
               <Link aria-label="Home" href={"/"}>
                 <img
                   loading="lazy"
-                  src={logo}
+                  src={logo.src}
                   width={80}
                   height={40}
                   alt="logo"
                 />
               </Link>
-              <CgMenuGridO
+              <CgMenu
+                          onClick={() => setMenuBool(true)}
+                          className="text-[27px] cursor-pointer"
+                        style={{opacity:'0.5'}}/>
+              {/* <CgMenuGridO
                 onClick={() => setMenuBool(!getMenuBool)}
                 className="text-[32px]  cursor-pointer"
-              />
+              /> */}
             </div>
           </div>
           {/* -----------------------------------For Mobile--------------------------------------- */}
           {getMenuBool && (
-            <div className="block lg:hidden pt-2 ">
-              <div className="container mx-auto">
-                <div className="flex flex-col text-center gap-4">
+            <div className={`block lg:hidden pt-2 mobileSidebarFool ${getMenuBool ? "open" : ""}`}
+        >
+           <button  className="mobileSidebarFoolCrox  cursor-pointer" onClick={() => setMenuBool(false)}><CgClose className="text-[25px]" style={{opacity:'0.5'}}/></button>
+              <div className="container mx-auto mt-10">
+                <div className="flex flex-col text-center gap-0">
                   <button
-                    className={`flex flex-col group gap-1 transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white ${
+                    className={`flex flex-col group gap-1 transition-all duration-300 text-gray-800 text-base border-b-0 border-[#376f50] font-semibold hover:bg-[#376f50] hover:border-b-0 hover:border-[#7C9C30] hover:text-white ${
                       showDivSubMenu &&
-                      `bg-[#376f50] border-b-2 border-[#7C9C30] text-white`
+                      `bg-[#376f50] border-b-0 border-[#7C9C30] text-white`
                     }`}
                   >
-                    <sapn
+                    <span
                       onClick={() => setShowDivSubMenu(!showDivSubMenu)}
                       className="py-3 flex self-baseline mx-auto items-center w-full  justify-center"
                     >
@@ -187,7 +193,7 @@ const Navbar3D = () => {
                       <span>
                         <IoMdArrowDropdown />
                       </span>
-                    </sapn>
+                    </span>
                     {showDivSubMenu && (
                       <ul className="flex flex-col font-normal w-full bg-[#2f6246]">
                         <li
@@ -269,8 +275,8 @@ const Navbar3D = () => {
                   <Link
                     aria-label="3d-trends"
                     onClick={() => setMenuBool(false)}
-                    href="/3d#3d-trends"
-                    className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"
+                    href="/3d-modeling-and-rendering#3d-trends"
+                    className="transition-all duration-300 text-gray-800 text-base border-b-0 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-0 hover:border-[#7C9C30] hover:text-white"
                   >
                     3D TRENDS
                   </Link>
@@ -278,7 +284,7 @@ const Navbar3D = () => {
                     aria-label="Contact-us"
                     onClick={() => setMenuBool(false)}
                     href="/contact-us"
-                    className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"
+                    className="transition-all duration-300 text-gray-800 text-base border-b-0 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-0 hover:border-[#7C9C30] hover:text-white"
                   >
                     CONTACT US
                   </Link>
@@ -305,15 +311,15 @@ const Navbar3D = () => {
                   <Link
                     aria-label="Subscribe"
                     onClick={() => setMenuBool(false)}
-                    href={"/3d#subscribe"}
-                    className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"
+                    href={"3d-modeling-and-rendering#subscribe"}
+                    className="transition-all duration-300 text-gray-800 text-base border-b-0 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-0 hover:border-[#7C9C30] hover:text-white"
                   >
                     SUBSCRIBE
                   </Link>
                   <Link
                     aria-label="Book A Call"
                     href="/book-a-call"
-                    className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"
+                    className="transition-all duration-300 text-gray-800 text-base border-b-0 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-0 hover:border-[#7C9C30] hover:text-white"
                   >
                     Book A Call
                   </Link>
@@ -321,7 +327,7 @@ const Navbar3D = () => {
                   <Link
                     aria-label="Career"
                     href="/career"
-                    className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"
+                    className="transition-all duration-300 text-gray-800 text-base border-b-0 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-0 hover:border-[#7C9C30] hover:text-white"
                   >
                     CAREER
                   </Link>

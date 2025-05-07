@@ -1,5 +1,5 @@
 import  Link  from "next/link";
-import Heading from "../Heading/Heading";
+import Heading from "../heading/heaDing";
 
 const Contact3D = () => {
   return (

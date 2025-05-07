@@ -7,12 +7,13 @@ import { CgMenuGridO } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import MegaNavbar from "../MegaNavbar/MegaNavbar";
+
 import { IoLanguage } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import GoogleTranslate from "../googleTranslate/googleTranslate";
 import "./navbar.css";
 import HeadlineModal from "./headlineModal";
+import MegaNavbar from "./megaNavbar";
 
 const NavbarHome = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -132,8 +133,8 @@ const NavbarHome = () => {
               IMAGES
             </HashLink>
             <HashLink
-              aria-label="3D"
-              to="/3d"
+              aria-label="3d-modeling-and-rendering"
+              to="/3d-modeling-and-rendering"
               className={` text-xs lg:text-sm font-semibold ${
                 screenLeft
                   ? "text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] "
@@ -369,9 +370,9 @@ const NavbarHome = () => {
                   IMAGES
                 </HashLink>
                 <HashLink
-                  aria-label="3D"
+                  aria-label="3d-modeling-and-rendering"
                   onClick={() => setMenuBool(false)}
-                  to="/3d"
+                  to="/3d-modeling-and-rendering"
                   className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]"
                 >
                   3D

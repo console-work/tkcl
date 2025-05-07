@@ -9,7 +9,7 @@ import order6 from "../../images/order6.png";
 
 import arrow from "../../assets/arrow.png";
 import arrow3 from "../../images/arrow3.png";
-import Heading2D from "../../component3d/Heading/Heading2D";
+import Heading2D from "../../component3d/heading/heading2D";
 const OrderGuide = () => {
   return (
     <div className="bg-white" id="order-guide">
@@ -23,7 +23,7 @@ const OrderGuide = () => {
       </div> */}
 
       <div >
-      <div className="2xl:container mx-auto">
+      <div className="2xl:container mx-auto commonContainer">
       <div className="flex justify-center w-full  transition-all duration-300">
           <video
             id="productVideo"
@@ -45,7 +45,7 @@ const OrderGuide = () => {
       />
       </div>
 
-        <div className="container mx-auto">
+        <div className="container mx-auto commonContainer commonContainerOrder">
         <div className="pt-7 pb-10 ">
           <div className="grid grid-cols-2 mr-5 gap-6 sm:grid-cols-3 sm:px-16 sm:gap-12 lg:grid-cols-4 xl:grid-cols-6 lg:gap-8 lg:px-16 xl:px-4 justify-items-center">
             <div className="bg-[#B1CC40] w-[140px] h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">

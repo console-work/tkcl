@@ -1,7 +1,7 @@
 // import React, { useState } from 'react';
 'use client'
 import  Link  from 'next/link';
-import Heading from "../Heading/Heading";
+import Heading from "../heading/heaDing";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const VisualizationSliderStatic = () => {
   return (

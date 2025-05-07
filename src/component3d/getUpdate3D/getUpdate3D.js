@@ -2,8 +2,9 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-import Heading from "../Heading/Heading";
+
 import Modal from "@/components/popupModal/popupModal";
+import Heading from "../heading/heaDing";
 
 
 const GetUpdate3D = () => {

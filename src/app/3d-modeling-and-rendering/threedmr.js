@@ -48,7 +48,7 @@ function Threedmr() {
                     {/* <Model3D /> */}
                 {/* </ScrollEffect> */}
                 {/* <ScrollEffect id="3d-trends" offset={100}> */}
-                    {/* <Trends3D /> */}
+                    <Trends3D />
                 {/* </ScrollEffect> */}
                 <ScrollEffect offset={100}>
                     <Video3D />

@@ -5,7 +5,7 @@ import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 
 import VideoWithThumb from './videoWithThumb'
-import Heading2D from '../../component3d/Heading/Heading2D'
+import Heading2D from '../../component3d/heading/heading2D'
 
 const VideoSlider = () => {
 

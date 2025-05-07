@@ -15,7 +15,7 @@ const StartPage = () => {
   };
   return (
     <div className="bg-[#DEE2E2] pt-2 pb-6 ">
-      <div className="container mx-auto">
+      <div className="container mx-auto commonContainer">
         <div className="flex flex-col md:flex-row gap-0 md:gap-20 justify-between justify-items-center items-center  pt-[50px] md:pt-0">
           <div className=" h-80">
             <h5 className="text-[40px] text-center md:text-left">WE DO</h5>

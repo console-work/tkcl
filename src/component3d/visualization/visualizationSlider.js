@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
-import Heading from '../Heading/Heading';
+import Heading from '../heading/heaDing';
 const VisualizationSlider = () => {
 
     const [getShadowWidth, setShadowWidth] = useState(null);

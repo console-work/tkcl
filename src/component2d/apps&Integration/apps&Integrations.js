@@ -15,7 +15,7 @@ const Integrations = () => {
             </h2>
           </div> 
         </div>
-        <div className="container mx-auto">
+        <div className="container mx-auto commonContainer">
           <div className="flex flex-col md:flex-row justify-center items-center gap-20 md:gap-12">
             <a href="https://shopify.thekowcompany.com/Account/Login" target="_blank" rel="noreferrer" className="cursor-pointer ">
               <div className="w-[140px] lg:w-[180px]  ">

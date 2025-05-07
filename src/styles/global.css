@@ -26,8 +26,11 @@ html,
 body {
   font-family: 'Roboto Condensed', sans-serif;
   scroll-behavior: smooth;
+  background: transparent !important;
 }
-
+.bgImage{
+  background-image: none !important;
+}
 .test{
   height: 100%;
 }
@@ -43,7 +46,13 @@ body {
   position: relative;
   /* padding-top: 50%; */
 }
-
+.menuActive{
+  transition: all 0.5s ease !important;
+  box-shadow: 0px 3px 12px 0px rgba(92, 92, 92, 0.5);
+}
+.menuActive.false{
+  box-shadow: none;
+}
 .img-bag {
   aspect-ratio: 4/3;
   width: 100%;
@@ -449,3 +458,82 @@ body {
   background-size: 100% 12%;
  
 }
+
+@media screen and (max-width: 1024px) {
+ /* .bgImage{
+  padding-left: 10px;
+  padding-right: 10px;
+ } */
+  h2,h1{
+    line-height: normal;
+
+  }
+ .menuActive  {
+ 
+background: #DEE2E2;
+opacity: 1 !important;
+transition: all 1s ease !important;
+
+ }
+.menuActive.false{
+
+  transition: all 1s ease !important;
+}
+.menuActive .container.mx-auto.py-1{
+  transition: all 1s ease !important;
+}
+ .mobileSidebarFool {
+  position: fixed;
+  left: -400px;  /* Start off-screen */
+  top: 0;
+  overflow-y: auto;
+  height: 100%;
+  width: 400px;
+  background: #DEE2E2;
+  transition: left 0.3s ease-in-out;  /* Transition for the sidebar */
+  z-index: 1000;
+}
+.mobileSidebarFoolCrox{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+/* When the menu is open, slide it in */
+.mobileSidebarFool.open {
+  left: 0;  /* Move into view */
+}
+}
+@media screen and (max-width: 768px) {
+#subscribe{
+  margin-top: 50px;
+}
+
+.commonContainer{
+padding-left: 10px;
+padding-right: 10px;
+}
+.commonContainerOrder{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+}
+@media screen and (max-width: 472px) {
+.flex.relative.justify-center.px-2 .relative.z-10 .text-5xl.font-bold{
+   font-size: 40px;
+}
+  .commonContainerContact{
+   
+    margin: 0 auto;
+  }
+  .commonContainerContact form{
+    width: 300px !important;
+  }
+ .mobileSidebarFool{
+
+   width: 280px;
+ }
+ 
+ }

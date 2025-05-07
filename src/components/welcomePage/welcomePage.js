@@ -32,7 +32,7 @@ const WelcomePage = () => {
                         <div className="block lg:hidden">
                             <img
                                 className="w-[120px] pb-5"
-                                src={logowhite}
+                                src={logowhite.src}
                                 alt="logo"
                             />
                         </div>

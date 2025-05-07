@@ -66,7 +66,7 @@ const EVPage2 = () => {
       <div className="2xl:container mx-auto my-1">
         {getVisibleDivs() &&
           getVisibleDivs().map((div) => (
-            <div className="relative " key={div.id}>
+            <div className="relative" key={div.id}>
               <div>
                 <img
                   className=" w-full  h-full 2xl:h-[800px] "

@@ -1,7 +1,7 @@
 'use client'
 import { GoHomeFill } from "react-icons/go";
 import logo from "../../images/logo3.png"
-import { CgMenuGridO } from "react-icons/cg";
+import { CgClose, CgMenu, CgMenuGridO } from "react-icons/cg";
 import  Link  from "next/link";
 import  {useState}  from "react";
 
@@ -40,19 +40,26 @@ const Navbar2D = () => {
           </div>
           <div className="flex items-center justify-between lg:hidden">
             <Link aria-label="home" href={"/"}>
-              <img loading="lazy" src={logo}
+              <img loading="lazy" src={logo.src}
                 width={80}
                 height={40}
                 alt="logo" />
             </Link>
-            <CgMenuGridO onClick={() => setMenuBool(!getMenuBool)} className="text-[32px]  cursor-pointer" />
+                 <CgMenu
+                        onClick={() => setMenuBool(true)}
+                        className="text-[27px] cursor-pointer"
+                      style={{opacity:'0.5'}}/>
           </div>
         </div>
         {/* -----------------------------------For Mobile--------------------------------------- */}
         {
-          getMenuBool && <div className="block lg:hidden bg-[#DEE2E2] pt-2 ">
-          <div className="container mx-auto">
-            <div className="flex flex-col text-center gap-3">
+          getMenuBool && 
+          
+          <div className={`block lg:hidden bg-[#DEE2E2] pt-2 mobileSidebarFool ${getMenuBool ? "open" : ""}`}
+        >
+          <button  className="mobileSidebarFoolCrox  cursor-pointer" onClick={() => setMenuBool(false)}><CgClose className="text-[25px]" style={{opacity:'0.5'}}/></button>
+          <div className="container mx-auto mt-10">
+            <div className="flex flex-col text-center gap-0">
               <Link aria-label="services" onClick={() => setMenuBool(false)} href="/2d-photo-editing#services" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">SERVICES</Link>
               <Link aria-label="apps" onClick={() => setMenuBool(false)} href="/2d-photo-editing#apps" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">APPS</Link>
               <Link aria-label="price" onClick={() => setMenuBool(false)} href="/2d-photo-editing#price" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">PRICE</Link>

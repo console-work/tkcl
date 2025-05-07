@@ -1,7 +1,7 @@
 'use client'
 import { GoHomeFill } from "react-icons/go";
 import logo from "../../images/logo3.png";
-import { CgMenuGridO } from "react-icons/cg";
+import { CgClose, CgMenu, CgMenuGridO } from "react-icons/cg";
 import  Link  from "next/link";
 import { useState } from "react";
 import MegaNavbar from "./megaNavbar";
@@ -36,8 +36,8 @@ const NavbarContact = () => {
               IMAGES
             </Link>
             <Link
-              aria-label="3D"
-              href="/3d"
+              aria-label="3d-modeling-and-rendering"
+              href="/3d-modeling-and-rendering"
               className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"
             >
               3D
@@ -86,23 +86,25 @@ const NavbarContact = () => {
             <Link aria-label="logo" href={"/"}>
               <img
                 loading="lazy"
-                src={logo}
+                src={logo.src}
                 width={80}
                 height={40}
                 alt="logo"
               />
             </Link>
-            <CgMenuGridO
-              onClick={() => setMenuBool(!getMenuBool)}
-              className="text-[32px]  cursor-pointer"
-            />
+             <CgMenu
+                        onClick={() => setMenuBool(true)}
+                        className="text-[27px] cursor-pointer"
+                      style={{opacity:'0.5'}}/>
           </div>
         </div>
         {/* -----------------------------------For Mobile--------------------------------------- */}
         {getMenuBool && (
-          <div className="block md:hidden bg-[#DEE2E2] pt-2 ">
-            <div className="container mx-auto">
-              <div className="flex flex-col text-center gap-4">
+          <div className={`block md:hidden bg-[#DEE2E2] pt-2 mobileSidebarFool ${getMenuBool ? "open" : ""}`}
+        >
+           <button  className="mobileSidebarFoolCrox  cursor-pointer" onClick={() => setMenuBool(false)}><CgClose className="text-[25px]" style={{opacity:'0.5'}}/></button>
+            <div className="container mx-auto mt-10">
+              <div className="flex flex-col text-center gap-0">
                 <Link
                   aria-label="2D"
                   onClick={() => setMenuBool(false)}
@@ -112,9 +114,9 @@ const NavbarContact = () => {
                   IMAGES
                 </Link>
                 <Link
-                  aria-label="3D"
+                  aria-label="3d-modeling-and-rendering"
                   onClick={() => setMenuBool(false)}
-                  href="/3d"
+                  href="/3d-modeling-and-rendering"
                   className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]"
                 >
                   3D
