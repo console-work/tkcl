@@ -76,7 +76,7 @@ const GetUpdate3D = () => {
           Sign up for our mailing list to get the latest information on our 2D and 3D services, cool new features or updates, must-read articles, and industry insights. 
           </p>
           <p className="text-center text-sm mb-6">
-          You won't want to miss it - Subscribe today! 
+          You won&apos;t want to miss it - Subscribe today!
           </p>
 
           <div className="flex justify-center text-sm mt-5 mb-1">

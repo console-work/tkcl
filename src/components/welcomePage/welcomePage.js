@@ -45,11 +45,11 @@ const WelcomePage = () => {
 
                         <div className=" flex justify-end lg:h-[400px] items-center">
                             <p className="w-full px-3 lg:w-3/4 lg:pl-20 lg:px-0 xl:px-20 text-white text-sm md:text-base text-justify">
-                            The KOW Company has been a leading name in the world of E-commerce as a relentless player in Studio Image & 3D post-production contents. We are constantly developing visual contents with creativity, and precision and turning them into stunning realities. With a versatile range of services in traditional image editing, we are equally proud of our remarkable 3D modeling, rendering, and architectural visualization abilities. 
+                            The KOW Company has been a leading name in the world of E-commerce as a relentless player in Studio Image &amp; 3D post-production contents. We are constantly developing visual contents with creativity, and precision and turning them into stunning realities. With a versatile range of services in traditional image editing, we are equally proud of our remarkable 3D modeling, rendering, and architectural visualization abilities.
 
-We have skilled artists and designers who create stunning 3D visuals and lifelike renderings that leave a lasting mark. To make things more streamlined, Retouched.ai is our advanced AI integration that sets us apart. This amazing technology has allowed us to redefine how we enhance product images. Retouched.ai easily and quickly removes backgrounds from your photos with the help of Ai. The result is an intricate, clean image that helps your product to be more attractive. 
+We have skilled artists and designers who create stunning 3D visuals and lifelike renderings that leave a lasting mark. To make things more streamlined, Retouched.ai is our advanced AI integration that sets us apart. This amazing technology has allowed us to redefine how we enhance product images. Retouched.ai easily and quickly removes backgrounds from your photos with the help of Ai. The result is an intricate, clean image that helps your product to be more attractive.
 
-At The KOW Company, we don't meet your expectations; we beat them. We're all about excellent quality and creative solutions to help your brand stand out, turning your every visual into something extraordinary. 
+At The KOW Company, we don&apos;t meet your expectations; we beat them. We&apos;re all about excellent quality and creative solutions to help your brand stand out, turning your every visual into something extraordinary.
                             </p>
                         </div>
                     </div>
