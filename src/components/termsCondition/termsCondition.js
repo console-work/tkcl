@@ -8,6 +8,7 @@ import terms from "../../../public/img/terms-banner.webp";
 import Footer from "../footer/footer";
 import ScrolTop from "../scrolTop/scrolTop";
 import NavbarHome from "../navbar/navbar";
+import Image from "next/image";
 
 
 
@@ -19,7 +20,11 @@ function TermsCondition(props) {
     <div className="terms container mx-auto ">
       <div className="container">
         <div className="row  mt-16 mb-5">
-          <img loading="lazy" src={terms.src} width="100%" height="100%" alt="termcondition" />
+        <Image
+  src={terms}
+  alt="termcondition"
+  className="w-full h-full object-contain"
+/>
           <h1 className="text-center text-2xl md:text-4xl font-semibold mt-3">
             Terms & Conditions
           </h1>

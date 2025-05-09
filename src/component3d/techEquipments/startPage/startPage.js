@@ -1,5 +1,6 @@
-'use client'
-import React from 'react';
+'use client';
+
+import Image from 'next/image';
 
 const StartPage = () => {
     return (
@@ -9,9 +10,23 @@ const StartPage = () => {
                     <div className='relative z-10'>
                         <h3 className='text-5xl text-[80px] md:text-[95px]  leading-[60px] font-bold md:leading-[80px]'>TECH</h3>
                         <h3 className='text-5xl text-[50px] md:text-[60px] md:leading-[85px] pb-4 text-[#8abc8b] font-bold'>EQUIPMENTS</h3>
-                        <img alt='green-ball' loading="lazy" className='absolute -top-[70px] md:-top-[50px] -right-[65px] w-[120px]' src='/img/3d/Green-Ball.png' />
+                        <Image 
+                            alt='green-ball' 
+                            className='absolute -top-[70px] md:-top-[50px] -right-[65px] w-[120px]' 
+                            src='/img/3d/Green-Ball.png' 
+                            width={120}
+                            height={120}
+                            priority
+                        />
                     </div>
-                    <img alt='ev' loading="lazy" className='absolute left-0 -top-[150px] md:-top-[170px] xl:-top-[180px] 2xl:-top-[250px] h-[360px] md:h-auto w-[360px] md:w-[500px] xl:w-[600px] 2xl:w-[700px] z-9' src='/img/3d/EV.webp' />
+                    <Image
+                        alt='ev'
+                        className='absolute left-0 -top-[150px] md:-top-[170px] xl:-top-[180px] 2xl:-top-[250px] h-[360px] md:h-auto w-[360px] md:w-[500px] xl:w-[600px] 2xl:w-[700px] z-9'
+                        src='/img/3d/EV.webp'
+                        width={700}
+                        height={700}
+                        priority
+                    />
                 </div>
             </div>
         </div>

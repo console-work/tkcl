@@ -4,6 +4,7 @@ import Link from "next/link";
 import icon1 from "../../../public/img/Blog-Images/2fb.webp";
 import icon2 from "../../../public/img/Blog-Images/2in.webp";
 import icon3 from "../../../public/img/Blog-Images/2X.webp";
+import Image from 'next/image';
 
 const BlogShare = () => {
   // Ensure window is available before accessing `window.location.href`
@@ -15,7 +16,7 @@ const BlogShare = () => {
 
   return (
     <div className="bg-[#DEE2E2] py-28">
-      <div className="container mx-auto">
+      <div className="container mx-auto commonContainer">
         <div className="flex justify-center items-center gap-5 md:gap-20">
           <div className="w-20">
             <Link
@@ -24,7 +25,14 @@ const BlogShare = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="Facebook Icon" loading="lazy" src={icon1.src} />
+             <div className="relative w-20 aspect-square">
+  <Image
+    src={icon1}
+    alt="Facebook Icon"
+    fill
+    className="object-contain"
+  />
+</div>
             </Link>
           </div>
           <div className="w-20">
@@ -34,7 +42,15 @@ const BlogShare = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="LinkedIn Icon" loading="lazy" src={icon2.src} />
+              {/* <img alt="LinkedIn Icon" loading="lazy" src={icon2.src} /> */}
+              <div className="relative w-20 aspect-square">
+  <Image
+    src={icon2}
+    alt="Facebook Icon"
+    fill
+    className="object-contain"
+  />
+</div>
             </Link>
           </div>
           <div className="w-20">
@@ -44,7 +60,14 @@ const BlogShare = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="Twitter Icon" loading="lazy" src={icon3.src} />
+                <div className="relative w-20 aspect-square">
+  <Image
+    src={icon3}
+    alt="Facebook Icon"
+    fill
+    className="object-contain"
+  />
+</div>
             </Link>
           </div>
         </div>

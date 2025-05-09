@@ -1,5 +1,6 @@
 
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 // import play from "/img/play-2.png"
 // import video from "../../video/production.mp4"
@@ -28,15 +29,16 @@ const ProductVideo = () => {
               </video>
             </div>
             <div onClick={playVideo} style={{ opacity: playBool ? 0 : 1 }} className="transition-all duration-300 cursor-pointer flex flex-col items-center justify-center relative w-[250px] md:w-[350px] lg:w-[450px]" >
-              <img loading="lazy" src={play} alt="play"
-                sizes="100vw"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                }}
-                width={500}
-                height={300}
-              />
+            <Image
+  src={play}
+  alt="play"
+  width={500}
+  height={300}
+  sizes="100vw"
+  style={{
+    width: '100%',
+    height: 'auto',
+  }} />
               <h4 className="hidden md:block md:text-[40px] lg:text-5xl font-bold text-kow-text-black uppercase absolute md:-right-[185px] lg:-right-[220px] md:top-[140px] lg:top-[184px]">RETOUCH</h4>
             </div>
           </div>
@@ -53,15 +55,16 @@ const ProductVideo = () => {
               </div>
               :
               <div onClick={() => setPlayBool(true)} className="cursor-pointer flex flex-col items-center justify-center relative max-w-full md:w-[450px]" >
-                <img loading="lazy" src={play} alt="play"
-                  sizes="100vw"
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                  }}
-                  width={500}
-                  height={300}
-                   />
+               <Image
+  src={play}
+  alt="play"
+  width={500}
+  height={300}
+  sizes="100vw"
+  style={{
+    width: '100%',
+    height: 'auto',
+  }} />
                 {/* <h4 className="text-5xl font-bold text-kow-text-black uppercase absolute -right-[220px] top-[184px]">RETOUCH</h4> */}
               </div>
           }

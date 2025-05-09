@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
+import Image from "next/image";
 
 import blog3DData from "../../../public/data/blog2D.json";
 import Heading2D from "@/component3d/heading/heading2D";
@@ -84,10 +85,13 @@ const Trends2D = () => {
                 >
                   <div className="flex-col items-center justify-center cursor-pointer">
                     <div className="h-auto md:h-[220px] xl:h-[280px] flex">
-                      <img
-                        className="w-full min-h-full"
-                        src={div.thumb}
+                      <Image
+                        src={div.thumb} // This assumes your images are in the public folder or a valid URL
                         alt={div.title}
+                        width={500} // Set appropriate width for the image
+                        height={300} // Set appropriate height for the image
+                        className="w-full min-h-full object-cover"
+                        loading="lazy" // Lazy load the images
                       />
                     </div>
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">

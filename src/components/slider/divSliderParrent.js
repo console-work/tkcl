@@ -5,6 +5,7 @@ import ReactCompareImage from 'react-compare-image';
 import arrowImage from '../../images/arrow.png';
 import Link from 'next/link';
 import { LazyLoadComponent, LazyLoadImage } from 'react-lazy-load-image-component';
+import Image from 'next/image';
 
 const DivSliderParrent = () => {
     const [currentPosition, setCurrentPosition] = useState(0);
@@ -78,12 +79,26 @@ const DivSliderParrent = () => {
                         className='bg-[#666] lg:bg-transparent py-2 lg:py-0 px-2 absolute top-1/2 left-0 z-40 -translate-y-1/2  disabled:opacity-10 cursor-pointer' onClick={prevSlidFunc}
                     //  disabled={currentPosition === -((sliderList.length - 1))}
                     >
-                        <img loading="lazy" src={arrowImage.src} width={25} height={25} alt="left-arrow" />
+                       <Image
+  src={arrowImage}
+  alt="left-arrow"
+  width={25}
+  height={25}
+/>
                     </button>
                     <button
                         // disabled={currentPosition === (sliderList.length - 1)}
                         className='bg-[#666] lg:bg-transparent py-2 lg:py-0 px-2 absolute top-1/2 right-0 z-40 -translate-y-1/2 disabled:opacity-10 cursor-pointer' onClick={nextSlidFunc}>
-                        <img loading="lazy" className='rotate-180' src={arrowImage.src} width={25} height={25} alt="right-arrow"/>
+
+                        {/* <img loading="lazy" className='rotate-180' src={arrowImage.src} width={25} height={25} alt="right-arrow"/> */}
+                        <Image
+  src={arrowImage}
+  alt="right-arrow"
+  width={25}
+  height={25}
+  className='rotate-180'
+/>
+
                     </button>
                 </div>
                 {/* <div className='2xl:container 2xl:mx-auto h-[350px] grid grid-cols-1 lg:grid-cols-[350px_auto_350px] gap-3'> */}
@@ -97,13 +112,15 @@ const DivSliderParrent = () => {
                                     <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
                                         <div className='w-full h-full relative'>
                                             {/* <img loading="lazy" className='w-full h-full object-cover' src={item.after} alt="slider" fill={true} objectFit='cover' /> */}
-                                            <LazyLoadImage
-                                                className='w-full h-full object-cover'
-                                                src={item.after}
-                                                alt="slider"
-                                                // fill={true}
-                                                // objectFit='cover'
-                                                effect="blur" />
+                                           
+  <Image
+    src={item.after}
+    alt="slider"
+    fill
+    className="object-cover"
+    sizes="100vw"
+  />
+
                                         </div>
                                         <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
@@ -112,14 +129,14 @@ const DivSliderParrent = () => {
                                     <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
                                         <div className='w-full h-full relative'>
                                             {/* <img loading="lazy" className='w-full h-full object-cover' src={item.after} alt="slider" fill={true} objectFit='cover' /> */}
-                                            <LazyLoadImage
-                                                className='w-full h-full object-cover'
-                                                src={item.after}
-                                                alt="slider"
-                                                // fill={true}
-                                                // objectFit='cover'
-                                                // effect="blur"
-                                            />
+                                            <Image
+    src={item.after}
+    alt="slider"
+    fill
+    className="object-cover"
+    sizes="100vw"
+  />
+
                                         </div>
                                         <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
@@ -128,14 +145,14 @@ const DivSliderParrent = () => {
                                     <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
                                         <div className='w-full h-full relative'>
                                             {/* <img loading="lazy" className='w-auto h-full  object-cover' src={item.after} alt="slider" fill={true} objectFit='cover' /> */}
-                                            <LazyLoadImage
-                                                className='w-auto h-full  object-cover'
-                                                src={item.after}
-                                                alt="slider"
-                                                // fill={true}
-                                                // objectFit='cover'
-                                                // effect="blur"
-                                                 />
+                                            <Image
+    src={item.after}
+    alt="slider"
+    fill
+    className="object-cover"
+    sizes="100vw"
+  />
+
                                         </div>
                                         <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
@@ -183,13 +200,14 @@ const DivSliderParrent = () => {
                                     <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
                                         <div className='w-full h-full relative'>
                                             {/* <img loading="lazy" className='w-full h-full object-cover' src={item.after} alt="slider" fill={true} objectFit='cover' /> */}
-                                            <LazyLoadImage
-                                                className='w-full h-full object-cover'
-                                                src={item.after}
-                                                alt="slider"
-                                            //  fill={true}
-                                                // objectFit='cover'
-                                                 />
+                                            <Image
+    src={item.after}
+    alt="slider"
+    fill
+    className="object-cover"
+    sizes="100vw"
+  />
+
                                         </div>
                                         <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>
@@ -198,14 +216,14 @@ const DivSliderParrent = () => {
                                     <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
                                         <div className='w-full h-full relative'>
                                             {/* <img loading="lazy" className='w-full h-full object-cover' src={item.after} alt="slider" fill={true} objectFit='cover' /> */}
-                                            <LazyLoadImage
-                                                className='w-full h-full object-cover'
-                                                src={item.after}
-                                                alt="slider"
-                                                // fill={true}
-                                                // objectFit='cover'
-                                                // effect="blur"
-                                            />
+                                            <Image
+    src={item.after}
+    alt="slider"
+    fill
+    className="object-cover"
+    sizes="100vw"
+  />
+
                                         </div>
                                         <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
                                     </div>

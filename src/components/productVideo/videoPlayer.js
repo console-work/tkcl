@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const VideoPlayer = ({videoUrl, loadingImg}) => {
@@ -22,7 +23,22 @@ const VideoPlayer = ({videoUrl, loadingImg}) => {
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
                     </div>
-                    <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading image" />
+                    {/* <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading image" /> */}
+<Image
+    src={loadingImg}
+    alt="slider"
+    fill
+    className="object-cover"
+    sizes="100vw"
+  />
+                     {/* <Image
+                        src={loadingImg}
+                        alt="Loading"
+                        fill
+                        className="object-cover w-full"
+                        sizes="100vw"
+                      /> */}
+                    
                 </div>
             }
 

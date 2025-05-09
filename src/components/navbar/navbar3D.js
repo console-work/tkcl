@@ -12,6 +12,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 import MegaMenu from "./megaMenu";
 import MegaNavbar from "./megaNavbar";
+import Image from "next/image";
 
 
 const Navbar3D = () => {
@@ -76,12 +77,13 @@ const Navbar3D = () => {
           <div className="container mx-auto ">
             <div className="hidden lg:flex items-center justify-between gap-3">
               <Link aria-label="Home" href={"/"}>
-                <img
-                  loading="lazy"
-                  className="w-[80px] h-[45px]"
-                  src={logo.src}
-                  alt="logo"
-                />
+              <Image
+  src={logo}
+  alt="logo"
+  width={80}
+  height={45}
+  className="w-[80px] h-[45px]"
+/>
               </Link>
               {/* --------------------------------------For Large Screen------------------------------------------ */}
               {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
@@ -154,13 +156,14 @@ const Navbar3D = () => {
 
             <div className={`flex items-center justify-between lg:hidden`}>
               <Link aria-label="Home" href={"/"}>
-                <img
-                  loading="lazy"
-                  src={logo.src}
-                  width={80}
-                  height={40}
-                  alt="logo"
-                />
+              <Image
+  src={logo}
+  alt="logo"
+  width={80}
+  height={45}
+  
+/>
+               
               </Link>
               <CgMenu
                           onClick={() => setMenuBool(true)}

@@ -16,6 +16,7 @@ import GoogleTranslate from "../googleTranslate/googleTranslate";
 import HeadlineModal from "./headlineModal";
 import MegaNavbar from "./megaNavbar";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 const NavbarHome = ({carearmenu}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -125,13 +126,13 @@ const NavbarHome = ({carearmenu}) => {
         <div className="container mx-auto bg-[#DEE2E2] md:bg-transparent py-1">
           <div className="hidden lg:flex items-center justify-between gap-3">
             <Link aria-label="home" href={"/"}>
-              <img
-                loading="lazy"
-                src={screenLeft || carearmenu ? logo.src : logoWhite.src}
-                width={80}
-                height={40}
-                alt="logo"
-              />
+            <Image
+  src={screenLeft || carearmenu ? logo.src : logoWhite.src}
+  alt="logo"
+  width={80}
+  height={45}
+  className=""
+/>
             </Link>
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             <Link
@@ -223,7 +224,7 @@ const NavbarHome = ({carearmenu}) => {
                   : "text-white hover:text-[#7C9C30]"
               } `}
             >
-              Blog
+              BLOG
             </Link>
             <a
               aria-label="sign up"
@@ -293,11 +294,18 @@ const NavbarHome = ({carearmenu}) => {
                       className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
                       role="menuitem"
                     >
-                      <img
+                      {/* <img
                         className="h-7 w-7"
                         src="/img/flags/united-kingdom.png"
                         alt="English"
-                      />
+                      /> */}
+                      <Image
+  src="/img/flags/united-kingdom.png"
+  alt="english"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
                       English
                     </button>
                     <button
@@ -305,11 +313,18 @@ const NavbarHome = ({carearmenu}) => {
                       className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
                       role="menuitem"
                     >
-                      <img
+                       <Image
+  src="/img/flags/spain.png"
+  alt="spain"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                      {/* <img
                         className="h-7 w-7"
                         src="/img/flags/spain.png"
                         alt="Spanish"
-                      />
+                      /> */}
                       Spanish
                     </button>
                     <button
@@ -317,11 +332,14 @@ const NavbarHome = ({carearmenu}) => {
                       className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
                       role="menuitem"
                     >
-                      <img
-                        className="h-7 w-7"
-                        src="/img/flags/france.png"
-                        alt="French"
-                      />
+                                             <Image
+  src="/img/flags/france.png"
+  alt="france"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                      
                       French
                     </button>
                     <button
@@ -329,11 +347,14 @@ const NavbarHome = ({carearmenu}) => {
                       className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
                       role="menuitem"
                     >
-                      <img
-                        className="h-7 w-7"
-                        src="/img/flags/germany.png"
-                        alt="German"
-                      />
+                       <Image
+  src="/img/flags/germany.png"
+  alt="germany"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                    
                       German
                     </button>
                     <button
@@ -341,11 +362,14 @@ const NavbarHome = ({carearmenu}) => {
                       className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
                       role="menuitem"
                     >
-                      <img
-                        className="h-7 w-7"
-                        src="/img/flags/netherlands.png"
-                        alt="Dutch"
-                      />
+                      <Image
+  src="/img/flags/netherlands.png"
+  alt="netherlands"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                     
                       Dutch
                     </button>
                   </div>
@@ -355,13 +379,14 @@ const NavbarHome = ({carearmenu}) => {
           </div>
           <div className="flex items-center justify-between lg:hidden">
             <Link aria-label="logo" href={"/"}>
-              <img
-                loading="lazy"
-                src={logo.src}
-                width={80}
-                height={40}
-                alt="logo"
-              />
+            <Image
+  src={logo.src}
+  alt="logo"
+  width={80}
+  height={45}
+  className=""
+/>
+              
             </Link>
             
           <CgMenu
@@ -458,7 +483,7 @@ const NavbarHome = ({carearmenu}) => {
               
               className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]"
             >
-              Blog
+              BLOG
             </Link>
                 <div className="flex justify-center mb-2">
                   <button
@@ -491,11 +516,14 @@ const NavbarHome = ({carearmenu}) => {
                         className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
                         role="menuitem"
                       >
-                        <img
-                          className="h-7 w-7"
-                          src="/img/flags/united-kingdom.png"
-                          alt="English"
-                        />
+                         <Image
+  src="/img/flags/united-kingdom.png"
+  alt="united-kingdom"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                        
                         English
                       </button>
                       <button
@@ -503,11 +531,14 @@ const NavbarHome = ({carearmenu}) => {
                         className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
                         role="menuitem"
                       >
-                        <img
-                          className="h-7 w-7"
-                          src="/img/flags/spain.png"
-                          alt="Spanish"
-                        />
+                         <Image
+  src="/img/flags/spain.png"
+  alt="spain"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                       
                         Spanish
                       </button>
                       <button
@@ -515,11 +546,14 @@ const NavbarHome = ({carearmenu}) => {
                         className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
                         role="menuitem"
                       >
-                        <img
-                          className="h-7 w-7"
-                          src="/img/flags/france.png"
-                          alt="French"
-                        />
+                         <Image
+  src="/img/flags/france.png"
+  alt="french"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                       
                         French
                       </button>
                       <button
@@ -527,11 +561,14 @@ const NavbarHome = ({carearmenu}) => {
                         className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
                         role="menuitem"
                       >
-                        <img
-                          className="h-7 w-7"
-                          src="/img/flags/germany.png"
-                          alt="German"
-                        />
+                         <Image
+  src="/img/flags/germany.png"
+  alt="germany"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                        
                         German
                       </button>
                       <button
@@ -539,11 +576,14 @@ const NavbarHome = ({carearmenu}) => {
                         className="flex justify.start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
                         role="menuitem"
                       >
-                        <img
-                          className="h-7 w-7"
-                          src="/img/flags/netherlands.png"
-                          alt="Dutch"
-                        />
+                                                <Image
+  src="/img/flags/netherlands.png"
+  alt="netherlands"
+  width={28} // Equivalent to Tailwind h-7/w-7
+  height={28}
+  className="h-7 w-7"
+/>
+                        
                         Dutch
                       </button>
                     </div>

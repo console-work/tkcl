@@ -1,9 +1,8 @@
 'use client'
-import  {useState}  from "react";
-
-
+import { useState } from "react";
 import BottomPart from "./bottomPart";
-import  Link  from "next/link";
+import Link from "next/link";
+import Image from "next/image"; // Importing next/image for optimized images
 
 const StartPage = () => {
   const [playBool, setPlayBool] = useState(false);
@@ -13,6 +12,7 @@ const StartPage = () => {
     const video = document.getElementById("productVideo");
     video.play();
   };
+
   return (
     <div className="bg-[#DEE2E2] pt-2 pb-6 ">
       <div className="container mx-auto commonContainer">
@@ -28,14 +28,14 @@ const StartPage = () => {
             <div className="pt-5 flex justify-center md:justify-start">
               <div className="rounded-3xl bg-white w-[260px] flex justify-between px-1 ">
                 <Link aria-label="Free Trial" href="/contact-us">
-                <button className="bg-[#B1CC40] my-1 px-8 py-1 font-semibold rounded-3xl text-[13px]">
-                  Free Trial
-                </button>
+                  <button className="bg-[#B1CC40] my-1 px-8 py-1 font-semibold rounded-3xl text-[13px]">
+                    Free Trial
+                  </button>
                 </Link>
                 <Link aria-label="Free Quote" href="/contact-us">
-                <button className=" my-2 px-10 rounded-3xl font-semibold text-[13px]">
-                  Free Quote
-                </button>
+                  <button className=" my-2 px-10 rounded-3xl font-semibold text-[13px]">
+                    Free Quote
+                  </button>
                 </Link>
               </div>
             </div>
@@ -43,20 +43,19 @@ const StartPage = () => {
 
           <div className="">
             <div className="relative h-full md:h-[515px] w-full flex justify-center">
-              <div      
-                className=""
-              >
-                <img
-                  src={"/img/headphone.webp"}            
-                  width={500}
-                  height={300}
+              <div>
+                {/* Replaced the regular <img> tag with <Image> from Next.js */}
+                <Image
+                  src={"/img/headphone.webp"} // Image source
+                  alt="Headphone"
+                  width={500} // width for optimization
+                  height={300} // height for optimization
+                  layout="intrinsic" // Maintain aspect ratio
                 />
               </div>
             </div>
           </div>
         </div>
-
-       
       </div>
       <BottomPart />
     </div>

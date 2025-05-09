@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 import ScrolTop from "../scrolTop/scrolTop";
 import NavbarContact from "../navbar/navbarContact";
 import Footer from "../footer/footer";
+import Image from "next/image";
 
 
 // import { Helmet } from "react-helmet";
@@ -147,7 +148,14 @@ function ContactUs() {
                             </form>
                         </div>
                         <div>
-                            <img alt="contact-us" className="w-[350px] sm:w-[400px] md:w-[450px]" src="/img/Illustration.webp" />
+                            {/* <img alt="contact-us" className="w-[350px] sm:w-[400px] md:w-[450px]" src="/img/Illustration.webp" /> */}
+                            <Image
+  src="/img/Illustration.webp"
+  alt="contact-us"
+  width={450} // Max width used for optimization
+  height={300} // Adjust to match aspect ratio (optional)
+  className="w-[350px] sm:w-[400px] md:w-[450px] h-auto"
+/>
                         </div>
                     </div>
                 </div>

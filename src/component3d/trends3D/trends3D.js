@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useEffect } from "react";
-import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import Link from "next/link";
-import Heading from "../heading/heaDing";
-import blog3DData from "../../../public/data/blog3D.json";
+import { useState, useEffect } from 'react';
+import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md';
+import Link from 'next/link';
+import Heading from '../heading/heaDing';
+import blog3DData from '../../../public/data/blog3D.json';
+import Image from 'next/image';
 
 const Trends3D = () => {
   const [visibleDivs, setVisibleDivs] = useState([]);
@@ -17,11 +18,15 @@ const Trends3D = () => {
       .filter((item) => item?.title && item?.thumb) // Avoid broken entries
       .map((item) => ({
         ...item,
+        title: item.title.trim(),
+        thumb: item.thumb.trim(),
         slug: item.title
           .toLowerCase()
+          .trim()
           .replace(/\s+/g, '-')
           .replace(/[^a-z0-9-]/g, ''),
       }));
+      
     setVisibleDivs(prepared);
   }, []);
 
@@ -56,12 +61,12 @@ const Trends3D = () => {
     return screenWidth <= 767
       ? [visibleDivs[startIndex]]
       : screenWidth <= 1025
-        ? [visibleDivs[startIndex], visibleDivs[middleIndex]]
-        : [
-            visibleDivs[startIndex],
-            visibleDivs[middleIndex],
-            visibleDivs[endIndex],
-          ];
+      ? [visibleDivs[startIndex], visibleDivs[middleIndex]]
+      : [
+          visibleDivs[startIndex],
+          visibleDivs[middleIndex],
+          visibleDivs[endIndex],
+        ];
   };
 
   return (
@@ -76,17 +81,16 @@ const Trends3D = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-2 w-[280px] sm:w-full">
             {getVisibleDivs().map((div, index) =>
               div?.slug ? (
-                <Link
-                  key={index}
-                  href={`/blog/${div.slug}`}
-                  aria-label="3D Blog Detail"
-                >
+                <Link key={index} href={`/blog/${div.slug}`} aria-label="3D Blog Detail">
                   <div className="flex-col items-center justify-center cursor-pointer">
                     <div className="h-auto md:h-[220px] xl:h-[280px] flex">
-                      <img
+                      <Image
                         className="w-full min-h-full"
                         src={div.thumb}
                         alt={div.title}
+                        width={500}  // You can adjust width and height based on your design
+                        height={280} // Adjust as needed
+                        loading="lazy"
                       />
                     </div>
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">

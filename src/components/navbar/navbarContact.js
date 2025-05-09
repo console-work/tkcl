@@ -5,6 +5,7 @@ import { CgClose, CgMenu, CgMenuGridO } from "react-icons/cg";
 import  Link  from "next/link";
 import { useState } from "react";
 import MegaNavbar from "./megaNavbar";
+import Image from "next/image";
 
 
 
@@ -18,13 +19,14 @@ const NavbarContact = () => {
         <div className="container mx-auto py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
             <Link href={"/"} aria-label="logo">
-              <img
-                loading="lazy"
-                src={logo.src}
-                width={80}
-                height={40}
-                alt="logo"
-              />
+            <Image
+  src={logo}
+  alt="logo"
+  width={80}
+  height={45}
+  
+/>
+              
             </Link>
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
@@ -84,13 +86,14 @@ const NavbarContact = () => {
           </div>
           <div className="flex items-center justify-between md:hidden">
             <Link aria-label="logo" href={"/"}>
-              <img
-                loading="lazy"
-                src={logo.src}
-                width={80}
-                height={40}
-                alt="logo"
-              />
+            <Image
+  src={logo}
+  alt="logo"
+  width={80}
+  height={45}
+  
+/>
+             
             </Link>
              <CgMenu
                         onClick={() => setMenuBool(true)}

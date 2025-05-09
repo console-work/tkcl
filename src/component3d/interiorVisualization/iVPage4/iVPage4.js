@@ -1,110 +1,66 @@
-'use client'
-import { useState } from "react";
+'use client';
+
+import { useEffect, useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import Image from "next/image";
 
 const IVPage4 = () => {
-  const [visibleDivs, setVisibleDivs] = useState([
+  const [visibleDivs] = useState([
     {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      
       imageUrl: "/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.webp",
       imageUrl2: "/img/3d/slider/view.webp",
-    },
-    {
-      id: 2,
-      text: "YOUR PROJECT TITLE",
-      text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .webp",
-    
-      imageUrl2: "/img/3d/slider/view.webp",
-    },
-    {
-      id: 3,
-      text: "YOUR PROJECT TITLE",
-      text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/INDUSTRIAL BLACK LUXURIOUS.webp",
-      imageUrl2: "/img/3d/slider/view.webp",
-    },
- 
+    }
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Ensure this code runs only on the client
+    setIsClient(true);
+  }, []);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === visibleDivs.length - 1 ? 0 : prevIndex + 1
+    setCurrentIndex((prev) =>
+      prev === visibleDivs.length - 1 ? 0 : prev + 1
     );
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? visibleDivs.length - 1 : prevIndex - 1
+    setCurrentIndex((prev) =>
+      prev === 0 ? visibleDivs.length - 1 : prev - 1
     );
   };
 
-  const isPrevDisabled = currentIndex === 0;
+  if (!isClient) return null; // Prevent hydration mismatch
 
-  // Function to determine if next button should be disabled
-  const isNextDisabled = currentIndex === visibleDivs.length - 1;
+  const currentDiv = visibleDivs[currentIndex];
 
-  const getVisibleDivs = () => {
-    if (typeof window === 'undefined') return [];
-  
-    const startIndex =
-      currentIndex === 0 ? visibleDivs.length - 1 : currentIndex - 1;
-  
-    return window.screen.width <= 641
-      ? [visibleDivs[startIndex]]
-      : window.screen.width <= 1025
-      ? [visibleDivs[startIndex]]
-      : [visibleDivs[startIndex]];
-  };
-  
   return (
-    <div>
-      <div className="2xl:container mx-auto">
-        {getVisibleDivs() &&
-          getVisibleDivs().map((div) => (
-            <div className="relative " key={div.id}>
-              <div>
-                <img
-                  className=" w-full h-full 2xl:h-[800px]"
-                  src={div.imageUrl}
-                  alt={div.text}
-                />
-              </div>
-              <div className="flex justify-between ">
-              {!isPrevDisabled && (
-                <button onClick={handlePrev} >
-                  <MdArrowBackIosNew className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute left-[10%] top-[50%]" />
-                </button>
-              )}
-               {!isNextDisabled && (
-                <button onClick={handleNext} >
-                  <MdArrowForwardIos className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute right-[10%] top-[50%]" />
-                </button>
-               )}
-              </div>
-              {/* <div className="flex justify-center items-center gap-3 absolute bottom-0 md:bottom-8 left-[15%]">
-               
-                <div className="w-8 md:w-16">
-                  <img loading="lazy" src={div.imageUrl2} />
-                </div>
-                <div>
-                  <p className="font-semibold text-base md:text-2xl text-black">
-                    {div.text}{" "}
-                    <span className="text-green-500 font-light">|</span>
-                  </p>
-                </div>
+    <div className="2xl:container mx-auto">
+      <div className="relative" key={currentDiv.id}>
+        <div className="relative w-full h-[400px] md:h-[600px] 2xl:h-[800px]">
+          <Image
+            src={currentDiv.imageUrl}
+            alt={currentDiv.text}
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
 
-                <div>
-                  <p className="text-[9px] md:text-base text-black">{div.text2}</p>
-                </div>
-              </div> */}
-            </div>
-          ))}
+        {/* <div className="flex justify-between">
+          <button onClick={handlePrev}>
+            <MdArrowBackIosNew className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute left-[10%] top-[50%]" />
+          </button>
+          <button onClick={handleNext}>
+            <MdArrowForwardIos className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute right-[10%] top-[50%]" />
+          </button>
+        </div> */}
       </div>
     </div>
   );

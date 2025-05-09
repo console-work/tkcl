@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Footer from "../footer/footer";
 import NavbarHome from "../navbar/navbar";
 import CareerMail from "./careerMail";
+import Image from "next/image";
 
 const Career = () => {
   const [jobCircular] = useState([
@@ -684,7 +685,7 @@ const Career = () => {
 
       {/* <div className="career-bg h-[100vh]"> */}
       <div className="bg-gradient-to-t from-[#ebebeb] to-[#cdcbcc] ">
-        <div className="container mx-auto relative  pb-20">
+        <div className="container mx-auto relative  pb-20 commonContainer">
           {/* <div dangerouslySetInnerHTML={{ __html: jobCircular[0].description }} /> */}
 
           <div className="flex flex-col items-center mt-10 ">
@@ -733,7 +734,7 @@ const Career = () => {
           {getJobAvaialbeCount == 0 && (
             <div className="flex flex-col items-center">
               <div className=" md:w-[450px]">
-                <h1 className="w-[400px] text-2xl text-red-700 font-semibold">
+                <h1 className="w-[250px] sm:w-[400px] text-2xl text-red-700 font-semibold  commonContainer">
                   We are not accepting new applications for now. Please check
                   back later.
                 </h1>
@@ -778,19 +779,29 @@ const Career = () => {
 
           <div className="career-top-bg absolute top-0 left-[50%] 2xl:left-[39%] -translate-x-[50%] xl:left-[38%] lg:left-[35%] md:left-[30%] 2xl:-translate-x-[37%] w-20 h-32">
             <div>
-              <img
-                src="/img/Light1.png"
-                className=" max-w-[300px] h-[300px] pt-[81px] ml-[-63px]"
-              />
+            <Image
+  src="/img/Light1.png"
+  alt="Light1"
+  width={230}            // Required by Next.js
+  height={300}           // Use the same as h-[300px]
+  className="max-w-[300px] h-[300px] pt-[81px] ml-[-63px]"
+/>
             </div>
           </div>
 
           <div className="w-full flex justify-center">
             <div className="flex justify-center  md:justify-end w-full md:w-[900px] 2xl:w-[1100px] ">
-              <img
+              {/* <img
                 src="/img/chair-shadow.png"
                 className=" max-w-[230px]   md:max-w-[300px] md:max-h-[270px] md:-mt-[90px] 2xl:-mt-[50px]   "
-              />
+              /> */}
+              <Image
+  src="/img/chair-shadow.png"
+  alt="Chair Shadow"
+  width={300} // max width for largest screen
+  height={270} // max height to preserve aspect ratio
+  className="max-w-[230px] md:max-w-[300px] md:max-h-[270px] md:-mt-[90px] 2xl:-mt-[50px]"
+/>
             </div>
           </div>
         </div>

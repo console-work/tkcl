@@ -6,6 +6,7 @@ import 'react-div-carousel/dist/index.css'
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import VideoPlayerLatest from "./videoPlayerLatest.js";
+import Image from "next/image.js";
 
 // import video from "./video/production.mp4";
 // import video from './video/production.mp4';
@@ -37,10 +38,17 @@ export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] 
                                 </svg>
                             </div>
 
-                            {/* <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading" /> */}
-                            <LazyLoadImage
-                                className="object-cover w-full" src={loadingImg} alt="loading"
-                                effect="blur" />
+                           
+ 
+ <div className="relative w-full h-full"> 
+  <Image
+    src={loadingImg.src}
+    alt="loading"
+    fill
+    className="object-cover"
+    sizes="100vw"
+  />
+</div>
                         </div>
                     }>
                         <VideoPlayerLatest videoName="3d-video" loadingImg={loadingImg} videoUrl={videoUrl}/>

@@ -1,6 +1,8 @@
 'use client'
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import Image from 'next/image';
 
 const PackPage1 = () => {
   const [visibleDivs, setVisibleDivs] = useState([
@@ -11,24 +13,24 @@ const PackPage1 = () => {
       imageUrl: "/img/Packaging.webp",
       imageUrl2: "/img/3d/slider/view.webp",
     },
-    // {
-    //   id: 2,
-    //   text: "YOUR PROJECT TITLE",
-    //   text2: "01 JAN, 2023",
-    //   imageUrl: "/public/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
-    //   imageUrl2: "/img/3d/slider/view.webp",
-    // },
-    // {
-    //   id: 3,
-    //   text: "YOUR PROJECT TITLE",
-    //   text2: "01 JAN, 2023",
-    //   imageUrl: "/public/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
-    //   imageUrl2: "/img/3d/slider/view.webp",
-    // },
- 
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  // Handle window resizing
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    handleResize(); // Set initial window width
+    window.addEventListener('resize', handleResize); // Add resize listener
+
+    return () => {
+      window.removeEventListener('resize', handleResize); // Cleanup listener
+    };
+  }, []);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -48,61 +50,41 @@ const PackPage1 = () => {
   const isNextDisabled = currentIndex === visibleDivs.length - 1;
 
   const getVisibleDivs = () => {
-    if (typeof window === 'undefined') return [];
-  
-    const startIndex =
-      currentIndex === 0 ? visibleDivs.length - 1 : currentIndex - 1;
-  
-    return window.screen.width <= 641
-      ? [visibleDivs[startIndex]]
-      : window.screen.width <= 1025
-      ? [visibleDivs[startIndex]]
-      : [visibleDivs[startIndex]];
+    if (windowWidth <= 641) {
+      return [visibleDivs[currentIndex]];
+    }
+    return [visibleDivs[currentIndex]];
   };
-  
+
   return (
     <div>
       <div className="2xl:container mx-auto my-1">
-        {getVisibleDivs() &&
-          getVisibleDivs().map((div) => (
-            <div className="relative " key={div.id}>
-              <div>
-                <img
-                  className=" w-full  h-full 2xl:h-[800px] "
-                  src={div.imageUrl}
-                  alt={div.text}
-                />
-              </div>
-              <div className="flex justify-between ">
-                {!isPrevDisabled && (
-                  <button onClick={handlePrev}>
-                    <MdArrowBackIosNew className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute left-[10%] top-[50%]" />
-                  </button>
-                )}
-                {!isNextDisabled && (
-                  <button onClick={handleNext}>
-                    <MdArrowForwardIos className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute right-[10%] top-[50%]" />
-                  </button>
-                )}
-              </div>
-              {/* <div className="flex justify-center items-center gap-3 absolute bottom-0 md:bottom-8 left-[15%]">
-               
-                <div className="w-8 md:w-16">
-                  <img loading="lazy" src={div.imageUrl2} />
-                </div>
-                <div>
-                  <p className="font-semibold text-base md:text-2xl text-white">
-                    {div.text}{" "}
-                    <span className="text-green-500 font-light">|</span>
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-[9px] md:text-base text-white">{div.text2}</p>
-                </div>
-              </div> */}
+        {getVisibleDivs().map((div) => (
+          <div className="relative" key={div.id}>
+            <div>
+              <Image
+                className="w-full h-full 2xl:h-[800px]"
+                src={div.imageUrl}
+                alt={div.text}
+                width={800}
+                height={800}
+                layout="responsive"
+              />
             </div>
-          ))}
+            {/* <div className="flex justify-between">
+              {!isPrevDisabled && (
+                <button onClick={handlePrev}>
+                  <MdArrowBackIosNew className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute left-[10%] top-[50%]" />
+                </button>
+              )}
+              {!isNextDisabled && (
+                <button onClick={handleNext}>
+                  <MdArrowForwardIos className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute right-[10%] top-[50%]" />
+                </button>
+              )}
+            </div> */}
+          </div>
+        ))}
       </div>
     </div>
   );

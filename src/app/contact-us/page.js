@@ -1,11 +1,17 @@
 import api from '@/api/endpoint';
 import { metadata as pageMeta } from '@/seo/metadatas';
-export const metadata = pageMeta.contactUs;
 import Contacts from './contact';
 
 
 
 
+export const metadata = {
+  title: pageMeta.contactUs.title,
+  description: pageMeta.contactUs.description,
+  alternates: {
+    canonical: pageMeta.contactUs.link,
+  },
+};
 
 
 

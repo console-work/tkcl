@@ -2,11 +2,18 @@
 
 import api from "@/api/endpoint";
 import { metadata as pageMeta } from '@/seo/metadatas';
-export const metadata = pageMeta.techAccessories;
+
 import TechAccessories from "./techAccessories";
 
 
 
+export const metadata = {
+  title: pageMeta.techAccessories.title,
+  description: pageMeta.techAccessories.description,
+  alternates: {
+    canonical: pageMeta.techAccessories.link,
+  },
+};
 
 
 

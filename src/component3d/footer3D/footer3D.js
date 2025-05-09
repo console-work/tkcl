@@ -11,6 +11,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 import  Link  from 'next/link';
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Footer3D = () => {
     const [boolMap, setBoolMap] = useState(false);
@@ -24,10 +25,14 @@ const Footer3D = () => {
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-center md:text-left flex flex-col justify-center">
                         <figure className='flex justify-center md:justify-start'>
-                            <img
-                                loading="lazy" src="/img/logoBlack.webp"
-                                width={120}
-                                alt="logoBlack" />
+                        <Image
+  src="/img/logoBlack.webp"
+  alt="logoBlack"
+  width={120}
+  height={0} // You can adjust or remove this if using responsive layout
+  className="h-auto w-[120px]"
+  loading="lazy"
+/>
                         </figure>
                         <p className="w-40 text-[#333333] text-[11px] p-1 border-b-2  border-[#333333]  mb-4">
                             <b>The KOW Company</b> is one of the leading image, video, 3D & CGI content production companies for businesses all over the world.

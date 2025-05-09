@@ -24,7 +24,7 @@ const MegaNavbar = () => {
             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
             <Link href="/2d-photo-editing" className="text-white text-xs font-semibold" aria-label="2D">IMAGES</Link>
             <Link href="/3d-modeling-and-rendering" className="text-white text-xs font-semibold " aria-label="3D">3D</Link>
-            <a href="http://retouched.ai/" target="_blank" className="text-white text-xs cursor-pointer   font-semibold " rel="noreferrer" aria-label="AI">AI</a>
+            <Link href="http://retouched.ai/" target="_blank" className="text-white text-xs cursor-pointer   font-semibold " rel="noreferrer" aria-label="AI">AI</Link>
             <Link href="/api-resources/retouched" target="_blank" className="text-white text-xs font-semibold " aria-label="3D">Resources</Link>
 
           </div>

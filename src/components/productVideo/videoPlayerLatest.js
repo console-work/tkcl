@@ -43,6 +43,7 @@
 // export default VideoPlayerLatest;
 
 "use client";
+import Image from 'next/image';
 import React, { useState, useRef, useEffect } from 'react';
 
 const VideoPlayerLatest = ({ videoUrl, loadingImg }) => {
@@ -85,11 +86,22 @@ const VideoPlayerLatest = ({ videoUrl, loadingImg }) => {
       {/* Loading image */}
       {isLoading && loadingImg && (
         <div className="absolute inset-0 flex justify-center items-center">
-          <img 
-            src={loadingImg} 
-            alt="Loading" 
-            className="w-full h-full object-cover"
-          />
+           <div className="relative w-full h-full">
+         {loadingImg?.src && (
+        <Image
+          src={loadingImg.src}
+          alt="loading"
+         
+          className="object-cover"
+        
+ 
+    fill
+    
+    sizes="100vw"
+          
+        />
+      )}
+      </div>
         </div>
       )}
 

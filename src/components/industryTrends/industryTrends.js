@@ -6,6 +6,7 @@ import Link from 'next/link';
 // Import JSON data for 2D and 3D blogs
 import LocalDataFor2D from '../../../public/data/blog2D.json';
 import LocalDataFor3D from '../../../public/data/blog3D.json';
+import Image from 'next/image';
 
 const IndustryTrends = () => {
   // Function to sort data by date in descending order
@@ -29,7 +30,7 @@ const IndustryTrends = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto">
+      <div className="container mx-auto commonContainer">
         <div className="flex flex-col lg:px-28 md:grid md:grid-cols-2 justify-items-center justify-center gap-3 pt-10 md:pt-20">
           {/* 2D Trends Section */}
           {latest2DBlog && (
@@ -37,11 +38,18 @@ const IndustryTrends = () => {
               <div className="relative">
                 {/* Image Container */}
                 <div className="flex flex-col justify-center overflow-hidden w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
-                  <img
+                  {/* <img
                     className="w-full h-full object-cover"
                     src={latest2DBlog.thumb}
                     alt={`${latest2DBlog.title} thumbnail`}
-                  />
+                  /> */}
+                  <Image
+  src={latest2DBlog.thumb}
+  alt={`${latest2DBlog.title} thumbnail`}
+  width={600}   // Set width based on your layout
+  height={400}  // Set height to maintain the aspect ratio
+  className="w-full h-full object-cover"
+/>
                   <div className="absolute flex gap-2 items-end right-0 bottom-0">
                     <h1 className="text-white text-[26px]">2D</h1>
                     <h1 className="w-[110px] border-b border-white mb-[10px]"></h1>
@@ -72,11 +80,18 @@ const IndustryTrends = () => {
               <div className="relative">
                 {/* Image Container */}
                 <div className="flex flex-col justify-center overflow-hidden w-full md:h-[210px] xl:h-[270px] 2xl:h-[320px] relative">
-                  <img
+                  {/* <img
                     className="w-full h-full object-cover"
                     src={latest3DBlog.thumb}
                     alt={`${latest3DBlog.title} thumbnail`}
-                  />
+                  /> */}
+                   <Image
+  src={latest3DBlog.thumb}
+  alt={`${latest3DBlog.title} thumbnail`}
+  width={600}   // Set width based on your layout
+  height={400}  // Set height to maintain the aspect ratio
+  className="w-full h-full object-cover"
+/>
                   <div className="absolute flex gap-2 items-end right-0 bottom-0">
                     <h1 className="text-white text-[26px]">3D</h1>
                     <h1 className="w-[110px] border-b border-white mb-[12px]"></h1>

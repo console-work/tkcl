@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Link from "next/link";
+import Image from "next/image";
 
 const Slider3D = () => {
   const sliderList = [
@@ -75,12 +76,14 @@ const Slider3D = () => {
               <div key={index}>
                 <Link href={item.link} className="relative flex flex-col md:block mx-2 cursor-pointer">
                   <div>
-                    <LazyLoadImage
-                      src={item.image}
-                      className="w-full object-cover"
-                      // effect="blur"
-                      alt={item.label}
-                    />
+                  <Image
+  src={item.image}
+  alt={item.label}
+  width={800} // 🔁 Replace with actual image width
+  height={500} // 🔁 Replace with actual image height
+  className="w-full object-cover"
+/>
+ 
                   </div>
                   <div className="w-full flex gap-3 py-4 justify-center">
                     <h2 className="text-black font-medium">{item.label}</h2>

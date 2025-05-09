@@ -8,6 +8,7 @@ import { BsCalendar3 } from 'react-icons/bs';
 import LocalDataFor2D from '../../../public/data/blog2D.json';
 import LocalDataFor3D from '../../../public/data/blog3D.json';
 import Footer from '../footer/footer';
+import Image from 'next/image';
 
 const AllBlog = () => {
   const filteredBlogs = useMemo(() => {
@@ -37,7 +38,15 @@ const AllBlog = () => {
               >
                 <div className="card_of_blog justify-center border-0 p-0">
                   <div className="cardImage">
-                    <img src={items.thumb} alt={items.title} />
+                    {/* <img src={items.thumb} alt={items.title} /> */}
+                    <div className="relative w-full aspect-[16/9]">
+  <Image
+    src={items.thumb}
+    alt={items.title}
+    fill
+    className="object-cover"
+  />
+</div>
                   </div>
                   <div className="cardCaption ps-4 pt-5 pb-5 pe-5">
                     <p className="cardTitle">{items.title}</p>

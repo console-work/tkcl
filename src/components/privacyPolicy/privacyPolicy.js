@@ -4,6 +4,7 @@ import ScrolTop from "../scrolTop/scrolTop";
 import NavbarHome from "../navbar/navbar";
 import Footer from "../footer/footer";
 import privacy   from "../../../public/img/privacy.webp";
+import Image from "next/image";
 
 function PrivacyPolicy(props) {
   return (
@@ -14,8 +15,17 @@ function PrivacyPolicy(props) {
       <div className="privacy">
         <div className="container">
           <div className="row mt-16">
-            <img loading="lazy" src={privacy.src} width="100%" height="100%" alt="privacy" />
 
+            {/* <img loading="lazy" src={privacy.src} width="100%" height="100%" alt="privacy" /> */}
+            <div className="relative w-full h-[300px]"> {/* ✅ Give the parent a height */}
+  <Image
+    src={privacy}
+    alt="privacy"
+    fill
+    className="object-cover"
+  />
+
+</div> 
             <h1 className="text-center mt-5 text-4xl font-semibold">
               PRIVACY POLICY
             </h1>

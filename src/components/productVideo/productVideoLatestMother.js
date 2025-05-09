@@ -4,6 +4,7 @@ import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 
 import VideoPlayerLatest from "./videoPlayerLatest.js";
+import Image from "next/image.js";
 
 // import video from "./video/production.mp4";
 // import video from './video/production.mp4';
@@ -35,7 +36,18 @@ export default function ProductVideoLatestMother({ videoUrl, loadingImg, tagList
                                 </svg>
                             </div>
 
-                            <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading" />
+                            {/* <img loading="lazy" className="object-cover w-full" src={loadingImg} alt="loading" /> */}
+                            
+ <div className="relative w-full h-full">
+  <Image
+    src={loadingImg}
+    alt="Loading"
+    fill
+    className="object-cover "
+    sizes="100vw"
+  />
+</div>
+   
                         </div>
                     }>
                         <VideoPlayerLatest videoName="home-video" loadingImg={loadingImg} videoType={videoType} videoUrl={videoUrl}/>

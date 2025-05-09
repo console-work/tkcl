@@ -1,5 +1,6 @@
 
 'use client'
+import Image from "next/image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
@@ -18,13 +19,22 @@ const BluePrint = () => {
                         width={950}
                         alt='integration photo'
                         /> */}
-                        <LazyLoadImage
+                        {/* <LazyLoadImage
                             src={"/img/tree.webp"}
                             // width={950}
                             alt='integration photo'
                             className="w-full"
                             // effect="blur"
-                        />
+                        /> */}
+                        <div className="w-full">
+      <Image
+        src="/img/tree.webp" // Make sure this path is correct
+        alt="Integration photo"
+        width={1600}
+        height={900}
+        className="w-full h-auto object-cover"
+      />
+    </div>
                     </div>
 
                 </div>

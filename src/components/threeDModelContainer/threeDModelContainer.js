@@ -2,6 +2,7 @@
 import React, { Suspense, lazy } from "react";
 // import ViewModel from '../ViewModel/ViewModel';
 import  Link  from "next/link";
+import Image from "next/image";
 
 // import ShoeModel from '../../component3d/ProductVisualization3d/Furniture/Model/ShoeModel';
 
@@ -17,11 +18,16 @@ const ThreeDModelContainer = () => {
           <div className="flex lg:flex-row flex-col gap-1 items-center justify-center">
             <div className="flex flex-col md:flex-row justify-center justify-items-center items-center gap-5  md:gap-10 w-full  px-16">
               <div className="mb-10">
-                <img
-                  loading="lazy"
-                  className="w-full h-full"
-                  src="/img/Holosnap-Logo_H_Color.webp"
-                />
+              <div className="relative w-full h-full">
+  <Image
+    src="/img/Holosnap-Logo_H_Color.webp"
+    alt="Holosnap Logo"
+    fill
+    className="object-contain"
+    sizes="100vw"
+    priority={false} // or remove to enable default lazy loading
+  />
+</div>
               </div>
 
               <div className="flex flex-col justify-items-center md:pt-10 items-center">

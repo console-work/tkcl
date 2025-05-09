@@ -13,6 +13,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 import  Link  from 'next/link';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 
 const Footer2D = () => {
@@ -29,9 +30,14 @@ const Footer2D = () => {
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-left flex flex-col justify-center">
                         <figure>
-                            <img loading="lazy" src={logoWhite.src}
-                                width={120}
-                                alt="logo" />
+                            <Image
+        src={logoWhite}
+        alt="logo"
+        width={120}
+        height={120}
+        loading="lazy" // Optional: you can still specify loading if you want
+      />
+    
                         </figure>
                         <p className="w-40 text-black text-[11px] p-1 border-b-2  border-black  mb-4">
                             <b>The KOW Company</b> is one of the

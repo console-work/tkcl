@@ -2,6 +2,7 @@
 
 import sideArt from "../../images/sideArtV1.webp"
 import logowhite from "../../images/logo2.webp"
+import Image from "next/image";
 
 const WelcomePage = () => {
     return (
@@ -13,31 +14,38 @@ const WelcomePage = () => {
                         <div className="hidden lg:block absolute bottom-0 left-0 ">
                             <div className="relative w-[250px] lg:w-[320px] xl:w-[360px]">
                                 <div className="">
-                                    <img
-                                        src={sideArt.src}
-                                        // width={360} 
-                                        // height={360}
-                                        alt="sideArt" />
+                                    <Image
+                                        src={sideArt}
+                                        alt="sideArt"
+                                        className="w-auto h-auto"
+                                        width={360} // Width for optimal display
+                                        height={360} // Height for optimal display
+                                    />
                                 </div>
                                 <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
-                                    <img
-                                        src={logowhite.src}
+                                    <Image
+                                        src={logowhite}
+                                        alt="logo"
                                         width={200}
                                         height={150}
-                                        alt="sideArt"
                                     />
                                 </div>
                             </div>
                         </div>
+
                         <div className="block lg:hidden">
-                            <img
+                            <Image
                                 className="w-[120px] pb-5"
-                                src={logowhite.src}
+                                src={logowhite}
                                 alt="logo"
+                                width={120}
+                                height={120}
                             />
                         </div>
+
                         <div className=" flex justify-end lg:h-[400px] items-center">
-                            <p className="w-full px-3 lg:w-3/4 lg:pl-20 lg:px-0 xl:px-20 text-white text-sm md:text-base text-justify">With a relentless commitment to excellence, we have etched our name as a leading player in the world of Ecommerce
+                            <p className="w-full px-3 lg:w-3/4 lg:pl-20 lg:px-0 xl:px-20 text-white text-sm md:text-base text-justify">
+                                With a relentless commitment to excellence, we have etched our name as a leading player in the world of Ecommerce
                                 and Studio Image & 3D Post-Production. Our journey has been defined by creativity, precision, and an unwavering
                                 passion for transforming visual concepts into captivating realities.
                                 Our multifaceted expertise extends beyond the realms of traditional image editing. We boast a remarkable proficiency
@@ -47,7 +55,8 @@ const WelcomePage = () => {
                                 we have redefined the art of product image enhancement. Retouched.ai seamlessly removes backgrounds, delivering
                                 product images that exude sophistication and elegance, allowing your merchandise to shine in its full glory.
                                 At The KOW Company, we dont just meet your expectations; we surpass them. Our dedication to perfection and innovative
-                                solutions will empower your brand to rise above the competition, turning every visual into a masterpiece.</p>
+                                solutions will empower your brand to rise above the competition, turning every visual into a masterpiece.
+                            </p>
                         </div>
                     </div>
                 </div>

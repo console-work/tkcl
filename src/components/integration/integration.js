@@ -1,5 +1,6 @@
 
 "use client";
+import Image from "next/image";
 import  Link  from "next/link";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -19,13 +20,13 @@ const Integration = () => {
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
                         /> */}
-                        <LazyLoadImage
-                            src={"/img/integration1.webp"}
-                            width={270}
-                            alt='integration photo'
-                            className='shadow-gray-500 shadow-lg'
-                            // effect="blur"
-                        />
+<Image
+  src="/img/integration1.webp"
+  alt="integration photo"
+  width={270}
+  height={0}  
+  className="shadow-gray-500 shadow-lg h-auto"
+/>
                     </div>
                     <div>
                         {/* <img loading="lazy" src={integration2}
@@ -33,13 +34,20 @@ const Integration = () => {
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
                         /> */}
-                        <LazyLoadImage
+                        {/* <LazyLoadImage
                             src={"/img/integration2.webp"}
                             width={300}
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
                             // effect="blur"
-                        />
+                        /> */}
+                        <Image
+  src="/img/integration2.webp"
+  alt="integration photo"
+  width={300}
+  height={0}  
+  className="shadow-gray-500 shadow-lg"
+/>
                     </div>
                     <div>
                         {/* <img loading="lazy" src={integration3}
@@ -47,13 +55,20 @@ const Integration = () => {
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
                         /> */}
-                        <LazyLoadImage
+                        {/* <LazyLoadImage
                             src={"/img/integration3.webp"}
                             width={270}
                             alt='integration photo'
                             className='shadow-gray-500 shadow-lg'
                             // effect="blur"
-                        />
+                        /> */}
+                                              <Image
+  src="/img/integration3.webp"
+  alt="integration photo"
+  width={270}
+  height={0}  
+  className="shadow-gray-500 shadow-lg h-auto"
+/>
                     </div>
                 </div>
 

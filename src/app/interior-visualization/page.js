@@ -1,9 +1,15 @@
 
 import api from "@/api/endpoint";
 import { metadata as pageMeta } from '@/seo/metadatas';
-export const metadata = pageMeta.interiorV;
-import InteriorVisualization from "./interiorVisualization";
 
+import InteriorVisualization from "./interiorVisualization";
+export const metadata = {
+  title: pageMeta.interiorV.title,
+  description: pageMeta.interiorV.description,
+  alternates: {
+    canonical: pageMeta.interiorV.link,
+  },
+};
 export default  function Page() {
   
   return (

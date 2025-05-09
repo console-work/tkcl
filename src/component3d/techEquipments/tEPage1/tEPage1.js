@@ -1,6 +1,8 @@
-'use client'
-import { useState } from "react";
+'use client';
+
+import { useState, useEffect } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import Image from 'next/image';
 
 const TEPage1 = () => {
   const [visibleDivs, setVisibleDivs] = useState([
@@ -11,24 +13,14 @@ const TEPage1 = () => {
       imageUrl: "/img/Tech Equipment.webp",
       imageUrl2: "/img/3d/slider/view.webp",
     },
-    // {
-    //   id: 2,
-    //   text: "YOUR PROJECT TITLE",
-    //   text2: "01 JAN, 2023",
-    //   imageUrl: "/public/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
-    //   imageUrl2: "/img/3d/slider/view.webp",
-    // },
-    // {
-    //   id: 3,
-    //   text: "YOUR PROJECT TITLE",
-    //   text2: "01 JAN, 2023",
-    //   imageUrl: "/public/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
-    //   imageUrl2: "/img/3d/slider/view.webp",
-    // },
- 
   ]);
-
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    // Update the screen width only on the client-side
+    setScreenWidth(window.innerWidth);
+  }, []);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -43,37 +35,35 @@ const TEPage1 = () => {
   };
 
   const isPrevDisabled = currentIndex === 0;
-
-  // Function to determine if next button should be disabled
   const isNextDisabled = currentIndex === visibleDivs.length - 1;
 
   const getVisibleDivs = () => {
-    if (typeof window === 'undefined') return [];
-  
-    const startIndex =
-      currentIndex === 0 ? visibleDivs.length - 1 : currentIndex - 1;
-  
-    return window.screen.width <= 641
-      ? [visibleDivs[startIndex]]
-      : window.screen.width <= 1025
-      ? [visibleDivs[startIndex]]
-      : [visibleDivs[startIndex]];
+    if (screenWidth <= 641) {
+      return [visibleDivs[currentIndex]];
+    } else if (screenWidth <= 1025) {
+      return [visibleDivs[currentIndex]];
+    } else {
+      return [visibleDivs[currentIndex]];
+    }
   };
-  
+
   return (
     <div>
       <div className="2xl:container mx-auto my-1">
         {getVisibleDivs() &&
           getVisibleDivs().map((div) => (
-            <div className="relative " key={div.id}>
+            <div className="relative" key={div.id}>
               <div>
-                <img
-                  className=" w-full  h-full 2xl:h-[800px] "
+                <Image
+                  className="w-full h-full 2xl:h-[800px]"
                   src={div.imageUrl}
                   alt={div.text}
+                  width={1200}
+                  height={800}
+                  priority
                 />
               </div>
-              <div className="flex justify-between ">
+              <div className="flex justify-between">
                 {!isPrevDisabled && (
                   <button onClick={handlePrev}>
                     <MdArrowBackIosNew className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute left-[10%] top-[50%]" />
@@ -85,22 +75,6 @@ const TEPage1 = () => {
                   </button>
                 )}
               </div>
-              {/* <div className="flex justify-center items-center gap-3 absolute bottom-0 md:bottom-8 left-[15%]">
-               
-                <div className="w-8 md:w-16">
-                  <img loading="lazy" src={div.imageUrl2} />
-                </div>
-                <div>
-                  <p className="font-semibold text-base md:text-2xl text-white">
-                    {div.text}{" "}
-                    <span className="text-green-500 font-light">|</span>
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-[9px] md:text-base text-white">{div.text2}</p>
-                </div>
-              </div> */}
             </div>
           ))}
       </div>

@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import Link  from "next/link";
 
 
@@ -10,7 +11,14 @@ const NavbarAPI = () => {
                     <nav className=" w-full flex relative justify-start items-center gap-[77px]  pl-[117px] mx-auto ">
                         {/* Logo */}
                         <div className=" flex justify-center items-center mt-[22.5px] gap-[8px]">
-                            <img className="w-[117px] h-[48px] " src="/img/API-Docx/kow_green_logo.svg" />
+                        <div className="relative w-[117px] h-[48px]">
+  <Image
+    src="/img/API-Docx/kow_green_logo.svg"
+    fill
+    alt="Kow Green Logo"
+    className="object-contain"
+  />
+</div>
                             <h1 className="text-[34px] leading-[24px] font-bold font-anek-latin text-[#255646]">Resources</h1>
                         </div>
 
@@ -28,7 +36,14 @@ const NavbarAPI = () => {
                 <div className="">
                     <div className="flex flex-col gap-4 lg:hidden">
                         <div className="flex justify-center items-center pt-5">
-                            <img className="w-[117px] h-[48px] " src="/img/API-Docx/kow_green_logo.svg" />
+                                                   <div className="relative w-[117px] h-[48px]">
+  <Image
+    src="/img/API-Docx/kow_green_logo.svg"
+    fill
+    alt="Kow Green Logo"
+    className="object-contain"
+  />
+</div>
                             <h1 className="text-[34px] leading-[24px] font-bold font-anek-latin text-[#255646]">Resources</h1>
                         </div>
                         <div>
