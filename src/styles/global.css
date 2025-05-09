@@ -264,7 +264,9 @@ body > .skiptranslate {
 }
 
 
-
+.font-tag-font{
+  font-family: Rubik Doodle Shadow,system-ui;
+}
 /* Blog Background Image */
 .blog-bg-img {
   background-image: url("/public/img/Blog-Images/blog-bangladesh.webp");

@@ -41,7 +41,7 @@ const BluePrint = () => {
 
                 <div className="mt-10">
 
-                    <p className='text-xs md:text-sm text-justify px-4 md:px-[30px]'>{`The KOW Company exemplifies a commitment to transparent and efficient asset management within the organization, fostering transparency for clients. Leveraging advanced technologies and robust systems, KOW ensures a seamless process that allows clients full visibility into asset management procedures. Through comprehensive reporting mechanisms and real-time tracking, clients can monitor the status, utilization, and performance of their assets.`}</p>
+                    <p className='text-xs md:text-sm text-justify px-4 md:px-[30px]'>{`The KOW Company always ensures that things are kept clear and efficient when it comes to managing assets. We focus on being transparent for our clients, making sure you always have an easy and clear insight into what’s going on. We use the latest technology and reliable systems to make things easy, providing clients with full insight into how we handle asset management. Clients can easily check the status, use, and performance of their assets with detailed reports and real-time monitoring. `}</p>
 
 
 

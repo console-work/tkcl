@@ -97,10 +97,10 @@ const Slider3D = () => {
 
       <div className="container mx-auto mt-10">
         <p className="text-xs text-center md:text-sm px-[54px]">
-          {`Visualize your brand in a captivating three-dimensional spectacle, brought to life by a skilled team of 3D artists. Whether showcasing products with realism, crafting engaging animations, or building immersive virtual experiences, we've got you covered. Our meticulous digital replicas capture every nuance and detail with astonishing accuracy, breathing life into your products.`}
+          {`Visualize your brand in a captivating three-dimensional spectacle brought to life by a skilled team of 3D artists. We can take your products visually to the next level.`}
         </p>
         <p className="text-xs md:text-sm text-center mt-5 mb-10 px-[52px]">
-          {`From intricate design elements to functional features, our 3D models empower customers to explore from every angle before purchase. In architectural visualization, we transcend blueprints, offering a virtual world where structures and spaces come alive. This immersive experience allows stakeholders to comprehend designs with unparalleled clarity, facilitating informed decision-making for architects, designers, and clients.`}
+          {`Our 3D models allow customers to examine the design and the intricate details that make them functional. We're not just rendering fancy, pretty pictures of buildings; we're creating a virtual reality where stakeholders can understand the architect's intentions and the spaces they'll occupy. This allows for accurate visualization, facilitating informed design awareness in a way that's never been done before. `}
         </p>
 
         <div className="flex justify-center">

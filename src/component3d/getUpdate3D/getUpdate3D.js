@@ -73,10 +73,10 @@ const GetUpdate3D = () => {
         <div className="pb-20 pt-10">
       
           <p className="text-center text-sm">
-            Sign up for our mailing list and we will let you know when we{" "}
+          Sign up for our mailing list to get the latest information on our 2D and 3D services, cool new features or updates, must-read articles, and industry insights. 
           </p>
           <p className="text-center text-sm mb-6">
-            release new features or updates.
+          You won't want to miss it - Subscribe today! 
           </p>
 
           <div className="flex justify-center text-sm mt-5 mb-1">

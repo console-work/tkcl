@@ -236,10 +236,10 @@ const DivSliderParrent = () => {
             </div>
             <div className='container mx-auto mt-10'>
 
-                <p className='text-xs md:text-sm px-[54px] text-center'>{`The KOW Company's unparalleled post-production services serve as a dynamic catalyst for global retailers. Picture a visual journey where Image Retouching transcends the ordinary, transforming each product shot into a magnetic narrative that accentuates every exceptional detail.`}</p>
-                <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your products radiate brilliance, whether on a website, social media, or in print.`}</p>
-
-                <div className='flex justify-center '>
+                <p className='text-xs md:text-sm px-[54px] text-center'>{`The KOW Company's outstanding post-production services serve as a dynamic catalyst for global retailers. Experience a palette of color brilliance, where each shade blends to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your products radiate brilliance, whether on a website, social media, or print media. `}</p>
+                {/* <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your products radiate brilliance, whether on a website, social media, or in print.`}</p> */}
+           
+                <div className='flex justify-center mt-5'>
                     <Link aria-label='Contact' href={"/contact-us"} className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</Link>
                 </div> 
             </div>

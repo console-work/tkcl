@@ -3,7 +3,7 @@ import React, { Suspense, lazy } from "react";
 // import ViewModel from '../ViewModel/ViewModel';
 import  Link  from "next/link";
 import Image from "next/image";
-
+import holosnap  from '../../../public/img/Holosnap-Logo_H_Color.webp'
 // import ShoeModel from '../../component3d/ProductVisualization3d/Furniture/Model/ShoeModel';
 
 // const ShoeModel = lazy(() =>
@@ -20,9 +20,9 @@ const ThreeDModelContainer = () => {
               <div className="mb-10">
               <div className="relative w-full h-full">
   <Image
-    src="/img/Holosnap-Logo_H_Color.webp"
+    src={holosnap}
     alt="Holosnap Logo"
-    fill
+   
     className="object-contain"
     sizes="100vw"
     priority={false} // or remove to enable default lazy loading
@@ -32,14 +32,7 @@ const ThreeDModelContainer = () => {
 
               <div className="flex flex-col justify-items-center md:pt-10 items-center">
               <p className="text-black text-justify">
-                Holosnap is an advanced AI-powered 3D asset creation tool that
-                seamlessly converts 2D images into intricate 3D point clouds.
-                Utilizing cutting-edge artificial intelligence algorithms, it
-                automates the transformation of 2D images into 3D Models.
-                Holosnap excels at analyzing 2D images to extrapolate depth
-                information, facilitating the reconstruction of highly detailed
-                and accurate 3D point clouds by identifying key features,
-                textures, and contours.
+              HoloSnap is an innovative software that transforms ordinary images into detailed 3D models with ease. Using advanced AI and computer vision, HoloSnap extracts depth and spatial data from photos, allowing users to create lifelike 3D representations without the need for complex modeling skills. Ideal for designers, architects, game developers, and 3D enthusiasts, HoloSnap streamlines the process of turning 2D visuals into immersive, interactive 3D models. Whether for virtual reality, augmented reality, or digital content creation, HoloSnap offers a powerful and user-friendly solution for 3D modeling from images. 
               </p>
               <div className="flex justify-center mt-3 md:mt-6 mb-5 md:mb-0">
                 <Link aria-label="contact-us" href="/contact-us">

@@ -43,10 +43,7 @@ const Footer = () => {
 />
                         </figure>
                         <p className="w-40 text-white text-[11px] p-1 border-b-2  border-white  mb-4">
-                            <b>The KOW Company</b> is one of the
-                            leading image and video editing
-                            companies for businesses all over
-                            the world.
+                            <b>The KOW Company</b> leads globally in 2D image editing, photo retouching, ghost mannequin solutions, 3D modeling, and rendering services for businesses worldwide.
                         </p>
                         <div className="flex text-[#003333] justify-center md:justify-start gap-1 mb-2">
                             <a aria-label='facebook' href="https://www.facebook.com/KOWCompany" target="_blank" rel="noreferrer">
