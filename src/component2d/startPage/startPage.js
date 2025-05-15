@@ -18,13 +18,13 @@ const StartPage = () => {
       <div className="container mx-auto commonContainer">
         <div className="flex flex-col md:flex-row gap-0 md:gap-20 justify-between justify-items-center items-center  pt-[50px] md:pt-0">
           <div className=" h-80">
-            <h5 className="text-[40px] text-center md:text-left">WE DO</h5>
-            <h5 className="border-b border-[#B1CC40] text-[40px] text-center md:text-left font-semibold -mt-4">
+            <h1 className="text-[40px] text-center md:text-left">WE DO</h1>
+            <h1 className="border-b border-[#B1CC40] text-[40px] text-center md:text-left font-semibold -mt-4">
               IMAGE & VIDEO EDITING
-            </h5>
-            <h1 className="pt-5 text-[#959595] font-semibold">
-              YOUR ONE-STOP CONTENT POST PRODUCTION SOLUTION
             </h1>
+            <h2 className="pt-5 text-[#959595] font-semibold">
+              YOUR ONE-STOP CONTENT POST PRODUCTION SOLUTION
+            </h2>
             <div className="pt-5 flex justify-center md:justify-start">
               <div className="rounded-3xl bg-white w-[260px] flex justify-between px-1 ">
                 <Link aria-label="Free Trial" href="/contact-us">

@@ -8,10 +8,15 @@ const FourthSection = () => {
             <div>
                 <div className='fourth-section-container'>
                     <div className='fourth-section-button'>
-                        <Link aria-label="Explore 3D" href="/3d-modeling-and-rendering">Explore 3D</Link>
+                        <h3 className='block'>
+                             <Link aria-label="Explore 3D" href="/3d-modeling-and-rendering">Explore 3D</Link>
+                        </h3>
+                       
                     </div>
                     <div className='fourth-section-button'>
-                        <Link aria-label="Request a Quote" href='/contact-us'>Request a Quote</Link>
+                        <h3 className='block'>
+                          <Link aria-label="Request a Quote" href='/contact-us'>Request a Quote</Link>
+                        </h3>
                     </div>
                 </div>
             </div>

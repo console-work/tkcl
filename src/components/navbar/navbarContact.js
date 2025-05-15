@@ -84,7 +84,7 @@ const NavbarContact = () => {
               <GoHomeFill />
             </Link>
           </div>
-          <div className="flex items-center justify-between md:hidden">
+          <div className="flex items-center justify-between md:hidden comonresponsiveNAvbar">
             <Link aria-label="logo" href={"/"}>
             <Image
   src={logo}

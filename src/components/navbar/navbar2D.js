@@ -43,7 +43,7 @@ const Navbar2D = () => {
             {/* <Link href="/" className="text-gray-800 text-[26px] lg:text-[32px] border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"><GoHomeFill />
             </Link> */}
           </div>
-          <div className="flex items-center justify-between lg:hidden">
+          <div className="flex items-center justify-between lg:hidden comonresponsiveNAvbar">
             <Link aria-label="home" href={"/"}>
             <Image
   src={logo}

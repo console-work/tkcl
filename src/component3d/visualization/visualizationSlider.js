@@ -95,7 +95,7 @@ const VisualizationSlider = () => {
                     />
                   </div>
                   <div className='w-full flex gap-3 absolute left-0 bottom-0 py-4 justify-center z-40'>
-                    <h5 className='text-white z-30'>{item.label}</h5>
+                    <h3 className='text-white z-30'>{item.label}</h3>
                     <Image
                       alt='3d-view'
                       loading="lazy"

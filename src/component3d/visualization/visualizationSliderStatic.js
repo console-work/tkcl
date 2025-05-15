@@ -108,7 +108,7 @@ const VisualizationSliderStatic = () => {
                 />
               </div>
               <div className="w-full flex gap-3 pt-2 justify-center">
-                <h2 className="text-black font-semibold">INTERIOR VISUALIZATION</h2>
+                <h3 className="text-black font-semibold">INTERIOR VISUALIZATION</h3>
                 <Image
                   alt="view"
                   loading="lazy"
@@ -134,7 +134,7 @@ const VisualizationSliderStatic = () => {
                 />
               </div>
               <div className="w-full flex gap-3 justify-center pt-2">
-                <h2 className="text-black font-semibold">EXTERIOR VISUALIZATION</h2>
+                <h3 className="text-black font-semibold">EXTERIOR VISUALIZATION</h3>
                 <Image
                   alt="view"
                   loading="lazy"
@@ -160,7 +160,7 @@ const VisualizationSliderStatic = () => {
                 />
               </div>
               <div className="w-full flex gap-3 justify-center pt-2">
-                <h2 className="text-black font-semibold">VR RENDERING</h2>
+                <h3 className="text-black font-semibold">VR RENDERING</h3>
                 <Image
                   alt="view"
                   loading="lazy"

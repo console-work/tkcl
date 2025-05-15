@@ -34,13 +34,17 @@ const Footer = () => {
                         <figure>
                             {/* <img alt="logo" loading="lazy" src={logoWhite.src}
                                 width={120} /> */}
-                                <Image
+                                <h1>
+              <Link aria-label="home" href={"/"}>
+            <Image
   src={logoWhite}
   alt="logo"
   width={120}
   height={60}
   loading="lazy"
-/>
+/>   
+              </Link>
+              </h1>                 
                         </figure>
                         <p className="w-40 text-white text-[11px] p-1 border-b-2  border-white  mb-4">
                             <b>The KOW Company</b> leads globally in 2D image editing, photo retouching, ghost mannequin solutions, 3D modeling, and rendering services for businesses worldwide.
@@ -81,7 +85,7 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col text-white lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
-                        <span className="text-xl font-semibold text-[white] mb-2 ">HOME</span>
+                        <h3 className="text-xl font-semibold text-[white] mb-2 ">HOME</h3>
                         <Link href="/#images" className="text-sm" aria-label='Images'>Images</Link>
                         <Link href="/#3d" className="text-sm" aria-label='3D'>3D</Link>
                         <Link href="/#ai" className="text-sm" aria-label='AI'>AI</Link>
@@ -102,7 +106,7 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Ecommerce</a>
                     </div> */}
                     <div className="flex text-white lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
-                        <span className="text-xl font-semibold mb-2">Support</span>
+                        <h3 className="text-xl font-semibold mb-2">Support</h3>
                         {/* <a className="link link-hover text-xs">Help & FAQs</a>
                         <a className="link link-hover text-xs">Refunds</a>
                         <a className="link link-hover text-xs">Platform Status</a> */}
@@ -113,9 +117,9 @@ const Footer = () => {
                         <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" className='text-sm cursor-pointer' aria-label='Sign Up' >Sign Up</a>
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
-                        <span className="font-bold text-white text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
+                        <h3 className="font-bold text-white text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
-                        </span>
+                        </h3>
                         {
                             boolMap &&
 

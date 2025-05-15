@@ -12,12 +12,17 @@ const NavbarAPI = () => {
                         {/* Logo */}
                         <div className=" flex justify-center items-center mt-[22.5px] gap-[8px]">
                         <div className="relative w-[117px] h-[48px]">
-  <Image
+            <h1>
+                 <Link aria-label="home" href={"/"}>
+                 <Image
     src="/img/API-Docx/kow_green_logo.svg"
     fill
     alt="Kow Green Logo"
     className="object-contain"
   />
+                 </Link>
+                </h1>                
+  
 </div>
                             <h1 className="text-[34px] leading-[24px] font-bold font-anek-latin text-[#255646]">Resources</h1>
                         </div>
@@ -37,12 +42,17 @@ const NavbarAPI = () => {
                     <div className="flex flex-col gap-4 lg:hidden">
                         <div className="flex justify-center items-center pt-5">
                                                    <div className="relative w-[117px] h-[48px]">
+                                                    <h1>
+                 <Link aria-label="home" href={"/"}>
   <Image
     src="/img/API-Docx/kow_green_logo.svg"
     fill
     alt="Kow Green Logo"
     className="object-contain"
   />
+</Link>
+</h1>
+  
 </div>
                             <h1 className="text-[34px] leading-[24px] font-bold font-anek-latin text-[#255646]">Resources</h1>
                         </div>

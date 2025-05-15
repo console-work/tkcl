@@ -543,6 +543,9 @@ transition: all 1s ease !important;
 }
 }
 @media screen and (max-width: 768px) {
+  .comonresponsiveNAvbar{
+    padding-right: 8px;
+  }
 #subscribe{
   margin-top: 50px;
 }

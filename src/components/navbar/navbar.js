@@ -124,16 +124,20 @@ const NavbarHome = ({carearmenu}) => {
 )}
 
         <div className="container mx-auto bg-[#DEE2E2] md:bg-transparent py-1">
-          <div className="hidden lg:flex items-center justify-between gap-3">
-            <Link aria-label="home" href={"/"}>
-            <Image
+          <div className="hidden lg:flex items-center justify-between gap-3 ">
+            
+            <h1>
+              <Link aria-label="home" href={"/"}>
+               <Image
   src={screenLeft || carearmenu ? logo.src : logoWhite.src}
-  alt="logo"
+  alt="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider"
   width={80}
   height={45}
   className=""
 />
             </Link>
+            </h1>
+           
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             <Link
               aria-label="2D"
@@ -377,17 +381,20 @@ const NavbarHome = ({carearmenu}) => {
               )}
             </div>
           </div>
-          <div className="flex items-center justify-between lg:hidden">
-            <Link aria-label="logo" href={"/"}>
+          <div className="flex items-center justify-between lg:hidden comonresponsiveNAvbar">
+            <h1>
+            <Link aria-label="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider" href={"/"}>
             <Image
   src={logo.src}
-  alt="logo"
+  alt="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider"
   width={80}
   height={45}
   className=""
 />
               
             </Link>
+            </h1>
+
             
           <CgMenu
             onClick={() => setMenuBool(true)}

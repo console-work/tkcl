@@ -1,4 +1,4 @@
-'use client'
+
 
 import sideArt from "../../images/sideArtV1.webp"
 import logowhite from "../../images/logo2.webp"

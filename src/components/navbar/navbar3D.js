@@ -154,7 +154,7 @@ const Navbar3D = () => {
               </div>
             </div>
 
-            <div className={`flex items-center justify-between lg:hidden`}>
+            <div className={`flex items-center justify-between lg:hidden comonresponsiveNAvbar`}>
               <Link aria-label="Home" href={"/"}>
               <Image
   src={logo}

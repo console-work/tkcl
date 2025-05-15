@@ -32,11 +32,8 @@ function PrivacyPolicy(props) {
             <br />
             <div className="commonContainer">
             <div>
-              <b style={{ fontSize: "20px", marginTop: "3%" }}>
-                {" "}
-                Brief Introduction{" "}
-              </b>
-              <p>
+             
+              <p style={{  marginTop: "3%" }}>
                 We know that you care how information about you is used and
                 shared, and we appreciate your trust. This Privacy Policy
                 explains how The KOW Company collect, use and share information
@@ -55,10 +52,10 @@ function PrivacyPolicy(props) {
             </div>
 
             <div className="mt-6">
-              <b style={{ fontSize: "20px" }}>
+             <h2> <b style={{ fontSize: "20px" }}>
                 {" "}
                 What Information we are Collecting from you?{" "}
-              </b>
+              </b></h2>
               <br />
 
               <ul>
@@ -83,9 +80,10 @@ function PrivacyPolicy(props) {
             </div>
 
             <div className="mt-6">
+              <h2>
               <b style={{ fontSize: "20px" }}>
                 How may we use your personal information?{" "}
-              </b>
+              </b></h2>
               <br />
 
               <ul>
@@ -118,9 +116,10 @@ function PrivacyPolicy(props) {
             </div>
 
             <div className="mt-6">
+              <h2>
               <b style={{ fontSize: "20px" }}>
                 Disclosure of Personal Information to Third Parties?{" "}
-              </b>
+              </b></h2>
               <br />
 
              
@@ -155,10 +154,11 @@ function PrivacyPolicy(props) {
             </div>
 
             <div className="mt-5">
+              <h2>
               <b style={{ fontSize: "20px" }}>
                 {" "}
                 How to make Complaint about a breach in privacy?{" "}
-              </b>
+              </b></h2>
               <br />
 
               <p>
@@ -169,9 +169,10 @@ function PrivacyPolicy(props) {
               </p>
             </div>
             <div className="mt-5">
+              <h2>
               <b style={{ fontSize: "20px" }}>
                 Changes/Amendments to this Policy{" "}
-              </b>
+              </b></h2>
               <br />
 
               <p>

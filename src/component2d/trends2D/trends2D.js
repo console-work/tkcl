@@ -96,9 +96,9 @@ const Trends2D = () => {
                     </div>
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">
                       <div className="flex justify-center items-center gap-2">
-                        <p className="text-[12px] font-semibold">
+                        <h3 className="text-[12px] font-semibold">
                           {div.title} | <span className="text-[10px] font-normal">{div.date}</span>
-                        </p>
+                        </h3>
                       </div>
                       <button className="bg-[#B1CC40] px-6 py-1 rounded-3xl font-semibold text-[10px]">
                         Read More

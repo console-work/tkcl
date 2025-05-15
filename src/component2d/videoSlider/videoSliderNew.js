@@ -68,7 +68,7 @@ const VideoSliderNew = () => {
                   </video>
                 </div>
                 <div className="w-full flex gap-3 py-4 justify-center">
-                  <h5 className="text-black text-lg uppercase font-medium">{item.label}</h5>
+                  <h3 className="text-black text-lg uppercase font-medium">{item.label}</h3>
                 </div>
               </div>
             ))}

@@ -4,6 +4,7 @@ import HeaderOne from '../microComponent/headerOne';
 
 import HeaderFive from '../microComponent/headerFive';
 import ParagraphOne from '../microComponent/paragraphOne';
+import Link from 'next/link';
 
 
 const SectionOne = () => {
@@ -68,7 +69,8 @@ const SectionOne = () => {
                     </ParagraphOne>
                   </div>
                   <div>
-                    <a href='https://retouched.ai/'
+                    <h3 className='block'>
+                    <Link href='https://retouched.ai/'
                       target="_blank" rel="noreferrer"
                       className="flex items-center justify-between lg:justify-center gap-2 font-anek-latin text-base leading-7 px-3 py-2 bg-[#00AC74] w-full lg:w-[170px] rounded-lg hover:bg-[#00D690]"
                     >
@@ -97,7 +99,8 @@ const SectionOne = () => {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </a>
+                    </Link>
+                    </h3>
                   </div>
                 </div>
               </div>

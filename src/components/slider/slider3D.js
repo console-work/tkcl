@@ -58,7 +58,7 @@ const Slider3D = () => {
     <div id="3d" className="pb-10 pt-0">
       <div className="flex justify-center gap-7 my-10">
         <h1 className="w-[400px] border-b border-[#7C9C30]"></h1>
-        <h1 className="text-[28px] md:text-[40px] -mb-2 md:-mb-4 font-bold">3D</h1>
+        <h2 className="text-[28px] md:text-[40px] -mb-2 md:-mb-4 font-bold">3D</h2>
         <h1 className="w-[400px] border-b border-[#7C9C30]"></h1>
       </div>
 
@@ -86,7 +86,7 @@ const Slider3D = () => {
  
                   </div>
                   <div className="w-full flex gap-3 py-4 justify-center">
-                    <h2 className="text-black font-medium">{item.label}</h2>
+                    <h3 className="text-black font-medium">{item.label}</h3>
                   </div>
                 </Link>
               </div>
@@ -104,13 +104,16 @@ const Slider3D = () => {
         </p>
 
         <div className="flex justify-center">
-          <Link
-            aria-label="contact-us"
-            href="/contact-us"
-            className="text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl"
-          >
-            Generate Realistic 3D Models
-          </Link>
+          <h3 className="block">
+            <Link
+              aria-label="contact-us"
+              href="/contact-us"
+              className="text-xs md:text-sm font-semibold text-white px-6 py-2 bg-[#7C9C30] rounded-3xl"
+            >
+              Generate Realistic 3D Models
+            </Link>
+          </h3>
+         
         </div>
       </div>
     </div>

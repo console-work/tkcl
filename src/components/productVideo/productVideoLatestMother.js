@@ -60,7 +60,7 @@ export default function ProductVideoLatestMother({ videoUrl, loadingImg, tagList
                                 >
                                     {tagList.map((item, index) => (
                                         <div key={index} className="flex justify-center font-tag-font opacity-60">
-                                            <h1 className="text-2xl md:text-7xl font-bold uppercase text-white">{item}</h1>
+                                            <h3 className="text-2xl md:text-7xl font-bold uppercase " style={{color:'#cfcfcf'}}>{item}</h3>
                                         </div>
                                     ))}
                                 </Carousel>

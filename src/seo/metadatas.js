@@ -99,7 +99,7 @@ const metadata = {
     blog2D: {
       title: 'Blog2D',
       description: 'Learn more about our company and our team.',
-      link: 'https://thekowcompany.com/blog/2dm'
+      link: 'https://thekowcompany.com/blog/2d'
     },
     blog3D: {
       title: 'Blog3D',

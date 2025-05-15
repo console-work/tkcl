@@ -73,7 +73,7 @@ const ProductVisualSlider = () => {
                   />
                 </div>
                 <div className='w-full flex gap-3 py-4 justify-center'>
-                  <h2 className='text-black font-medium'>{item.label}</h2>
+                  <h3 className='text-black font-medium'>{item.label}</h3>
                 </div>
               
               </Link>

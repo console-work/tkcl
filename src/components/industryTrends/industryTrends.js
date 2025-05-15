@@ -59,10 +59,10 @@ const IndustryTrends = () => {
                 {/* Text Content */}
                 <div className="flex flex-col justify-items-center pt-5 gap-3">
                   <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3">
-                    <h1 className="text-sm">
+                    <h3 className="text-sm">
                       {latest2DBlog.title} |{' '}
                       <span className="text-xs">{latest2DBlog.date}</span>
-                    </h1>
+                    </h3>
                   </div>
                   <div className="flex justify-center items-center">
                     <h2 className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl">
@@ -101,10 +101,10 @@ const IndustryTrends = () => {
                 {/* Text Content */}
                 <div className="flex flex-col justify-items-center pt-5 gap-3">
                   <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3">
-                    <h1 className="text-sm">
+                    <h3 className="text-sm">
                       {latest3DBlog.title} |{' '}
                       <span className="text-xs">{latest3DBlog.date}</span>
-                    </h1>
+                    </h3>
                   </div>
                   <div className="flex justify-center items-center">
                     <h2 className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl">

@@ -80,7 +80,7 @@ const ImageSlider = () => {
                                         rightImage={item.before}
                                     />
                                 </div>
-                                <h4 className='text-2xl font-semibold text-kow-text-black uppercase text-center first-letter:text-3xl first-letter:font-bold'>{item.lebel}</h4>
+                                <h3 className='text-2xl font-semibold text-kow-text-black uppercase text-center first-letter:text-3xl first-letter:font-bold'>{item.lebel}</h3>
                             </div>
                         ))}
                     </Carousel>

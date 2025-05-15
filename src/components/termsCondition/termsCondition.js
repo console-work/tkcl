@@ -78,7 +78,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}> Order Cancellation Policy </b>
+            <h2><b style={{ fontSize: "20px" }}> Order Cancellation Policy </b></h2>
 
             <ul>
               <li>
@@ -102,7 +102,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}>Faulty Policy </b>
+           <h2><b style={{ fontSize: "20px" }}>Faulty Policy </b></h2> 
 
             <p>
               We aim to provide you with products of the highest standard and
@@ -118,7 +118,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}> Limitation of Liability </b>
+            <h2><b style={{ fontSize: "20px" }}> Limitation of Liability </b></h2>
 
             <p>
               We take all precautions possible to keep the details of your
@@ -130,7 +130,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}>Intellectual Property </b>
+             <h2><b style={{ fontSize: "20px" }}>Intellectual Property </b></h2>
 
             <p>
               The KOW Company guarantees that it has not infringed or does not
@@ -142,7 +142,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}>Severability </b>
+             <h2><b style={{ fontSize: "20px" }}>Severability </b></h2>
 
             <p>
               If any portion of the order is determined to be enforceable, the
@@ -153,7 +153,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}>Governing Law </b>
+           <h2><b style={{ fontSize: "20px" }}>Governing Law </b></h2>  
 
             <p>
               The whole process shall be governed and construed in accordance
@@ -162,7 +162,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}>Settlement of Dispute </b>
+            <h2><b style={{ fontSize: "20px" }}>Settlement of Dispute </b></h2> 
 
             <p>
               We will give our best efforts to settle amicably all disputes
@@ -176,7 +176,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}>Assignment </b>
+            <h2><b style={{ fontSize: "20px" }}>Assignment </b></h2> 
 
             <p>
               The KOW Company cannot use a third party without taking the
@@ -185,7 +185,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}>Notice and Communication </b>
+             <h2><b style={{ fontSize: "20px" }}>Notice and Communication </b></h2>
 
             <p>
               All Communications should be done by the registered email address
@@ -196,7 +196,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}>Confidentiality </b>
+             <h2><b style={{ fontSize: "20px" }}>Confidentiality </b></h2>
 
             <p>
               The KOW Company may need to disclose certain “Confidential

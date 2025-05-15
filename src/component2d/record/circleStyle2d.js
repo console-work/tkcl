@@ -17,9 +17,9 @@ const CircleStyle2d = ({ count, title, recordTime }) => {
                 <div className="p-5 bg-kow-gray-light rounded-full z-20 relative">
                     <div className="rounded-full">
                         <div className="shadow-kow-shadow border-[4px] border-white w-[140px] h-[140px] flex bg-kow-green-light rounded-full items-center justify-center">
-                            <h1 className="text-4xl font-semibold text-white">
+                            <h3 className="text-4xl font-semibold text-white">
                                 {count}
-                            </h1>
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -31,8 +31,8 @@ const CircleStyle2d = ({ count, title, recordTime }) => {
                             <div className="bg-kow-green-light p-2 rounded-full"></div>
                         </div>
                         <div className="text-center">
-                            <h2 className="uppercase text-lg font-medium">{title}</h2>
-                            <h3 className="uppercase text-lg font-bold text-kow-green-light">{recordTime}</h3>
+                            <h4 className="uppercase text-lg font-medium">{title}</h4>
+                            <h4 className="uppercase text-lg font-bold text-kow-green-light">{recordTime}</h4>
                         </div>
                     </div>
                 </div>

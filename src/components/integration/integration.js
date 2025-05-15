@@ -77,9 +77,11 @@ const Integration = () => {
                     <p className='text-xs text-center md:text-sm px-[54px]'>{`In an era where innovative collaborations are the key to unlocking outstanding success, we're thrilled to introduce a groundbreaking partnership between Covision Media, Nureg GMBH, and The KOW Company. This powerful trio combines different realms of expertise to offer an unmatched 3D content production experience. Witness the future as Covision Media's AI-powered scanners, NUREG GmbH's unrivaled expertise in content production and photography studio services, and The KOW Company's post-production magic come together! `}</p>
                     <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`From the beginning to perfection, we are pushing boundaries, breaking limits, and shaping the future with every polygon. `}</p>
                     <div className='flex justify-center'>
-                        <Link href="/integrations-and-partnership" aria-label="intergration-btn">
-                            <button aria-label="explore-btn" className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Explore the 3D Content Production Solution</button>
+                        <h3 className="block">
+                        <Link href="/integrations-and-partnership" aria-label="intergration-btn" className='text-xs md:text-sm font-semibold text-white px-6 py-2 bg-[#7C9C30] rounded-3xl'>
+                            Explore the 3D Content Production Solution
                         </Link>
+                        </h3>
                     </div>
                 </div>
 

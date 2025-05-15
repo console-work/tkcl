@@ -69,7 +69,7 @@ const DivSliderParrent = () => {
         <div id='images' className='pt-0  pb-0 '>
             <div className='flex justify-center gap-7 my-10'>
                 <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                <h1 className='text-[28px] md:text-[40px]  -mb-2 lg:-mb-4 font-bold'>IMAGES</h1>
+                <h2 className='text-[28px] md:text-[40px]  -mb-2 lg:-mb-4 font-bold'>IMAGES</h2>
                 <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
             </div>
             <div className='relative 2xl:container 2xl:mx-auto 2xl:px-0 h-[400px] lg:h-[337px] xl:h-[423px] 2xl:h-[508px] '>
@@ -122,7 +122,7 @@ const DivSliderParrent = () => {
   />
 
                                         </div>
-                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
+                                        <h3 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h3>
                                     </div>
                                 ))}
                                 {sliderList.map((item, index) => (
@@ -138,7 +138,7 @@ const DivSliderParrent = () => {
   />
 
                                         </div>
-                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
+                                        <h3 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h3>
                                     </div>
                                 ))}
                                 {firstTwoItems.map((item, index) => (
@@ -154,7 +154,7 @@ const DivSliderParrent = () => {
   />
 
                                         </div>
-                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
+                                        <h3 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h3>
                                     </div>
                                 ))}
 
@@ -174,7 +174,7 @@ const DivSliderParrent = () => {
                                                 />
                                             </LazyLoadComponent>
                                         </div>
-                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
+                                        <h3 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h3>
                                     </div>
                                 ))}
                                 {firstOneItems.map((item, index) => (
@@ -209,7 +209,7 @@ const DivSliderParrent = () => {
   />
 
                                         </div>
-                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
+                                        <h3 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h3>
                                     </div>
                                 ))}
                                 {firstTwoItems.map((item, index) => (
@@ -225,7 +225,7 @@ const DivSliderParrent = () => {
   />
 
                                         </div>
-                                        <h1 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h1>
+                                        <h3 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h3>
                                     </div>
                                 ))}
                             </>
@@ -240,7 +240,10 @@ const DivSliderParrent = () => {
                 {/* <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your products radiate brilliance, whether on a website, social media, or in print.`}</p> */}
            
                 <div className='flex justify-center mt-5'>
-                    <Link aria-label='Contact' href={"/contact-us"} className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</Link>
+                    <h3 className='block'>
+                         <Link aria-label='Contact' href={"/contact-us"} className='text-xs md:text-sm font-semibold text-white px-6 py-2 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</Link>
+                    </h3>
+                   
                 </div> 
             </div>
         </div>

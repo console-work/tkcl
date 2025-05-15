@@ -63,9 +63,9 @@ const GetUpdate = () => {
         <div className="pb-32 pt-10">
           <div className="flex justify-center gap-7 my-6">
             <h1 className="w-[70px] sm:w-[400px] border-b border-[#7C9C30]"></h1>
-            <h1 className="text-[28px] md:text-[40px] -mb-2 md:-mb-4 text-center font-bold">
+            <h2 className="text-[28px] md:text-[40px] -mb-2 md:-mb-4 text-center font-bold">
               GET UPDATES
-            </h1>
+            </h2>
             <h1 className="w-[70px] sm:w-[400px] border-b border-[#7C9C30]"></h1>
           </div>
           <p className="text-center text-sm">

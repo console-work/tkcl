@@ -46,9 +46,9 @@ const OrderGuide = () => {
                   height={30}
                 />
               </div>
-              <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
+              <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 1:
-              </h1>
+              </h3>
               <h1 className="text-[10px] font-semibold">Sign In</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
                 <Image
@@ -68,9 +68,9 @@ const OrderGuide = () => {
                   height={30}
                 />
               </div>
-              <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
+              <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 2:
-              </h1>
+              </h3>
               <h1 className="text-[10px] font-semibold">Choose your</h1>
               <h1 className="text-[10px] font-semibold">preferred subscription plan</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
@@ -91,9 +91,9 @@ const OrderGuide = () => {
                   height={30}
                 />
               </div>
-              <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
+              <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 3:
-              </h1>
+              </h3>
               <h1 className="text-[10px] font-semibold">Go to your</h1>
               <h1 className="text-[10px] font-semibold">account to place an order</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
@@ -114,9 +114,9 @@ const OrderGuide = () => {
                   height={30}
                 />
               </div>
-              <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
+              <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 4:
-              </h1>
+              </h3>
               <h1 className="text-[10px] font-semibold">Upload your</h1>
               <h1 className="text-[10px] font-semibold">images you want us to edit</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
@@ -137,9 +137,9 @@ const OrderGuide = () => {
                   height={30}
                 />
               </div>
-              <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
+              <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 5:
-              </h1>
+              </h3>
               <h1 className="text-[10px] font-semibold">The best photo editor</h1>
               <h1 className="text-[10px] font-semibold">process the photos for you</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
@@ -160,9 +160,9 @@ const OrderGuide = () => {
                   height={30}
                 />
               </div>
-              <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
+              <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 6:
-              </h1>
+              </h3>
               <h1 className="text-[10px] font-semibold">Download the edited photos</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[164px]">
                 <Image
