@@ -18,7 +18,8 @@ const NavbarContact = () => {
         <MegaNavbar />
         <div className="container mx-auto py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
-            <Link href={"/"} aria-label="logo">
+            <h1>
+               <Link href={"/"} aria-label="logo">
             <Image
   src={logo}
   alt="logo"
@@ -28,6 +29,8 @@ const NavbarContact = () => {
 />
               
             </Link>
+            </h1>
+           
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
             <Link
@@ -85,7 +88,7 @@ const NavbarContact = () => {
             </Link>
           </div>
           <div className="flex items-center justify-between md:hidden comonresponsiveNAvbar">
-            <Link aria-label="logo" href={"/"}>
+            <h1><Link aria-label="logo" href={"/"}>
             <Image
   src={logo}
   alt="logo"
@@ -94,7 +97,8 @@ const NavbarContact = () => {
   
 />
              
-            </Link>
+            </Link></h1>
+            
              <CgMenu
                         onClick={() => setMenuBool(true)}
                         className="text-[27px] cursor-pointer"

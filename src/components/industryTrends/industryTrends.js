@@ -22,11 +22,11 @@ const IndustryTrends = () => {
     <div id="trends">
       {/* Header Section */}
       <div className="flex justify-center gap-7 mb-5">
-        <h1 className="w-[50px] sm:w-[400px] border-b border-[#7C9C30]"></h1>
-        <h1 className="text-[28px] md:text-[40px] -mb-2 md:-mb-4 text-center font-bold">
+        <h2 className="w-[50px] sm:w-[400px] border-b border-[#7C9C30]"></h2>
+        <h2 className="text-[28px] md:text-[40px] -mb-2 md:-mb-4 text-center font-bold">
           INDUSTRY TRENDS
-        </h1>
-        <h1 className="w-[50px] sm:w-[400px] border-b border-[#7C9C30]"></h1>
+        </h2>
+        <h2 className="w-[50px] sm:w-[400px] border-b border-[#7C9C30]"></h2>
       </div>
 
       {/* Main Content */}
@@ -51,8 +51,8 @@ const IndustryTrends = () => {
   className="w-full h-full object-cover"
 />
                   <div className="absolute flex gap-2 items-end right-0 bottom-0">
-                    <h1 className="text-white text-[26px]">2D</h1>
-                    <h1 className="w-[110px] border-b border-white mb-[10px]"></h1>
+                    <h2 className="text-white text-[26px]">2D</h2>
+                    <h2 className="w-[110px] border-b border-white mb-[10px]"></h2>
                   </div>
                 </div>
 
@@ -93,8 +93,8 @@ const IndustryTrends = () => {
   className="w-full h-full object-cover"
 />
                   <div className="absolute flex gap-2 items-end right-0 bottom-0">
-                    <h1 className="text-white text-[26px]">3D</h1>
-                    <h1 className="w-[110px] border-b border-white mb-[12px]"></h1>
+                    <h2 className="text-white text-[26px]">3D</h2>
+                    <h2 className="w-[110px] border-b border-white mb-[12px]"></h2>
                   </div>
                 </div>
 

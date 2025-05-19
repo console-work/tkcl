@@ -19,9 +19,9 @@ const Record = () => {
                     </div>
                 </div>
                 <div className='flex justify-center gap-7 pt-20 pb-10'>
-                    <h1 className='w-[50px] sm:w-[400px] border-b border-[#7C9C30]'></h1>
+                    <h2 className='w-[50px] sm:w-[400px] border-b border-[#7C9C30]'></h2>
                     <h2 className='text-[28px] md:text-[40px]  -mb-2 lg:-mb-4 font-bold'>SUCCESS RECORD</h2>
-                    <h1 className='w-[50px] sm:w-[400px] border-b border-[#7C9C30]'></h1>
+                    <h2 className='w-[50px] sm:w-[400px] border-b border-[#7C9C30]'></h2>
                 </div>
             </div>
         </div>

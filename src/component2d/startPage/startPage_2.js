@@ -20,8 +20,8 @@ const StartPage_2 = () => {
         <div className="flex justify-center items-center gap-20">
           <div className=" w-[400px] h-80"> 
             <h5 className="text-[40px] text-center md:text-left">WE DO</h5>
-            <h5 className="border-b border-[#B1CC40] text-[40px] text-center md:text-left font-semibold -mt-4">IMAGE & VIDEO EDITING</h5>
-            <h1 className="pt-5 text-[#959595] font-semibold">YOUR ONE-STOP CONTENT POST PRODUCTION SOLUTION</h1>
+            <h1 className="border-b border-[#B1CC40] text-[40px] text-center md:text-left font-semibold -mt-4">IMAGE & VIDEO EDITING</h1>
+            <h2 className="pt-5 text-[#959595] font-semibold">YOUR ONE-STOP CONTENT POST PRODUCTION SOLUTION</h2>
             <div className="pt-5 flex justify-center md:justify-start">
               <div className="rounded-3xl bg-white w-[260px] flex justify-between px-1 ">
                 <button className="bg-[#B1CC40] my-1 px-8 py-1 font-semibold rounded-3xl text-[13px]">Free Trial</button>

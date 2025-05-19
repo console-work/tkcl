@@ -18,7 +18,7 @@ const StartPage = () => {
       <div className="container mx-auto commonContainer">
         <div className="flex flex-col md:flex-row gap-0 md:gap-20 justify-between justify-items-center items-center  pt-[50px] md:pt-0">
           <div className=" h-80">
-            <h1 className="text-[40px] text-center md:text-left">WE DO</h1>
+            <h2 className="text-[40px] text-center md:text-left">WE DO</h2>
             <h1 className="border-b border-[#B1CC40] text-[40px] text-center md:text-left font-semibold -mt-4">
               IMAGE & VIDEO EDITING
             </h1>

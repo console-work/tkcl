@@ -68,9 +68,9 @@ const DivSliderParrent = () => {
     return (
         <div id='images' className='pt-0  pb-0 '>
             <div className='flex justify-center gap-7 my-10'>
-                <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+                <h2 className='w-[400px] border-b border-[#7C9C30]'></h2>
                 <h2 className='text-[28px] md:text-[40px]  -mb-2 lg:-mb-4 font-bold'>IMAGES</h2>
-                <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+                <h2 className='w-[400px] border-b border-[#7C9C30]'></h2>
             </div>
             <div className='relative 2xl:container 2xl:mx-auto 2xl:px-0 h-[400px] lg:h-[337px] xl:h-[423px] 2xl:h-[508px] '>
                 <div className=''>

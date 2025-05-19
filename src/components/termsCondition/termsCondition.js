@@ -31,7 +31,8 @@ function TermsCondition(props) {
           <br />
           <div className="commonContainer">
           <div>
-            <b style={{ fontSize: "20px" }}> Placing an Order </b>
+            <h2>
+            <b style={{ fontSize: "20px" }}> Placing an Order </b></h2>
 
             <ul>
               <li>
@@ -50,7 +51,7 @@ function TermsCondition(props) {
           </div>
 
           <div className="mt-5">
-            <b style={{ fontSize: "20px" }}> Payment Method </b>
+           <h2><b style={{ fontSize: "20px" }}> Payment Method </b></h2> 
 
             <ul>
               <li>

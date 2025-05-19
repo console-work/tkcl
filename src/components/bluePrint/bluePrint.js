@@ -8,9 +8,9 @@ const BluePrint = () => {
     return (
         <div>
             <div className='flex justify-center gap-7 mb-5 '>
-                <h1 className='w-[80px] sm:w-[400px] border-b border-[#7C9C30]'></h1>
-                <h1 className='text-[28px] md:text-[40px] -mb-2 md:-mb-4 font-bold'>2D BLUE PRINT</h1>
-                <h1 className='w-[80px] sm:w-[400px] border-b border-[#7C9C30]'></h1>
+                <h2 className='w-[80px] sm:w-[400px] border-b border-[#7C9C30]'></h2>
+                <h2 className='text-[28px] md:text-[40px] -mb-2 md:-mb-4 font-bold'>2D BLUE PRINT</h2>
+                <h2 className='w-[80px] sm:w-[400px] border-b border-[#7C9C30]'></h2>
             </div>
             <div className='container mx-auto pt-10 pb-10 md:pb-10'>
                 <div className='flex  justify-center items-center  '>

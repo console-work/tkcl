@@ -37,19 +37,19 @@ const ChoosePlan = () => {
                     <div className="flex flex-col items-start">
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                    <h1 className="text-[12px]">1-100 IMAGES/ORDER</h1>
+                    <p className="text-[12px]">1-100 IMAGES/ORDER</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">10 IMAGES-FREE</h1>
+                      <p className="text-[12px]">10 IMAGES-FREE</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">1 MONTH FREE STORAGE</h1>
+                      <p className="text-[12px]">1 MONTH FREE STORAGE</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">24/7 CUSTOMER SUPPORT</h1>
+                      <p className="text-[12px]">24/7 CUSTOMER SUPPORT</p>
                     </div>
     
                     </div>
@@ -84,19 +84,19 @@ const ChoosePlan = () => {
                     <div className="flex flex-col items-start">
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">101-500 IMAGES/ORDER</h1>
+                      <p className="text-[12px]">101-500 IMAGES/ORDER</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">10 IMAGES-FREE</h1>
+                      <p className="text-[12px]">10 IMAGES-FREE</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">2 MONTH FREE STORAGE</h1>
+                      <p className="text-[12px]">2 MONTH FREE STORAGE</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">24/7 CUSTOMER SUPPORT</h1>
+                      <p className="text-[12px]">24/7 CUSTOMER SUPPORT</p>
                     </div>
                       
   
@@ -134,19 +134,19 @@ const ChoosePlan = () => {
                     <div className="flex flex-col items-start">
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">1-100 IMAGES/ORDER</h1>
+                      <p className="text-[12px]">1-100 IMAGES/ORDER</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">10 IMAGES-FREE</h1>
+                      <p className="text-[12px]">10 IMAGES-FREE</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">1 MONTH FREE STORAGE</h1>
+                      <p className="text-[12px]">1 MONTH FREE STORAGE</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                       < BsCircleFill className="w-2 h-2" />
-                      <h1 className="text-[12px]">24/7 CUSTOMER SUPPORT</h1>
+                      <p className="text-[12px]">24/7 CUSTOMER SUPPORT</p>
                     </div>
     
                     </div>
