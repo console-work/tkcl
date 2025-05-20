@@ -541,6 +541,20 @@ transition: all 1s ease !important;
 .mobileSidebarFool.open {
   left: 0;  /* Move into view */
 }
+
+.mobileresponsiveLanguage{
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+.mobileresponsiveLanguage .origin-top-right.rounded-md.ring-opacity-5 {
+      right: auto;
+    margin-top: 40px;
+}
+.mobileresponsiveLanguage  #options-menu{
+  color: oklch(27.8% .033 256.848);
+}
+
 }
 @media screen and (max-width: 768px) {
   .comonresponsiveNAvbar{

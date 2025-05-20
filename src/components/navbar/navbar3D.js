@@ -13,6 +13,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import MegaMenu from "./megaMenu";
 import MegaNavbar from "./megaNavbar";
 import Image from "next/image";
+import Language from "../language/language";
 
 
 const Navbar3D = () => {
@@ -152,6 +153,7 @@ const Navbar3D = () => {
                 </Link>
                 {/* <Link href="/" className="text-gray-800 text-[26px] lg:text-[32px]font-medium"><GoHomeFill />
                                 </Link> */}
+                                 <Language navbar2d3dColor={true}/>
               </div>
             </div>
 
@@ -334,6 +336,7 @@ const Navbar3D = () => {
                   >
                     CAREER
                   </Link>
+                   <Language navbar2d3dColor={true}/>
                   {/* <Link onClick={() => setMenuBool(false)} href="/" className="transition-all duration-300 flex flex-col items-center text-gray-800 text-[32px] border-b-2 py-3 hover:bg-[#376f50] border-[#376f50] font-semibold hover:border-b-2 hover:border-[#7C9C30] hover:text-white"><GoHomeFill /></Link> */}
                 </div>
               </div>

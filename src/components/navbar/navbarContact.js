@@ -6,6 +6,7 @@ import  Link  from "next/link";
 import { useState } from "react";
 import MegaNavbar from "./megaNavbar";
 import Image from "next/image";
+import Language from "../language/language";
 
 
 
@@ -79,6 +80,7 @@ const NavbarContact = () => {
             >
               SIGN UP
             </a>
+             <Language navbar2d3dColor={true}/>
             <Link
               aria-label="home"
               href="/"

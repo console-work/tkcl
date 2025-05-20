@@ -7,10 +7,12 @@ import  {useState}  from "react";
 
 import MegaNavbar from "./megaNavbar";
 import Image from "next/image";
+import Language from "../language/language";
 
 
 const Navbar2D = () => {
   const [getMenuBool, setMenuBool] = useState(false); 
+ 
   return (
     <>
       {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
@@ -40,7 +42,7 @@ const Navbar2D = () => {
 
             <a aria-label="sign-up" href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="text-gray-800 text-xs lg:text-sm border-2 rounded-3xl px-8 py-1 border-[#7C9C30] font-semibold" rel="noreferrer">SIGN UP</a>
             <Link aria-label="book-a-call" href="/book-a-call" className="text-gray-800 text-xs lg:text-sm border-2 rounded-3xl px-6 py-1 border-[#7C9C30] font-semibold" rel="noreferrer">Book A Call</Link>
-
+           <Language navbar2d3dColor={true}/>
             {/* <Link href="/" className="text-gray-800 text-[26px] lg:text-[32px] border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"><GoHomeFill />
             </Link> */}
           </div>
@@ -78,7 +80,7 @@ const Navbar2D = () => {
               <a aria-label="sign-up" onClick={() => setMenuBool(false)} href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]" rel="noreferrer">SIGN UP</a>
               <Link aria-label="book-a-call" href="/book-a-call" onClick={() => setMenuBool(false)}  className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">Book A Call</Link>
               <Link aria-label="career" href="/career" onClick={() => setMenuBool(false)}  className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">CAREER</Link>
-
+              <Language navbar2d3dColor={true}/>
               {/* <Link onClick={() => setMenuBool(false)} href="/" className="transition-all duration-300 flex flex-col items-center text-gray-800 text-[32px] border-b-2 py-3 hover:bg-[#cfd6d6] border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"><GoHomeFill /></Link> */}
             </div>
           </div>

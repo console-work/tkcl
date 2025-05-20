@@ -17,21 +17,16 @@ import HeadlineModal from "./headlineModal";
 import MegaNavbar from "./megaNavbar";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import Language from "../language/language";
 
 const NavbarHome = ({carearmenu}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const { handleTranslate } = GoogleTranslate();
+
   const [showModal, setShowModal] = useState(false);
   const [headlineText, setHeadlineText] = useState('');
   const [headline, setHeadline] = useState('');
 
-  const selectLanguage = (lang) => {
-    handleTranslate(lang);
-    setDropdownOpen(false);
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000); // Adjust the delay to ensure the language change is fully applied
-  };
+
   const [getMenuBool, setMenuBool] = useState(false);
   const [screenLeft, setScreenLeft] = useState(false);
 
@@ -251,135 +246,8 @@ const NavbarHome = ({carearmenu}) => {
             >
               Book A Call
             </Link>
-            {/* {!showModal && !headline && (
-              <button
-                className={`text-xs lg:text-sm border-2 rounded-3xl px-4 py-1 border-[#7C9C30] font-semibold ${
-                  screenLeft ? "text-gray-800 " : " text-white"
-                }`}
-                onClick={() => setShowModal(true)}
-              >
-                Show Headline
-              </button>
-            )} */}
-            <div
-              id="google_translate_element"
-              style={{ display: "none" }}
-            ></div>
-            <div className="relative inline-block text-center notranslate">
-              <div>
-                <button
-                  type="button"
-                  className={`flex justify-center text-base ${
-                    screenLeft || carearmenu
-                      ? "text-gray-800 border-b-2 border-[#7C9C30]"
-                      : "text-white border-b-2 border-[#7C9C30]"
-                  } items-center gap-2 w-40 rounded-3xl border shadow-sm px-2 py-1 font-medium focus:outline-none`}
-                  id="options-menu"
-                  aria-expanded="true"
-                  aria-haspopup="true"
-                  onClick={() => setDropdownOpen(!dropdownOpen)}
-                >
-                  <IoLanguage className="text-xl" />
-                  Language
-                  <IoMdArrowDropdown className="text-xl" />
-                </button>
-              </div>
-
-              {dropdownOpen && (
-                <div
-                  className="origin-top-right absolute bg-white right-0 mt-2 w-40 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="options-menu"
-                >
-                  <div className="py-1" role="none">
-                    <button
-                      onClick={() => selectLanguage("en")}
-                      className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-                      role="menuitem"
-                    >
-                      {/* <img
-                        className="h-7 w-7"
-                        src="/img/flags/united-kingdom.png"
-                        alt="English"
-                      /> */}
-                      <Image
-  src="/img/flags/united-kingdom.png"
-  alt="english"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                      English
-                    </button>
-                    <button
-                      onClick={() => selectLanguage("es")}
-                      className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-                      role="menuitem"
-                    >
-                       <Image
-  src="/img/flags/spain.png"
-  alt="spain"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                      {/* <img
-                        className="h-7 w-7"
-                        src="/img/flags/spain.png"
-                        alt="Spanish"
-                      /> */}
-                      Spanish
-                    </button>
-                    <button
-                      onClick={() => selectLanguage("fr")}
-                      className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-                      role="menuitem"
-                    >
-                                             <Image
-  src="/img/flags/france.png"
-  alt="france"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                      
-                      French
-                    </button>
-                    <button
-                      onClick={() => selectLanguage("de")}
-                      className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-                      role="menuitem"
-                    >
-                       <Image
-  src="/img/flags/germany.png"
-  alt="germany"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                    
-                      German
-                    </button>
-                    <button
-                      onClick={() => selectLanguage("nl")}
-                      className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-                      role="menuitem"
-                    >
-                      <Image
-  src="/img/flags/netherlands.png"
-  alt="netherlands"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                     
-                      Dutch
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
+             <Language carearmenu={carearmenu} screenLeft={screenLeft}/>
+          
           </div>
           <div className="flex items-center justify-between lg:hidden comonresponsiveNAvbar">
             <h1>
@@ -492,110 +360,7 @@ const NavbarHome = ({carearmenu}) => {
             >
               BLOG
             </Link>
-                <div className="flex justify-center mb-2">
-                  <button
-                    type="button"
-                    className={`flex justify-center text-base ${
-                      screenLeft
-                        ? "text-gray-800 border-b-2 border-[#7C9C30]"
-                        : "text-black border-b-2 border-[#7C9C30]"
-                    } items-center gap-2 w-40 rounded-3xl border shadow-sm px-2 py-1 font-medium focus:outline-none`}
-                    id="options-menu"
-                    aria-expanded="true"
-                    aria-haspopup="true"
-                    onClick={() => setDropdownOpen(!dropdownOpen)}
-                  >
-                    <IoLanguage className="text-xl" />
-                    Language
-                    <IoMdArrowDropdown className="text-xl" />
-                  </button>
-                </div>
-                {dropdownOpen && (
-                  <div
-                    className="top-[62%] absolute bg-white right-[30%]  mt-2 w-40 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                    role="menu"
-                    aria-orientation="vertical"
-                    aria-labelledby="options-menu"
-                  >
-                    <div className="py-1" role="none">
-                      <button
-                        onClick={() => selectLanguage("en")}
-                        className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text-center"
-                        role="menuitem"
-                      >
-                         <Image
-  src="/img/flags/united-kingdom.png"
-  alt="united-kingdom"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                        
-                        English
-                      </button>
-                      <button
-                        onClick={() => selectLanguage("es")}
-                        className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
-                        role="menuitem"
-                      >
-                         <Image
-  src="/img/flags/spain.png"
-  alt="spain"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                       
-                        Spanish
-                      </button>
-                      <button
-                        onClick={() => selectLanguage("fr")}
-                        className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
-                        role="menuitem"
-                      >
-                         <Image
-  src="/img/flags/france.png"
-  alt="french"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                       
-                        French
-                      </button>
-                      <button
-                        onClick={() => selectLanguage("de")}
-                        className="flex justify-start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
-                        role="menuitem"
-                      >
-                         <Image
-  src="/img/flags/germany.png"
-  alt="germany"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                        
-                        German
-                      </button>
-                      <button
-                        onClick={() => selectLanguage("nl")}
-                        className="flex justify.start items-center gap-3 px-4 py-1 text-base text-gray-700 hover:bg-gray-100 w-full text.center"
-                        role="menuitem"
-                      >
-                                                <Image
-  src="/img/flags/netherlands.png"
-  alt="netherlands"
-  width={28} // Equivalent to Tailwind h-7/w-7
-  height={28}
-  className="h-7 w-7"
-/>
-                        
-                        Dutch
-                      </button>
-                    </div>
-                  </div>
-                )}
+                <Language />
               </div>
             </div>
           </div>
