@@ -20,7 +20,7 @@ const Navbar2D = () => {
         <MegaNavbar/> 
         <div className="container mx-auto py-1">
           <div className="hidden lg:flex items-center justify-between gap-3">
-            <h1><Link aria-label="home" href={"/"}>
+            <Link aria-label="home" href={"/"}>
             
              
                 <Image
@@ -29,7 +29,7 @@ const Navbar2D = () => {
   width={80}
   height={45}
 />
-            </Link></h1>
+            </Link>
            
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
@@ -47,14 +47,14 @@ const Navbar2D = () => {
             </Link> */}
           </div>
           <div className="flex items-center justify-between lg:hidden comonresponsiveNAvbar">
-            <h1><Link aria-label="home" href={"/"}>
+           <Link aria-label="home" href={"/"}>
             <Image
   src={logo}
   alt="logo"
   width={80}
   height={45}
 />
-            </Link></h1>
+            </Link>
 
                  <CgMenu
                         onClick={() => setMenuBool(true)}

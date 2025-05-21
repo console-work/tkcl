@@ -439,7 +439,13 @@ body > .skiptranslate {
   height: 50%;
   width: 100%;
 }
-
+.fifth-section-text h2 {
+  margin-top: 40px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
 /* .blogFullImgSingle .img-2 {
   position: absolute;
   left: 0;

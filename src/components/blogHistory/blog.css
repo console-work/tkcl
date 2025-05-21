@@ -150,7 +150,8 @@
     .blogAllFor2D3D{
         align-items: center;
         justify-content: center;
-        margin-top: 46px;
+        margin-top: 25px;
+        margin-bottom: 20px;
         border-bottom: none;
     }
     .blogAllFor2D3D a{

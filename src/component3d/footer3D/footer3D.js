@@ -25,7 +25,8 @@ const Footer3D = () => {
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-center md:text-left flex flex-col justify-center">
                         <figure className='flex justify-center md:justify-start'>
-                        <Image
+                            <Link href='/'>
+                                                   <Image
   src="/img/logoBlack.webp"
   alt="logoBlack"
   width={120}
@@ -33,8 +34,11 @@ const Footer3D = () => {
   className="h-auto w-[120px]"
   loading="lazy"
 />
+                            </Link>
+ 
                         </figure>
-                        <p className="w-40 text-[#333333] text-[11px] p-1 border-b-2  border-[#333333]  mb-4">
+                        <p className="w-40 text-[#333333] text-[12px] p-1 border-b-2  border-[#333333]  mb-4">
+                           
                             <b>The KOW Company</b> leads globally in 2D image editing, photo retouching, ghost mannequin solutions, 3D modeling, and rendering services for businesses worldwide.
                         </p>
                         <div className="flex text-[#003333] justify-center md:justify-start gap-1 mb-2">
@@ -74,8 +78,8 @@ const Footer3D = () => {
 
                     <div className="flex flex-col text-[#333333] lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
                         <span className="text-xl font-semibold mb-2 ">HOME</span>
-                        <Link aria-label="3d services" href="/3D#3d-services" className="link link-hover text-sm">Services</Link>
-                        <Link aria-label="3d trends" href="/3d#3d-trends" className="link link-hover text-sm">3D Trends</Link>
+                        <Link aria-label="3d services" href="/3d-modeling-and-rendering#3d-services" className="link link-hover text-sm">Services</Link>
+                        <Link aria-label="3d trends" href="/3d-modeling-and-rendering#3d-trends" className="link link-hover text-sm">3D Trends</Link>
                         {/* <Link  href="/3d#3d-contact" className="link link-hover text-sm">Contact us</Link> */}
 
 

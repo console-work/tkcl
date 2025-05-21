@@ -19,7 +19,9 @@ const About3D = () => {
 />
                     </div>
                     <div>
-                        <p className='text-base md:text-xl text-justify px-2 md:px-0'>We are a specialized company in 3D modeling and CGI, producing high-quality 3D models, imagery and animations in collaboration with top 3D designers. Along with creating realistic 3D models, we also offer high quality product image        rendering tailored to retail industries, enabling clients to catch the customers     attention with stunning product rendered outputs. Our commitment to delivering exceptional visual experiences not only satisfies our clients but also attracts more business opportunities. </p>
+                        <p className='text-base md:text-xl text-justify px-2 md:px-0'>At The KOW Company, we specialize in 3D modeling and Computer-Generated Imagery (CGI), providing premium-quality 3D models, imagery, and animations. Collaborating with top 3D designers, we transform your concepts into photorealistic visualizations.  
+<br></br>
+Beyond crafting realistic 3D models, we offer premium product image rendering services tailored for the retail industry. Our 3D modeling services enable clients to capture customer attention with stunning, high-quality rendered outputs. This commitment to superior visual experiences satisfies our clients and attracts increased business opportunities.  </p>
                     </div>
                 </div>
             </div>

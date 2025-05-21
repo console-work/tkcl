@@ -30,6 +30,8 @@ const Footer2D = () => {
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-left flex flex-col justify-center">
                         <figure>
+                            <Link href='/'>
+                            
                             <Image
         src={logoWhite}
         alt="logo"
@@ -37,13 +39,12 @@ const Footer2D = () => {
         height={120}
         loading="lazy" // Optional: you can still specify loading if you want
       />
+                            </Link>
+                            
     
                         </figure>
                         <p className="w-40 text-black text-[11px] p-1 border-b-2  border-black  mb-4">
-                            <b>The KOW Company</b> is one of the
-                            leading image and video editing
-                            companies for businesses all over
-                            the world.
+                            <b>The KOW Company</b> leads globally in 2D image editing, photo retouching, ghost mannequin solutions, 3D modeling, and rendering services for businesses worldwide.
                         </p>
                         <div className="flex text-[#003333] justify-center md:justify-start gap-1 mb-2">
                             <a aria-label='facebook' href="https://www.facebook.com/cutoutwiz" target="_blank" rel="noreferrer">
@@ -85,11 +86,11 @@ const Footer2D = () => {
 
                     <div className="flex flex-col text-black lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
                         <span className="text-xl font-semibold text-black mb-2 ">HOME</span>
-                        <Link aria-label='services' href="/2d#services" className=" text-sm">SERVICES</Link>
-                        <Link aria-label='apps' href="/2d#apps" className=" text-sm">APPS</Link>
-                        <Link aria-label='price' href="/2d#price" className=" text-sm">PRICE</Link>
-                        <Link aria-label='order-guide' href="/2d#order-guide" className=" text-sm">ORDER GUIDE</Link>
-                        <Link aria-label='2d-trends' href="/2d#2d-trends" className=" text-sm">2D TRENDS</Link>
+                        <Link aria-label='services' href="/2d-photo-editing#services" className=" text-sm">SERVICES</Link>
+                        <Link aria-label='apps' href="/2d-photo-editing#apps" className=" text-sm">APPS</Link>
+                        <Link aria-label='price' href="/2d-photo-editing#price" className=" text-sm">PRICE</Link>
+                        <Link aria-label='order-guide' href="/2d-photo-editing#order-guide" className=" text-sm">ORDER GUIDE</Link>
+                        <Link aria-label='2d-trends' href="/2d-photo-editing#2d-trends" className=" text-sm">2D TRENDS</Link>
 
 
 

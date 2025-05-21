@@ -77,14 +77,14 @@ const Navbar3D = () => {
           <MegaNavbar />
           <div className="container mx-auto ">
             <div className="hidden lg:flex items-center justify-between gap-3">
-              <h1><Link aria-label="Home" href={"/"}>
+              <Link aria-label="Home" href={"/"}>
               <Image
   src={logo}
   alt="logo"
   width={80}
   height={45}
   className="w-[80px] h-[45px]"
-/> </Link></h1>
+/> </Link>
               
              
               {/* --------------------------------------For Large Screen------------------------------------------ */}
@@ -158,14 +158,14 @@ const Navbar3D = () => {
             </div>
 
             <div className={`flex items-center justify-between lg:hidden comonresponsiveNAvbar`}>
-              <h1><Link aria-label="Home" href={"/"}>
+              <Link aria-label="Home" href={"/"}>
               <Image
   src={logo}
   alt="logo"
   width={80}
   height={45}
   
-/></Link></h1>
+/></Link>
               
               <CgMenu
                           onClick={() => setMenuBool(true)}

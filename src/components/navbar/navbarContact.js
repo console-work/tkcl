@@ -19,7 +19,7 @@ const NavbarContact = () => {
         <MegaNavbar />
         <div className="container mx-auto py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
-            <h1>
+           
                <Link href={"/"} aria-label="logo">
             <Image
   src={logo}
@@ -30,7 +30,7 @@ const NavbarContact = () => {
 />
               
             </Link>
-            </h1>
+           
            
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
@@ -81,16 +81,16 @@ const NavbarContact = () => {
               SIGN UP
             </a>
              <Language navbar2d3dColor={true}/>
-            <Link
+            {/* <Link
               aria-label="home"
               href="/"
               className="text-gray-800 text-[26px] lg:text-[32px] border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"
             >
               <GoHomeFill />
-            </Link>
+            </Link> */}
           </div>
           <div className="flex items-center justify-between md:hidden comonresponsiveNAvbar">
-            <h1><Link aria-label="logo" href={"/"}>
+           <Link aria-label="logo" href={"/"}>
             <Image
   src={logo}
   alt="logo"
@@ -99,7 +99,7 @@ const NavbarContact = () => {
   
 />
              
-            </Link></h1>
+            </Link>
             
              <CgMenu
                         onClick={() => setMenuBool(true)}

@@ -7,15 +7,15 @@ const Contact3D = () => {
       <div className="py-10">
         <Heading
           className="pt-12 pb-7"
-          titleClassName="w-[1500px]"
-          title="DISCUSS YOUR AMBITIONS WITH US"
+          titleClassName="w-[2000px]"
+          title="DISCUSS YOUR INNOVATIVE IDEAS WITH US "
         />
        <div className="container mx-auto">
        <p className=" text-center text-sm">
-          Use our knowledge to get your organization ready for the future.
+         Use our knowledge and expertise to get your organization ready for the future. 
         </p>
         <p className=" text-center text-sm mb-6">
-          Contact our experts now for an introductory meeting.
+        Contact our experts now for an initial meeting. 
         </p>
         <div className="flex justify-center ">
          <Link aria-label="Contact" href="/contact-us">

@@ -23,9 +23,9 @@ const ChoosePlan = () => {
                     <div className="rounded-full">
                       <div className="shadow-xl  w-[100px] h-[100px] flex flex-col bg-[#B1CC40] rounded-full border-2 border-gradient-to-l from-white via-slate-100 to-white items-center justify-center">
                         <h4 className="text-2xl text-white font-semibold">
-                          $1.19
+                          $1.19<span className="text-[11px] text-white block mt-1 font-normal">PER IMAGES</span>
                         </h4>
-                        <h4 className="text-[11px] text-white ">PER IMAGES</h4>
+                        
                       </div>
                     </div>
                   </div>
@@ -70,9 +70,9 @@ const ChoosePlan = () => {
                     <div className="rounded-full">
                       <div className="shadow-xl  w-[100px] h-[100px] flex flex-col bg-[#B1CC40] rounded-full border-2 border-gradient-to-l from-white via-slate-100 to-white items-center justify-center">
                         <h4 className="text-2xl text-white font-semibold">
-                          $0.99
+                          $0.99 <span className="text-[11px] text-white block mt-1 font-normal">PER IMAGES</span>
                         </h4>
-                        <h4 className="text-[11px] text-white ">PER IMAGES</h4>
+                       
                       </div>
                     </div>
                   </div>
@@ -121,8 +121,8 @@ const ChoosePlan = () => {
                   <div className="p-4 bg-[#DEE2E2] rounded-full z-20 relative">
                     <div className="rounded-full">
                       <div className="shadow-xl  w-[100px] h-[100px] flex flex-col bg-[#B1CC40] rounded-full border-2 border-gradient-to-l from-white via-slate-100 to-white items-center justify-center">
-                        <h4 className="text-[11px] text-white ">CONTACT</h4>
-                        <h4 className="text-xl text-white font-semibold">US</h4>
+                        <h4 className="text-[11px] text-white text-center">CONTACT <span className="block text-xl text-white font-semibold">US</span></h4>
+                        
                       </div>
                     </div>
                   </div>

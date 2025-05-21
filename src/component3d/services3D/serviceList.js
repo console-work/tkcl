@@ -21,7 +21,7 @@ const ServiceList = ({ icon, title, description, divider = false }) => {
                         effect="blur" /> */}
                 </div>
                 <div className='flex flex-col items-center md:gap-5'>
-                    <h3 style={{fontWeight:'500'}}>{title}</h3>
+                    <h3 style={{fontWeight:'500',textAlign:'center'}}>{title}</h3>
                     <p className='w-[150px] text-center'>{description}</p>
                 </div>
             </div>

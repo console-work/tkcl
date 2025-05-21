@@ -62,11 +62,11 @@ const GetUpdate = () => {
       <div className="container mx-auto">
         <div className="pb-32 pt-10">
           <div className="flex justify-center gap-7 my-6">
-            <h2 className="w-[70px] sm:w-[400px] border-b border-[#7C9C30]"></h2>
+            <div className="w-[70px] sm:w-[400px] border-b border-[#7C9C30]"></div>
             <h2 className="text-[28px] md:text-[40px] -mb-2 md:-mb-4 text-center font-bold">
               GET UPDATES
             </h2>
-            <h2 className="w-[70px] sm:w-[400px] border-b border-[#7C9C30]"></h2>
+            <div className="w-[70px] sm:w-[400px] border-b border-[#7C9C30]"></div>
           </div>
           <p className="text-center text-sm">
           Sign up for our mailing list to get the latest information on our 2D and 3D services, cool new features or updates, must-read articles, and industry insights. 

@@ -39,9 +39,9 @@ const Slider3D = () => {
   return (
     <div id='3d' className='pb-10 pt-0 '>
       <div className='flex justify-center gap-7 my-10'>
-        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+        <div className='w-[400px] border-b border-[#7C9C30]'></div>
         <h1 className='text-[28px] md:text-[40px] -mb-2 md:-mb-4 font-bold'>3D</h1>
-        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+        <div className='w-[400px] border-b border-[#7C9C30]'></div>
       </div>
       <div>
 

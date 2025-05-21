@@ -49,7 +49,7 @@ const OrderGuide = () => {
               <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 1:
               </h3>
-              <h5 className="text-[10px] font-semibold">Sign In</h5>
+              <p className="text-[10px] font-semibold">Sign In</p>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
                 <Image
                   alt="arrow"
@@ -71,8 +71,8 @@ const OrderGuide = () => {
               <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 2:
               </h3>
-              <h5 className="text-[10px] font-semibold">Choose your</h5>
-              <h5 className="text-[10px] font-semibold">preferred subscription plan</h5>
+              <p className="text-[10px] font-semibold">Choose your</p>
+              <p className="text-[10px] font-semibold">preferred subscription plan</p>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
                 <Image
                   alt="arrow"
@@ -94,8 +94,8 @@ const OrderGuide = () => {
               <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 3:
               </h3>
-              <h5 className="text-[10px] font-semibold">Go to your</h5>
-              <h5 className="text-[10px] font-semibold">account to place an order</h5>
+              <p className="text-[10px] font-semibold">Go to your</p>
+              <p className="text-[10px] font-semibold">account to place an order</p>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
                 <Image
                   alt="arrow"
@@ -117,8 +117,8 @@ const OrderGuide = () => {
               <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 4:
               </h3>
-              <h5 className="text-[10px] font-semibold">Upload your</h5>
-              <h5 className="text-[10px] font-semibold">images you want us to edit</h5>
+              <p className="text-[10px] font-semibold">Upload your</p>
+              <p className="text-[10px] font-semibold">images you want us to edit</p>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
                 <Image
                   alt="arrow"
@@ -140,8 +140,8 @@ const OrderGuide = () => {
               <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 5:
               </h3>
-              <h5 className="text-[10px] font-semibold">The best photo editor</h5>
-              <h5 className="text-[10px] font-semibold">process the photos for you</h5>
+              <p className="text-[10px] font-semibold">The best photo editor</p>
+              <p className="text-[10px] font-semibold">process the photos for you</p>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
                 <Image
                   alt="arrow"
@@ -163,7 +163,7 @@ const OrderGuide = () => {
               <h3 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
                 STEP 6:
               </h3>
-              <h5 className="text-[10px] font-semibold">Download the edited photos</h5>
+              <p className="text-[10px] font-semibold">Download the edited photos</p>
               <div className="absolute -top-[15px] -left-[14px] w-[164px]">
                 <Image
                   alt="arrow"
