@@ -449,11 +449,12 @@ body > .skiptranslate {
 .threedh1Frtee{
   position: absolute;
   font-size: 48px;
+  font-weight: bold;
   text-transform: uppercase;
   z-index: 9;
-  padding: 20px;
+  padding: 0px;
   background: #dee2e200;
-  color: #fff;
+  color: #B3B9BF;
 }
 
 /* .blogFullImgSingle .img-2 {
