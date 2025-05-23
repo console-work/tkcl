@@ -18,8 +18,8 @@ const CircleStyle = ({count, title, recordTime}) => {
             <div className="bg-kow-green p-2 rounded-full"></div>
           </div>
           <div className="text-center">
-            <h3 className="uppercase text-lg font-medium">{title}</h3>
-            <h3 className="uppercase text-lg font-bold text-[#7C9C30]">{recordTime}</h3>
+            <h4 className="uppercase text-lg font-medium">{title}<p className="uppercase text-lg font-bold text-[#7C9C30]">{recordTime}</p></h4>
+            
           </div>
         </div>
       </div>

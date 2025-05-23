@@ -51,7 +51,7 @@ const IndustryTrends = () => {
   className="w-full h-full object-cover"
 />
                   <div className="absolute flex gap-2 items-end right-0 bottom-0">
-                    <h2 className="text-white text-[26px]">2D</h2>
+                    <p className="text-white text-[26px]">2D</p>
                     <div className="w-[110px] border-b border-white mb-[10px]"></div>
                   </div>
                   <p className="text-xs blogposterdate">{latest2DBlog.date}</p>
@@ -95,7 +95,7 @@ const IndustryTrends = () => {
   className="w-full h-full object-cover"
 />
                   <div className="absolute flex gap-2 items-end right-0 bottom-0">
-                    <h2 className="text-white text-[26px]">3D</h2>
+                    <p className="text-white text-[26px]">3D</p>
                     <div className="w-[110px] border-b border-white mb-[12px]"></div>
                   </div>
                   <p className="text-xs" style={{position: "absolute",

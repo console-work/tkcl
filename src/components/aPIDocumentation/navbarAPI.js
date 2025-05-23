@@ -1,18 +1,32 @@
 'use client'
 import Image from "next/image";
 import Link  from "next/link";
+import { useEffect, useState } from "react";
 
 
 const NavbarAPI = () => {
+const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    handleResize(); // initial check
+    window.addEventListener("resize", handleResize); // listen for resize
+    return () => window.removeEventListener("resize", handleResize); // cleanup
+  }, []);
+
     return (
         <>
             <div className="">
                 <div className="hidden lg:block bg-white h-[93px] border-b border-[#000]">
                     <nav className=" w-full flex relative justify-start items-center gap-[77px]  pl-[117px] mx-auto ">
                         {/* Logo */}
-                        <div className=" flex justify-center items-center mt-[22.5px] gap-[8px]">
+                        {!isMobile && (
+                       <div className=" flex justify-center items-center mt-[22.5px] gap-[8px]">
                         <div className="relative w-[117px] h-[48px]">
-            <h1>
+           
                  <Link aria-label="home" href={"/"}>
                  <Image
     src="/img/API-Docx/kow_green_logo.svg"
@@ -21,11 +35,14 @@ const NavbarAPI = () => {
     className="object-contain"
   />
                  </Link>
-                </h1>                
+                           
   
 </div>
                             <h1 className="text-[34px] leading-[24px] font-bold font-anek-latin text-[#255646]">Resources</h1>
                         </div>
+
+                        )}
+                       
 
                         {/* Search Bar */}
                         <div className="mt-[21px]">
@@ -40,22 +57,27 @@ const NavbarAPI = () => {
                 </div>
                 <div className="">
                     <div className="flex flex-col gap-4 lg:hidden">
-                        <div className="flex justify-center items-center pt-5">
-                                                   <div className="relative w-[117px] h-[48px]">
-                                                    <h1>
+                        {isMobile && 
+                         (
+                             <div className="flex justify-center items-center pt-5">
+                            <div className="relative w-[117px] h-[48px]">
+                                                   
                  <Link aria-label="home" href={"/"}>
-  <Image
-    src="/img/API-Docx/kow_green_logo.svg"
-    fill
-    alt="Kow Green Logo"
-    className="object-contain"
-  />
-</Link>
-</h1>
-  
-</div>
-                            <h1 className="text-[34px] leading-[24px] font-bold font-anek-latin text-[#255646]">Resources</h1>
+                        <Image
+                            src="/img/API-Docx/kow_green_logo.svg"
+                            fill
+                            alt="Kow Green Logo"
+                            className="object-contain"
+                        />
+                        </Link>
+
+                        
                         </div>
+                            <h1 className="text-[34px] leading-[24px] font-bold font-anek-latin text-[#255646]">Resources</h1>
+                        </div> 
+                         )
+                        }
+                      
                         <div>
                             <div className="border-y border-[#000] px-6">
                                 <ul className="flex items-center py-[10px] gap-[23px] text-base font-normal font-ibm-plex text-black">

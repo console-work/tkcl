@@ -113,9 +113,9 @@ const ChoosePlan = () => {
               </div>
               <div className=" h-[400px] w-[260px] bg-white shadow-lg border border--gradient-to-t from-white via-slate-300 to-white rounded-md relative"  style={{borderWidth:'0'}}>
                 <div className="flex flex-col items-center h-[130px] bg-[#DEE2E2] pt-10">
-                  <h5 className="absolute top-0 left-30 bg-[#B1CC40] text-white text-[11px] px-4 py-1 rounded-b-md font-semibold">
+                  <p className="absolute top-0 left-30 bg-[#B1CC40] text-white text-[11px] px-4 py-1 rounded-b-md font-semibold">
                     POPULAR
-                  </h5>
+                  </p>
                   <h3 className="text-2xl  font-semibold">PREMIUM</h3>
 
                   <div className="p-4 bg-[#DEE2E2] rounded-full z-20 relative">
