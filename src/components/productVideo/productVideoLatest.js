@@ -29,6 +29,7 @@ export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] 
         <div id="videoElement" className="">
             <div className="mt-[76px]">
                 <div className="relative  flex flex-col justify-center items-center h-auto md:h-screen">
+                     <h1 className="threedh1Frtee font-tag-font">3D Modeling and Rendering Services</h1>
                     <Suspense fallback={
                         <div className="flex justify-center w-full h-full">
                             <div className="absolute top-1/2 -translate-y-1/2">
@@ -41,6 +42,7 @@ export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] 
                            
  
  <div className="relative w-full h-full"> 
+   
   <Image
     src={loadingImg.src}
     alt="loading"

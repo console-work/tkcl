@@ -20,6 +20,18 @@ import Image from "next/image";
 import Language from "../language/language";
 
 const NavbarHome = ({carearmenu}) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    handleResize(); // initial check
+    window.addEventListener("resize", handleResize); // listen for resize
+    return () => window.removeEventListener("resize", handleResize); // cleanup
+  }, []);
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const [showModal, setShowModal] = useState(false);
@@ -30,37 +42,7 @@ const NavbarHome = ({carearmenu}) => {
   const [getMenuBool, setMenuBool] = useState(false);
   const [screenLeft, setScreenLeft] = useState(false);
 
-  // useEffect(() => {
-  //   // Function to check if an element is out of the viewport
-  //   function isElementOutOfViewport(el) {
-  //     var rect = el.getBoundingClientRect();
-  //     return (
-  //       rect.bottom < 0 ||
-  //       rect.right < 0 ||
-  //       rect.left > window.innerWidth ||
-  //       rect.top > window.innerHeight
-  //     );
-  //   }
-
-  //   // Function to handle the scroll event
-  //   function handleScroll() {
-  //     var myElement = document.getElementById("videoElement");
-
-  //     if (isElementOutOfViewport(myElement)) {
-  //       console.log("Element has left the screen.");
-  //       setScreenLeft(true);
-  //     } else {
-  //       console.log("Element is still visible on the screen.");
-  //       setScreenLeft(false);
-  //     }
-  //   }
-
-  //   // Attach the handleScroll function to the scroll event
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   // Optionally, you might want to also check the initial state
-  //   window.addEventListener("load", handleScroll);
-  // }, []);
+  
 
   useEffect(() => {
     function isElementOutOfViewport(el) {
@@ -121,6 +103,7 @@ const NavbarHome = ({carearmenu}) => {
         <div className="container mx-auto bg-[#DEE2E2] md:bg-transparent py-1">
           <div className="hidden lg:flex items-center justify-between gap-3 ">
             
+             {!isMobile && !carearmenu && (
             <h1>
               <Link aria-label="home" href={"/"}>
                <Image
@@ -132,7 +115,21 @@ const NavbarHome = ({carearmenu}) => {
 />
             </Link>
             </h1>
-           
+             )}  
+ {carearmenu && (
+          
+              <Link aria-label="home" href={"/"}>
+               <Image
+  src={screenLeft || carearmenu ? logo.src : logoWhite.src}
+  alt="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider"
+  width={80}
+  height={45}
+  className=""
+/>
+            </Link>
+        
+             )}  
+
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             <Link
               aria-label="2D"
@@ -250,20 +247,39 @@ const NavbarHome = ({carearmenu}) => {
           
           </div>
           <div className="flex items-center justify-between lg:hidden comonresponsiveNAvbar">
-            <h1>
-            <Link aria-label="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider" href={"/"}>
-            <Image
-  src={logo.src}
-  alt="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider"
-  width={80}
-  height={45}
-  className=""
-/>
-              
-            </Link>
-            </h1>
-
             
+            {isMobile  && !carearmenu &&  (
+        <h1>
+          <Link
+            aria-label="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider"
+            href="/"
+          >
+            <Image
+              src={logo.src}
+              alt="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider"
+              width={80}
+              height={45}
+            />
+          </Link>
+        </h1>
+      )}
+
+            {carearmenu &&  (
+       
+          <Link
+            aria-label="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider"
+            href="/"
+          >
+            <Image
+              src={logo.src}
+              alt="Best 2D Photo Editing and 3D Modeling and Rendering Service Provider"
+              width={80}
+              height={45}
+            />
+          </Link>
+       
+      )}
+ 
           <CgMenu
             onClick={() => setMenuBool(true)}
             className="text-[27px] cursor-pointer"

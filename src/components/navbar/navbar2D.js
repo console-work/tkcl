@@ -11,6 +11,8 @@ import Language from "../language/language";
 
 
 const Navbar2D = () => {
+
+  
   const [getMenuBool, setMenuBool] = useState(false); 
  
   return (
@@ -39,7 +41,16 @@ const Navbar2D = () => {
             <Link aria-label="order-guide" href="/2d-photo-editing#order-guide" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">ORDER GUIDE</Link>
             <Link aria-label="2d trends" href="/2d-photo-editing#2d-trends" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">2D TRENDS</Link>
             <Link aria-label="contact-us" href="/contact-us" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">CONTACT US</Link>
-
+           <Link
+              aria-label="blog"
+              href="/blog"
+              // target="_blank"
+              className={ "text-xs lg:text-sm font-semibold text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] "
+                 
+              }
+            >
+              BLOG
+            </Link>
             <a aria-label="sign-up" href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="text-gray-800 text-xs lg:text-sm border-2 rounded-3xl px-8 py-1 border-[#7C9C30] font-semibold" rel="noreferrer">SIGN UP</a>
             <Link aria-label="book-a-call" href="/book-a-call" className="text-gray-800 text-xs lg:text-sm border-2 rounded-3xl px-6 py-1 border-[#7C9C30] font-semibold" rel="noreferrer">Book A Call</Link>
            <Language navbar2d3dColor={true}/>

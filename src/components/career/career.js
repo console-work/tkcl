@@ -692,19 +692,20 @@ const Career = () => {
             <div className="w-full md:w-[450px] mt-[140px] md:mt-[120px]  text-center md:text-left">
               <h1 className="text-[18px] md:text-[24px] 2xl:text-[40px] font-bold text-[#57524B]">
                 WE ARE
-              </h1>
-              <h1 className="text-[60px]  md:text-[120px] 2xl:text-[150px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
+                 <p className="text-[60px]  md:text-[120px] 2xl:text-[150px] font-bold leading-[80px] md:leading-[100px] text-[#57524B] -ml-2">
                 HIRING
+              </p>
               </h1>
+             
             </div>
           </div>
 
           <div className="flex justify-center">
             <div className="w-full  md:w-[450px] ">
-              <h1 className=" text-center md:text-left text-[12px] 2xl:text-[14px] 2xl:mt-5 text-green-700 font-semibold">
+              <p className=" text-center md:text-left text-[12px] 2xl:text-[14px] 2xl:mt-5 text-green-700 font-semibold">
                 Note : Please select a position and submit your curriculum vitae
                 at your earliest convenience.
-              </h1>
+              </p>
             </div>
           </div>
 

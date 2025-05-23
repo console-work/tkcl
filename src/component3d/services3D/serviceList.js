@@ -5,7 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ServiceList = ({ icon, title, description, divider = false }) => {
     return (
-        <div className='flex flex-col md:flex-row items-center md:items-end justify-center gap-7 md:gap-32'>
+        <div className='flex flex-col md:flex-row items-center md:items-end justify-center gap-7 md:gap-20'>
             {divider && <div className='w-[90%] md:w-[2px] h-[2px] md:h-20 bg-gradient-to-t from-[#4f9e75]  to-[#cddcc8]'></div>}
             <div className='flex flex-col justify-center items-center '>
                 <div>
@@ -22,7 +22,7 @@ const ServiceList = ({ icon, title, description, divider = false }) => {
                 </div>
                 <div className='flex flex-col items-center md:gap-5'>
                     <h3 style={{fontWeight:'500',textAlign:'center'}}>{title}</h3>
-                    <p className='w-[150px] text-center'>{description}</p>
+                    <p className='w-[300px] text-center'>{description}</p>
                 </div>
             </div>
             {divider && <div className='w-[90%] md:w-[2px] h-[2px] md:h-20 bg-gradient-to-t from-[#4f9e75]  to-[#cddcc8]'></div>}

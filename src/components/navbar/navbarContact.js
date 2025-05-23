@@ -11,6 +11,10 @@ import Language from "../language/language";
 
 
 const NavbarContact = () => {
+
+
+
+
   const [getMenuBool, setMenuBool] = useState(false);
   return (
     <>
@@ -69,6 +73,16 @@ const NavbarContact = () => {
               className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]"
             >
               INDUSTRY TRENDS
+            </Link>
+             <Link
+              aria-label="blog"
+              href="/blog"
+              // target="_blank"
+              className={ "text-xs lg:text-sm font-semibold text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 hover:border-[#7C9C30] "
+                 
+              }
+            >
+              BLOG
             </Link>
             {/* <Link href="/#virtual" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">VIRTUAL TOUR</Link> */}
             <a

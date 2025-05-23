@@ -16,9 +16,9 @@ const metadata = {
       link: 'https://thekowcompany.com/3d-modeling-and-rendering'
     },
     apiResources: {
-      title: 'Loram',
-      description: 'Learn more about our company and our team.',
-      link: 'https://thekowcompany.com'
+      title: 'Retouched.ai API Resources | The KOW Company',
+      description: 'Try Retouched.ai, the powerful tool for AI background removal, professional touch-ups, preset backgrounds, smart resizing, and multi-format downloads.',
+      link: 'https://thekowcompany.com/api-resources/retouched'
     },
     exteriorV: {
       title: 'Specialized 3D Exterior Rendering and Visualization Services',
@@ -82,7 +82,7 @@ const metadata = {
     },
     career: {
       title: 'Careers at The KOW Company - Join Our Innovative Team',
-      description: "Discover budget-friendly product photography tips for small businesses. Learn DIY setups, creative techniques & tools to capture stunning product photos.",
+      description: "Join The KOW Company's team and grow your career. Collaborate with diverse professionals, share ideas, and thrive in a dynamic, global work environment.",
       link: 'https://thekowcompany.com/career'
     },
     integrationsPartnership: {

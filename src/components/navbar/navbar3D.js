@@ -89,7 +89,7 @@ const Navbar3D = () => {
              
               {/* --------------------------------------For Large Screen------------------------------------------ */}
               {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
-              <div className="flex gap-24 items-center relative">
+              <div className="flex gap-8 2xl:gap-24  items-center relative">
                 <button
                   onClick={toggleDiv}
                   className="relative text-gray-800 text-xl lg:text-sm font-medium flex gap-1 items-center"
@@ -128,6 +128,16 @@ const Navbar3D = () => {
                 >
                   CAREER
                 </Link>
+                <Link
+              aria-label="blog"
+              href="/blog"
+              // target="_blank"
+              className={ "text-xs lg:text-sm font-semibold text-gray-800 border-[#DEE2E2] border-b-2  hover:border-b-2 "
+                 
+              }
+            >
+              BLOG
+            </Link>
                 {/* <Link
                   aria-label="creative-showcase"
                   href={"/3d/creative-showcase"}

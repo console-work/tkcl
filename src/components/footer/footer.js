@@ -34,7 +34,7 @@ const Footer = () => {
                         <figure>
                             {/* <img alt="logo" loading="lazy" src={logoWhite.src}
                                 width={120} /> */}
-                                <h1>
+                               
               <Link aria-label="home" href={"/"}>
             <Image
   src={logoWhite}
@@ -44,7 +44,7 @@ const Footer = () => {
   loading="lazy"
 />   
               </Link>
-              </h1>                 
+                              
                         </figure>
                         <p className="w-40 text-white text-[12px] p-1 border-b-2  border-white  mb-4">
                             <b>The KOW Company</b> leads globally in 2D image editing, photo retouching, ghost mannequin solutions, 3D modeling, and rendering services for businesses worldwide.

@@ -48,7 +48,7 @@ const Blog3D = () => {
 
                   </div>
                   <div className="cardCaption ps-4 pt-5 pb-5 pe-5">
-                    <p className="cardTitle">{items.title}</p>
+                    <h3 className="cardTitle">{items.title}</h3>
                     <p className="cardDes">{items.metaDescription}</p>
                     <div className="readAndDate">
                       <button>

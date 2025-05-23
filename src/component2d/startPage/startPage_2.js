@@ -19,7 +19,7 @@ const StartPage_2 = () => {
       <div className="container mx-auto">
         <div className="flex justify-center items-center gap-20">
           <div className=" w-[400px] h-80"> 
-            <h5 className="text-[40px] text-center md:text-left">WE DO</h5>
+            <p className="text-[40px] text-center md:text-left">WE DO</p>
             <h1 className="border-b border-[#B1CC40] text-[40px] text-center md:text-left font-semibold -mt-4">IMAGE & VIDEO EDITING</h1>
             <h2 className="pt-5 text-[#959595] font-semibold">YOUR ONE-STOP CONTENT POST PRODUCTION SOLUTION</h2>
             <div className="pt-5 flex justify-center md:justify-start">

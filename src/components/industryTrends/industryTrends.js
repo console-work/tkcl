@@ -54,20 +54,26 @@ const IndustryTrends = () => {
                     <h2 className="text-white text-[26px]">2D</h2>
                     <div className="w-[110px] border-b border-white mb-[10px]"></div>
                   </div>
+                  <p className="text-xs" style={{position: "absolute",
+    bottom: "0px",
+    background: "#ffffff5c",
+    padding: "5px",
+    left: "0px"}}>{latest2DBlog.date}</p>
                 </div>
 
                 {/* Text Content */}
                 <div className="flex flex-col justify-items-center pt-5 gap-3">
-                  <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3">
+                  <div className="flex flex-col  justify-items-start items-left gap-1">
                     <h3 className="text-sm">
-                      {latest2DBlog.title} |{' '}
-                      <span className="text-xs">{latest2DBlog.date}</span>
+                      {latest2DBlog.title} 
+                      
                     </h3>
+
                   </div>
                   <div className="flex justify-center items-center">
-                    <h2 className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl">
+                    <h3 className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl">
                       See More
-                    </h2>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -96,20 +102,25 @@ const IndustryTrends = () => {
                     <h2 className="text-white text-[26px]">3D</h2>
                     <div className="w-[110px] border-b border-white mb-[12px]"></div>
                   </div>
+                  <p className="text-xs" style={{position: "absolute",
+    bottom: "0px",
+    background: "#ffffff5c",
+    padding: "5px",
+    left: "0px"}}>{latest3DBlog.date}</p>
                 </div>
 
                 {/* Text Content */}
                 <div className="flex flex-col justify-items-center pt-5 gap-3">
                   <div className="flex flex-row md:flex-col lg:flex-row justify-center items-center gap-3">
                     <h3 className="text-sm">
-                      {latest3DBlog.title} |{' '}
-                      <span className="text-xs">{latest3DBlog.date}</span>
+                      {latest3DBlog.title} 
+                      
                     </h3>
                   </div>
                   <div className="flex justify-center items-center">
-                    <h2 className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl">
+                    <h3 className="text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl">
                       See More
-                    </h2>
+                    </h3>
                   </div>
                 </div>
               </div>

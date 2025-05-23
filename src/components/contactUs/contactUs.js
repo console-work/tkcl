@@ -61,8 +61,10 @@ function ContactUs() {
                     <div className="flex flex-col-reverse md:flex-row  justify-center gap-10 md:gap-20 items-center">
                         <div className="flex flex-col justify-center items-center gap-4">
                             <div className="flex w-full flex-col border-b-2 border-[#98AE61]  justify-end items-end text-end">
-                                <p className="text-4xl font-bold text-[#333333]">GET IN TOUCH</p>
-                                <p className="text-4xl font-bold text-[#333333]">WITH US</p>
+                                <h1 className="text-4xl font-bold text-[#333333]">GET IN TOUCH
+                                    <p className="text-4xl font-bold text-[#333333]">WITH US</p>
+                                </h1>
+                                
                                 {/* <p className="text-xl  text-white">Contact us</p> */}
                             </div>
                             <form onSubmit={sendEmail} className="w-[350px] sm:w-[400px] md:w-[400px] flex flex-col">
