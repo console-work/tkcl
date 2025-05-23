@@ -1,6 +1,6 @@
 
 
-'use client';
+
 import Link from 'next/link';
 
 // Import JSON data for 2D and 3D blogs
@@ -54,11 +54,7 @@ const IndustryTrends = () => {
                     <h2 className="text-white text-[26px]">2D</h2>
                     <div className="w-[110px] border-b border-white mb-[10px]"></div>
                   </div>
-                  <p className="text-xs" style={{position: "absolute",
-    bottom: "0px",
-    background: "#ffffff5c",
-    padding: "5px",
-    left: "0px"}}>{latest2DBlog.date}</p>
+                  <p className="text-xs blogposterdate">{latest2DBlog.date}</p>
                 </div>
 
                 {/* Text Content */}

@@ -1,4 +1,4 @@
-'use client'
+
 import React from 'react';
 
 import ScrolTop from '@/components/scrolTop/scrolTop';

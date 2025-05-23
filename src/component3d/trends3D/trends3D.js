@@ -83,7 +83,7 @@ const Trends3D = () => {
               div?.slug ? (
                 <Link key={index} href={`/blog/${div.slug}`} aria-label="3D Blog Detail">
                   <div className="flex-col items-center justify-center cursor-pointer">
-                    <div className="h-auto md:h-[220px] xl:h-[280px] flex">
+                    <div className="h-auto md:h-[220px] xl:h-[280px] flex relative">
                       <Image
                         className="w-full min-h-full"
                         src={div.thumb}
@@ -92,11 +92,12 @@ const Trends3D = () => {
                         height={280} // Adjust as needed
                         loading="lazy"
                       />
+                      <span className="text-[10px] font-normal blogposterdate">{div.date}</span>
                     </div>
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">
                       <div className="flex justify-center items-center gap-2">
                         <h3 className="text-[12px] font-semibold">
-                          {div.title} | <span className="text-[10px] font-normal">{div.date}</span>
+                          {div.title} 
                         </h3>
                       </div>
                       <button className="bg-[#B1CC40] px-6 py-1 rounded-3xl font-semibold text-[10px]">

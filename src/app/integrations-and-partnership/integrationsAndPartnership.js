@@ -1,4 +1,4 @@
-'use client'
+
 
 import ScrolTop from '@/components/scrolTop/scrolTop';
 import NavbarContact from '@/components/navbar/navbarContact';

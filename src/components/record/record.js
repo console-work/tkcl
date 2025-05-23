@@ -1,4 +1,4 @@
-"use client";
+
 
 import CircleStyle from './circleStyle';
 

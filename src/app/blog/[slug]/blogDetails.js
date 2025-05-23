@@ -1,5 +1,5 @@
 
-'use client';
+
 
 import Head from 'next/head';
 import Navbar2D from '@/components/navbar/navbar2D';

@@ -1,4 +1,4 @@
-'use client'
+
 
 import PrivacyPolicy from "@/components/privacyPolicy/privacyPolicy";
 

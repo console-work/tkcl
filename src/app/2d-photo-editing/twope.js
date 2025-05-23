@@ -1,4 +1,4 @@
-'use client'
+
 import Integrations from "@/component2d/apps&Integration/apps&Integrations";
 import ChoosePlan from "@/component2d/choosePlan/choosePlan";
 import Footer2D from "@/component2d/footer2D/footer2D";

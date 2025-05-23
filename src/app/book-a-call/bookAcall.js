@@ -1,8 +1,6 @@
-'use client'
+
 
 import BookACall from "@/components/calendly/bookACall";
-
-
 
 const BookACalls = () => {
     return (

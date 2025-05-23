@@ -84,7 +84,7 @@ const Trends2D = () => {
                   aria-label="2D Blog Detail"
                 >
                   <div className="flex-col items-center justify-center cursor-pointer">
-                    <div className="h-auto md:h-[220px] xl:h-[280px] flex">
+                    <div className="h-auto md:h-[220px] xl:h-[280px] flex relative">
                       <Image
                         src={div.thumb} // This assumes your images are in the public folder or a valid URL
                         alt={div.title}
@@ -93,11 +93,12 @@ const Trends2D = () => {
                         className="w-full min-h-full object-cover"
                         loading="lazy" // Lazy load the images
                       />
+                      <span className="text-[10px] font-normal blogposterdate">{div.date}</span>
                     </div>
                     <div className="flex flex-col items-center gap-2 pt-5 pb-10">
                       <div className="flex justify-center items-center gap-2">
                         <h3 className="text-[12px] font-semibold">
-                          {div.title} | <span className="text-[10px] font-normal">{div.date}</span>
+                          {div.title} 
                         </h3>
                       </div>
                       <button className="bg-[#B1CC40] px-6 py-1 rounded-3xl font-semibold text-[10px]">

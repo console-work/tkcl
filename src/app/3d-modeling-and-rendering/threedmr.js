@@ -1,5 +1,5 @@
 
-'use client'
+
 
 import Navbar3D from "@/components/navbar/navbar3D"
 import ProductVideoLatest from "@/components/productVideo/productVideoLatest"

@@ -1,4 +1,4 @@
-'use client'
+
 
 import Blog2D from "@/components/blogHistory/blog2D";
 

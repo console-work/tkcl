@@ -1,4 +1,4 @@
-'use client'
+
 import Contact3D from "@/component3d/contact3D/contact3D";
 import Footer3D from "@/component3d/footer3D/footer3D";
 import IVPage2 from "@/component3d/interiorVisualization/iVPage2/iVPage2";

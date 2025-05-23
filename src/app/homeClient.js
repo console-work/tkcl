@@ -1,7 +1,4 @@
 
-'use client'
-
-
 import BluePrint from '@/components/bluePrint/bluePrint'
 import GetUpdate from '@/components/getUpdate/getUpdate'
 import IndustryTrends from '@/components/industryTrends/industryTrends'
@@ -33,7 +30,7 @@ function HomeClient() {
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
                 <ProductVideoLatestMother
                     videoUrl="../video/main_video.webm"
-                    loadingImg="/video/loading-image.webp"
+                    loadingImg="../video/loading-image.webp"
                     tagList={tagList} 
                     videoType="video/webm"  />
 

@@ -456,7 +456,13 @@ body > .skiptranslate {
   background: #dee2e200;
   color: #B3B9BF;
 }
-
+.blogposterdate{
+  position: absolute;
+    bottom: 0px;
+    background: #ffffff5c;
+    padding: 5px;
+    left: 0px;
+}
 /* .blogFullImgSingle .img-2 {
   position: absolute;
   left: 0;

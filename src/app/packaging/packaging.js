@@ -1,4 +1,4 @@
-'use client'
+
 import Contact3D from "@/component3d/contact3D/contact3D";
 import Footer3D from "@/component3d/footer3D/footer3D";
 import PackPage1 from "@/component3d/packaging/packPage1/packPage1";

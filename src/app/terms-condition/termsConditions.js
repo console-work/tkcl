@@ -1,4 +1,4 @@
-'use client'
+
 
 import TermsCondition from "@/components/termsCondition/termsCondition";
 

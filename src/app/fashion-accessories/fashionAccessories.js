@@ -1,4 +1,4 @@
-'use client'
+
 import Contact3D from "@/component3d/contact3D/contact3D";
 import FAPage1 from "@/component3d/fashionAccessories/fAPage1/fAPage1";
 import StartPage from "@/component3d/fashionAccessories/startPage/startPage";
