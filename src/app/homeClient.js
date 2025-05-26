@@ -28,11 +28,11 @@ function HomeClient() {
             <NavbarHome />
             {/* <NavbarHome /> */}
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
-                <ProductVideoLatestMother
+                {/* <ProductVideoLatestMother
                     videoUrl="../video/main_video.webm"
                     loadingImg="../video/loading-image.webp"
                     tagList={tagList} 
-                    videoType="video/webm"  />
+                    videoType="video/webm"  /> */}
 
 
               <ScrollEffect id="scrolAnim_2d" offset={100}>
