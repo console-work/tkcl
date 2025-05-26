@@ -131,7 +131,7 @@ const WelcomePage = () => {
                 className="w-full px-3 lg:w-3/4 lg:pl-20 lg:px-0 xl:px-20 text-white text-sm md:text-base text-justify"
                 style={{ lineHeight: "1.6" }}
               > */}
-              <p className="" style={{ lineHeight: "1.6" }}>
+              {/* <p className="w-full px-3 lg:w-3/4 lg:pl-0 lg:px-0 xl:px-0 text-white text-sm md:text-base text-justify" style={{ lineHeight: "1.6" }}>
                 The KOW Company has been a leading name in the world of E-commerce
                 as a relentless player in Studio Image &amp; 3D
                 post-production contents. We are constantly developing visual
@@ -155,7 +155,7 @@ const WelcomePage = () => {
                 them. We&apos;re all about excellent quality and creative
                 solutions to help your brand stand out, turning your every visual
                 into something extraordinary.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
