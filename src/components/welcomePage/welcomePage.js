@@ -140,7 +140,7 @@ const WelcomePage = () => {
                 traditional image editing, we are equally proud of our remarkable
                 3D modeling, rendering, and architectural visualization abilities.
                 <br />
-               
+               <br />
                 We have skilled artists and designers who create stunning 3D
                 visuals and lifelike renderings that leave a lasting mark. To make
                 things more streamlined, Retouched.ai is our advanced AI
@@ -150,7 +150,7 @@ const WelcomePage = () => {
                 help of Ai. The result is an intricate, clean image that helps
                 your product to be more attractive.
                 <br />
-                
+                <br />
                 At The KOW Company, we don&apos;t meet your expectations; we beat
                 them. We&apos;re all about excellent quality and creative
                 solutions to help your brand stand out, turning your every visual
