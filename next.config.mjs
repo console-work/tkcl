@@ -19,25 +19,18 @@
 
 // export default bundleAnalyzer(nextConfig)
 
-import withBundleAnalyzer from '@next/bundle-analyzer';
+import withBundleAnalyzer from '@next/bundle-analyzer'
 
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
-});
+})
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-
-  // ✅ 'swcMinify' is no longer needed in Next.js 15
-  // ✅ Don't use 'experimental.legacyBrowsers' in v15
-  // ✅ Let Browserslist control targeting
-
-  webpack(config) {
-    // ❌ Avoid using 'esnext', it's not a valid target
-    // You can skip setting config.target altogether for most setups
-    return config;
+  experimental: {
+    // কোনো legacyBrowsers বা browsersListForSwc এখানে থাকবে না
   },
-};
+}
 
-export default bundleAnalyzer(nextConfig);
+export default bundleAnalyzer(nextConfig)
