@@ -21,24 +21,23 @@
 
 import withBundleAnalyzer from '@next/bundle-analyzer';
 
+const bundleAnalyzer = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
 
-  // ✅ Modern JavaScript only, no legacy browser transforms
-  experimental: {
-    legacyBrowsers: false,
-    browsersListForSwc: true,
-  },
+  // ✅ 'swcMinify' is no longer needed in Next.js 15
+  // ✅ Don't use 'experimental.legacyBrowsers' in v15
+  // ✅ Let Browserslist control targeting
 
-  // ✅ Output ESNext to skip polyfills and transpilation for modern features
   webpack(config) {
-    config.target = 'esnext';
+    // ❌ Avoid using 'esnext', it's not a valid target
+    // You can skip setting config.target altogether for most setups
     return config;
   },
 };
 
-export default withBundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true',
-})(nextConfig);
+export default bundleAnalyzer(nextConfig);
