@@ -41,6 +41,10 @@ export default {
         'kow-green-light': '#b1cc40',
         'kow-text-black': '#333333',
       },
+       fontFamily: {
+       roboto: ['"Roboto Condensed"', 'sans-serif'],
+       rubik: ['"Rubik Doodle Shadow"', 'cursive'],
+    },
     },
   },
   plugins: [],
