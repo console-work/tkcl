@@ -87,7 +87,7 @@ const WelcomePage = () => {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row items-center py-5 lg:py-0">
             
-            {/* বড় স্ক্রিনের সাইড আর্ট ও লোগো */}
+            
             <div className="hidden lg:block absolute bottom-0 left-0">
               <div className="relative w-[250px] lg:w-[320px] xl:w-[360px]">
                 <Image
@@ -96,7 +96,7 @@ const WelcomePage = () => {
                   className="w-auto h-auto"
                   width={360}
                   height={360}
-                  priority // প্রথমে লোড হবে
+                  priority 
                   placeholder="blur" // blurry placeholder (optional)
                 />
                 <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
@@ -127,10 +127,14 @@ const WelcomePage = () => {
 
             {/* টেক্সট প্যারাগ্রাফ */}
             <div className="flex justify-end lg:h-[400px] items-center">
-              <p
+              {/* <p
                 className="w-full px-3 lg:w-3/4 lg:pl-20 lg:px-0 xl:px-20 text-white text-sm md:text-base text-justify"
                 style={{ lineHeight: "1.6" }}
-              >
+              > */}
+              <p
+  className="w-full px-3 lg:w-3/4 lg:pl-8 lg:px-0 xl:px-16 text-white text-sm md:text-base text-justify"
+  style={{ lineHeight: "1.6" }}
+>
                 The KOW Company has been a leading name in the world of E-commerce
                 as a relentless player in Studio Image &amp; 3D
                 post-production contents. We are constantly developing visual
@@ -139,7 +143,7 @@ const WelcomePage = () => {
                 traditional image editing, we are equally proud of our remarkable
                 3D modeling, rendering, and architectural visualization abilities.
                 <br />
-                <br />
+               
                 We have skilled artists and designers who create stunning 3D
                 visuals and lifelike renderings that leave a lasting mark. To make
                 things more streamlined, Retouched.ai is our advanced AI
@@ -149,7 +153,7 @@ const WelcomePage = () => {
                 help of Ai. The result is an intricate, clean image that helps
                 your product to be more attractive.
                 <br />
-                <br />
+                
                 At The KOW Company, we don&apos;t meet your expectations; we beat
                 them. We&apos;re all about excellent quality and creative
                 solutions to help your brand stand out, turning your every visual
