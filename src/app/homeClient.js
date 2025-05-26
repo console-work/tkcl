@@ -65,23 +65,19 @@ import ScrolTop from '@/components/scrolTop/scrolTop'
 import { ScrollEffect } from '@/components/scrollEffect/scrollEffect'
 
 // Lazy Load Components
-const NavbarHome = dynamic(() => import('@/components/navbar/navbar'), { ssr: false })
-const ProductVideoLatestMother = dynamic(() => import('@/components/productVideo/productVideoLatestMother'), { ssr: false })
-const WelcomePage = dynamic(() => import('@/components/welcomePage/welcomePage'), { ssr: false })
-
-const DivSliderParrent = dynamic(() => import('@/components/slider/divSliderParrent'), { ssr: false })
-
-
-const ThreeDModelContainer = dynamic(() => import('@/components/threeDModelContainer/threeDModelContainer'), { ssr: false })
-const Slider3D = dynamic(() => import('@/components/slider/slider3D'), { ssr: false })
-const Record = dynamic(() => import('@/components/record/record'), { ssr: false })
- 
-const Retouched = dynamic(() => import('@/components/retouched/retouched'), { ssr: false })
-const Integration = dynamic(() => import('@/components/integration/integration'), { ssr: false })
+const NavbarHome = dynamic(() => import('@/components/navbar/navbar'))
+const ProductVideoLatestMother = dynamic(() => import('@/components/productVideo/productVideoLatestMother'))
+const WelcomePage = dynamic(() => import('@/components/welcomePage/welcomePage'))
+const ThreeDModelContainer = dynamic(() => import('@/components/threeDModelContainer/threeDModelContainer'))
+const DivSliderParrent = dynamic(() => import('@/components/slider/divSliderParrent'))
+const Slider3D = dynamic(() => import('@/components/slider/slider3D'))
+const Record = dynamic(() => import('@/components/record/record'))
+const Retouched = dynamic(() => import('@/components/retouched/retouched'))
+const Integration = dynamic(() => import('@/components/integration/integration'))
 const BluePrint = dynamic(() => import('@/components/bluePrint/bluePrint'))
-const IndustryTrends = dynamic(() => import('@/components/industryTrends/industryTrends'), { ssr: false })
-const GetUpdate = dynamic(() => import('@/components/getUpdate/getUpdate'), { ssr: false })
-const Footer = dynamic(() => import('@/components/footer/footer'), { ssr: false })
+const IndustryTrends = dynamic(() => import('@/components/industryTrends/industryTrends'))
+const GetUpdate = dynamic(() => import('@/components/getUpdate/getUpdate'))
+const Footer = dynamic(() => import('@/components/footer/footer'))
 
 function HomeClient() {
     const tagList = ["Retouching", "Recoloring", "Editing", "3D Modeling", "Texture Creation"];
