@@ -68,10 +68,14 @@ import { ScrollEffect } from '@/components/scrollEffect/scrollEffect'
 const NavbarHome = dynamic(() => import('@/components/navbar/navbar'))
 const ProductVideoLatestMother = dynamic(() => import('@/components/productVideo/productVideoLatestMother'))
 const WelcomePage = dynamic(() => import('@/components/welcomePage/welcomePage'))
-const ThreeDModelContainer = dynamic(() => import('@/components/threeDModelContainer/threeDModelContainer'))
+
 const DivSliderParrent = dynamic(() => import('@/components/slider/divSliderParrent'))
-const Slider3D = dynamic(() => import('@/components/slider/slider3D'))
-const Record = dynamic(() => import('@/components/record/record'))
+
+
+const ThreeDModelContainer = dynamic(() => import('@/components/threeDModelContainer/threeDModelContainer'), { ssr: false })
+const Slider3D = dynamic(() => import('@/components/slider/slider3D'), { ssr: false })
+const Record = dynamic(() => import('@/components/record/record'), { ssr: false })
+ 
 const Retouched = dynamic(() => import('@/components/retouched/retouched'))
 const Integration = dynamic(() => import('@/components/integration/integration'))
 const BluePrint = dynamic(() => import('@/components/bluePrint/bluePrint'))
