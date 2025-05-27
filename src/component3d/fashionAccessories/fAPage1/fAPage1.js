@@ -12,7 +12,7 @@ const FAPage1 = () => {
   const visibleDivs = [
     {
       id: 1,
-      text: "YOUR PROJECT TITLE",
+      text: "fashion Accessories",
       text2: "01 JAN, 2023",
       imageUrl: "/img/Fashion Accessories.webp",
       imageUrl2: "/img/3d/slider/view.webp",
@@ -52,16 +52,19 @@ const FAPage1 = () => {
       <div className="2xl:container mx-auto my-1">
         {getVisibleDivs().map((div) => (
           <div className="relative" key={div.id}>
-            <div className="relative w-full h-[250px] sm:h-[500px] xl:h-[800px]">
-              <Image
-                src={div.imageUrl}
-                alt={div.text}
-                fill
-                className="object-content"
-                sizes="100vw"
-                priority
-              />
-            </div>
+             <div className="relative ">
+  <Image
+    src={div.imageUrl}
+    alt={div.text}
+    
+      className="object-cover w-full h-auto" // responsive এবং cover mode
+             
+                  width={800} // Set the width for optimization
+                  height={800} // Set the height for optimization
+  
+    priority
+  />
+</div>
             <div className="flex justify-between">
               {!isPrevDisabled && (
                 <button onClick={handlePrev}>

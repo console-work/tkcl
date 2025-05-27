@@ -8,7 +8,7 @@ const FPage1 = () => {
   const [visibleDivs, setVisibleDivs] = useState([
     {
       id: 1,
-      text: 'YOUR PROJECT TITLE',
+      text: 'furniture',
       text2: '01 JAN, 2023',
       imageUrl: '/img/Furniture.webp',
       imageUrl2: '/img/3d/slider/view.webp',
@@ -58,12 +58,12 @@ const FPage1 = () => {
             <div className="relative" key={div.id}>
               <div>
                 <Image
-                  className="w-full h-full 2xl:h-[800px]"
+                   className="object-cover w-full h-auto" // responsive এবং cover mode
                   src={div.imageUrl}
                   alt={div.text}
                   width={800} // Set the width for optimization
                   height={800} // Set the height for optimization
-                  loading="lazy"
+                  priority
                 />
               </div>
               {/* <div className="flex justify-between">
