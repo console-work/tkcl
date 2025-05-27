@@ -97,9 +97,9 @@ function HomeClient() {
                 
                     <WelcomePage />
                 
-                <ScrollEffect id="scrolAnim_2d" offset={100}>
+               
                     <ThreeDModelContainer />
-                </ScrollEffect>
+               
 
                 <DivSliderParrent />
                 <Slider3D />
