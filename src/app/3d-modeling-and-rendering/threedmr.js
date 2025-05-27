@@ -37,9 +37,12 @@ function Threedmr() {
            
                 <VisualizationSliderStatic />
             {/* </ScrollEffect> */}
-            <ScrollEffect offset={100}>
+            {/* <ScrollEffect offset={100}>
                 <ProductVisualization />
-            </ScrollEffect>
+            </ScrollEffect> */}
+            
+                <ProductVisualization />
+            
             <div className="flex flex-col bg-[#f1f4ed] bgImage-2 ">
                 {/* <ScrollEffect offset={100}> */}
                     <ProductVisualSlider />
@@ -50,9 +53,9 @@ function Threedmr() {
                 {/* <ScrollEffect id="3d-trends" offset={100}> */}
                     <Trends3D />
                 {/* </ScrollEffect> */}
-                <ScrollEffect offset={100}>
+               
                     <Video3D />
-                </ScrollEffect>
+              
                 {/* <ScrollEffect offset={100}> */}
                     <GetUpdate3D />
                 {/* </ScrollEffect> */}

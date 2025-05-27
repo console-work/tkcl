@@ -96,11 +96,7 @@ function HomeClient() {
 
                 
                     <WelcomePage />
-                
-               
                     <ThreeDModelContainer />
-               
-
                 <DivSliderParrent />
                 <Slider3D />
                 <Record />
