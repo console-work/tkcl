@@ -86,7 +86,7 @@ const WelcomePage = () => {
                                     className="w-auto h-auto"
                                     width={360}
                                     height={360}
-                                     loading="lazy"
+                                    priority
                                 />
                                 <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                                     <Image
@@ -94,7 +94,7 @@ const WelcomePage = () => {
                                         alt="logo"
                                         width={200}
                                         height={150}
-                                         loading="lazy"
+                                        priority
                                     />
                                 </div>
                             </div>
@@ -108,7 +108,7 @@ const WelcomePage = () => {
                                 alt="logo"
                                 width={120}
                                 height={60}
-                                 loading="lazy"
+                                priority
                             />
                         </div>
 
