@@ -94,9 +94,9 @@ function HomeClient() {
                     videoType="video/webm"
                 />
 
-                <ScrollEffect id="scrolAnim_2d" offset={100}>
+                
                     <WelcomePage />
-                </ScrollEffect>
+                
                 <ScrollEffect id="scrolAnim_2d" offset={100}>
                     <ThreeDModelContainer />
                 </ScrollEffect>
