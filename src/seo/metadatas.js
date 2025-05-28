@@ -61,8 +61,8 @@ const metadata = {
       link: 'https://thekowcompany.com/tech-accessories'
     },
     contactUs: {
-      title: 'Contact Us | The Kow Company',
-      description: 'Learn more about our company and our team.',
+      title: 'Contact Us | The KOW Company – Start Your Project Today',
+      description: 'Reach out to The KOW Company for expert 2D, 3D, and CGI services. Contact us today to discuss your project, request a free quote, or book a call now.',
       link: 'https://thekowcompany.com/contact-us/'
     },
     privacyPolicy: {
@@ -92,18 +92,18 @@ const metadata = {
     },
 
     blog: {
-      title: 'Blog',
-      description: 'Learn more about our company and our team.',
+      title: '2D, 3D & CGI Blog: Tips & Trends | The KOW Company',
+      description: 'Explore tips, trends, and insights in 2D editing, 3D modeling and rendering, and CGI. Stay inspired with The KOW Company’s expert blogs.',
       link: 'https://thekowcompany.com/blog'
     },
     blog2D: {
-      title: 'Blog2D',
-      description: 'Learn more about our company and our team.',
+      title: '2D Image Editing Mastery: Pro Tips & Tutorials | The KOW Company',
+      description: 'Discover pro tips and tutorials for 2D image editing. Master background removal, retouching, color correction, and more with The KOW Company.',
       link: 'https://thekowcompany.com/blog/2d'
     },
     blog3D: {
-      title: 'Blog3D',
-      description: 'Learn more about our company and our team.',
+      title: '3D Modeling & Rendering Insights | The KOW Company',
+      description: 'Get insights and tips on 3D modeling and rendering. Discover how The KOW Company crafts captivating visuals for brands and products. Read now!',
       link: 'https://thekowcompany.com/blog/3d'
     },
     thanks:{

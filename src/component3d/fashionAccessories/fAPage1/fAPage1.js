@@ -52,16 +52,13 @@ const FAPage1 = () => {
       <div className="2xl:container mx-auto my-1">
         {getVisibleDivs().map((div) => (
           <div className="relative" key={div.id}>
-             <div className="relative ">
+             <div className="relative w-full h-[250px] sm:h-[500px] xl:h-[800px]">
   <Image
     src={div.imageUrl}
     alt={div.text}
-    
-      className="object-cover w-full h-auto" // responsive এবং cover mode
-             
-                  width={800} // Set the width for optimization
-                  height={800} // Set the height for optimization
-  
+    fill
+    className="object-cover"
+    sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 1280px"
     priority
   />
 </div>
