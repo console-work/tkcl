@@ -29,6 +29,9 @@ export async function generateMetadata({ params }) {
       images: [blog.thumb],
       url: `https://thekowcompany.com/blog/${params.slug}`,
     },
+    alternates: {
+    canonical:`https://thekowcompany.com/blog/${params.slug}`,
+  }
   };
 }
 
