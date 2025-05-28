@@ -16,10 +16,7 @@ const AllBlog = () => {
     return combined
       .map((item) => ({
         ...item,
-        slug: item.title
-          .toLowerCase()
-          .replace(/\s+/g, '-')
-          .replace(/[^a-z0-9-]/g, ''),
+        slug: item.slug,
       }))
       .sort((a, b) => new Date(b.date) - new Date(a.date));
   }, []);

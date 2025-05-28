@@ -10,7 +10,8 @@ export async function generateMetadata({ params }) {
 
   const blog = allBlogs.find(
     (item) =>
-      item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') === params.slug
+      // item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') === params.slug
+    item.slug === params.slug
   );
 
   if (!blog) {
@@ -26,11 +27,11 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: blog.title,
       description: blog.metaDescription || blog.description?.slice(0, 160),
-      images: [blog.thumb],
-      url: `https://thekowcompany.com/blog/${params.slug}`,
+      images: [blog.thumb]
+      // url: `https://thekowcompany.com/blog/${params.slug}`,
     },
     alternates: {
-    canonical:`https://thekowcompany.com/blog/${params.slug}`,
+    canonical:`https://thekowcompany.com/blog/${blog.slug}`,
   }
   };
 }
@@ -41,7 +42,8 @@ export async function generateStaticParams() {
   const allBlogs = [...blog2D, ...blog3D];
 
   return allBlogs.map((item) => ({
-    slug: item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
+    // slug: item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
+    slug: item.slug,
   }));
 
 
@@ -55,7 +57,8 @@ export default async function Page({ params }) {
 
   const blog = allBlogs.find(
     (item) =>
-      item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') === params.slug
+      // item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') === params.slug
+    item.slug === params.slug
   );
 
   if (!blog) return <div>Blog Not Found</div>;
