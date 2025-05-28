@@ -32,7 +32,7 @@ const ThreeDModelContainer = () => {
 
               <div className="flex flex-col justify-items-center md:pt-10 items-center">
               <p className="text-black text-justify">
-              HoloSnap is an innovative software that transforms ordinary images into detailed 3D models with ease. Using advanced AI and computer vision, HoloSnap extracts depth and spatial data from photos, allowing users to create lifelike 3D representations without the need for complex modeling skills. Ideal for designers, architects, game developers, and 3D enthusiasts, HoloSnap streamlines the process of turning 2D visuals into immersive, interactive 3D models. Whether for virtual reality, augmented reality, or digital content creation, HoloSnap offers a powerful and user-friendly solution for 3D modeling from images. 
+              Holosnap is an innovative software that transforms ordinary images into detailed 3D models with ease. Using advanced AI and computer vision, Holosnap extracts depth and spatial data from photos, allowing users to create lifelike 3D representations without the need for complex modeling skills. Ideal for designers, architects, game developers, and 3D enthusiasts, Holosnap streamlines the process of turning 2D visuals into immersive, interactive 3D models. Whether for virtual reality, augmented reality, or digital content creation, Holosnap offers a powerful and user-friendly solution for 3D modeling from images. 
               </p>
               <div className="flex justify-center mt-3 md:mt-6 mb-5 md:mb-0">
                <h3 className="block">

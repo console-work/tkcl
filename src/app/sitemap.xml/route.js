@@ -15,10 +15,7 @@ export async function GET() {
 
   // Slugify like in [slug]/page.js
   const blogPages = allBlogs.map((item) => {
-    const slug = item.title
-      .toLowerCase()
-      .replace(/\s+/g, '-')
-      .replace(/[^a-z0-9-]/g, '');
+    const slug = item.slug;
     return {
       loc: `${baseUrl}/blog/${slug}`,
       lastmod: new Date().toISOString().split('T')[0],

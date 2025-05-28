@@ -117,17 +117,15 @@ const WelcomePage = () => {
                             <div className="w-full px-3 lg:w-[75%] xl:w-[75%] lg:pl-20 text-white text-sm md:text-base text-justify space-y-3">
                                 <p>
                                     The KOW Company has been a leading name in the world of E-commerce as a relentless player in Studio Image &amp; 3D post-production contents. We are constantly developing visual contents with creativity and precision, turning them into stunning realities.
-                                </p>
-                                <p>
+                                
                                     With a versatile range of services in traditional image editing, we are equally proud of our remarkable 3D modeling, rendering, and architectural visualization abilities.
-                                </p>
-                                <p>
+                                 </p>
+                                 <p>
                                     We have skilled artists and designers who create stunning 3D visuals and lifelike renderings that leave a lasting mark.
-                                </p>
-                                <p>
+                               
+                                
                                     To make things more streamlined, Retouched.ai is our advanced AI integration that sets us apart. This amazing technology has allowed us to redefine how we enhance product images.
-                                </p>
-                                <p>
+                               
                                     Retouched.ai easily and quickly removes backgrounds from your photos with the help of Ai. The result is an intricate, clean image that helps your product to be more attractive.
                                 </p>
                                 <p>
