@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: blog.title,
+    title: blog.metaTitle,
     description: blog.metaDescription || blog.description?.slice(0, 160),
     openGraph: {
       title: blog.title,
